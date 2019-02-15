@@ -111,7 +111,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#contents" tabindex="1" class="md-skip">
+      <a href="#summary" tabindex="1" class="md-skip">
         跳转至
       </a>
     
@@ -3276,13 +3276,6 @@
   
     <label class="md-nav__title" for="__toc">目录</label>
     <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#contents" title="Contents" class="md-nav__link">
-    Contents
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#summary" title="Summary" class="md-nav__link">
@@ -6870,13 +6863,6 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#contents" title="Contents" class="md-nav__link">
-    Contents
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#summary" title="Summary" class="md-nav__link">
     Summary
   </a>
@@ -7136,7 +7122,9 @@
                 
                   <h1>开放的社会大学</h1>
                 
-                <p><img alt="Open Source Society University (OSSU)" src="http://i.imgur.com/kYYCXtC.png" /></p>
+                <div class="github-widget" data-repo="ossu/computer-science"></div>
+
+<p><img alt="Open Source Society University (OSSU)" src="http://i.imgur.com/kYYCXtC.png" /></p>
 <h3 align="center">开源社会大学</h3>
 
 <p align="center">
@@ -7155,22 +7143,6 @@
   </a>
 </p>
 
-<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="#summary">Summary</a></li>
-<li><a href="#curriculum">Curriculum</a></li>
-<li><a href="#prerequisites">Prerequisites</a></li>
-<li><a href="#introduction-to-computer-science">Introduction to Computer Science</a></li>
-<li><a href="#core-cs">Core CS</a></li>
-<li><a href="#advanced-cs">Advanced CS</a></li>
-<li><a href="#final-project">Final project</a></li>
-<li><a href="#pro-cs">Pro CS</a></li>
-<li><a href="#code-of-conduct">Code of conduct</a></li>
-<li><a href="#community">Community</a></li>
-<li><a href="#how-to-show-your-progress">How to show your progress</a></li>
-<li><a href="#team">Team</a></li>
-<li><a href="#references">References</a></li>
-</ul>
 <h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
 <p>OSSU课程是一门完整的计算机科学教育*<em>，使用在线资料.
 它不仅仅用于职业培训或职业发展.
@@ -7205,30 +7177,11 @@
 请注意Coursera提供 <a href="https://learner.coursera.help/hc/en-us/articles/209819033-Apply-for-Financial-Aid">financial aid</a>.
 根据您自己的时间和预算决定花多少钱或多少钱;
 只记得你不能购买成功！</p>
-<p><strong>内容政策</strong>.  如果您打算公开展示一些课程作业，则必须仅共享您允许的文件.
-<em>不要不尊重您在每门课程开始时签署的行为准则</em>！</p>
+<p><em>不要不尊重您在每门课程开始时签署的行为准则</em>！</p>
 <p><strong>如何贡献</strong>.  请参阅 <a href="https://github.com/ossu/computer-science/blob/master/CONTRIBUTING.md">CONTRIBUTING</a>.</p>
 <p><strong>获得帮助</strong>.  请检查我们 <a href="https://github.com/ossu/computer-science/blob/master/FAQ.md">Frequently Asked Questions</a>，如果您找不到答案，请提出问题或与我们联系 <a href="https://github.com/ossu/computer-science/blob/master/#community">friendly community</a>!</p>
 <h2 id="curriculum">Curriculum<a class="headerlink" href="#curriculum" title="Permanent link">&para;</a></h2>
 <p><strong>课程版</strong>：<code>8.0.0</code>（见 <a href="https://github.com/ossu/computer-science/blob/master/CHANGELOG.md">CHANGELOG</a>)</p>
-<ul>
-<li><a href="#prerequisites">Prerequisites</a></li>
-<li><a href="#introduction-to-computer-science">Introduction to Computer Science</a></li>
-<li><a href="#core-cs">Core CS</a></li>
-<li><a href="#core-programming">Core programming</a></li>
-<li><a href="#core-math">Core math</a></li>
-<li><a href="#core-systems">Core systems</a></li>
-<li><a href="#core-theory">Core theory</a></li>
-<li><a href="#core-applications">Core applications</a></li>
-<li><a href="#advanced-cs">Advanced CS</a></li>
-<li><a href="#advanced-programming">Advanced programming</a></li>
-<li><a href="#advanced-math">Advanced math</a></li>
-<li><a href="#advanced-systems">Advanced systems</a></li>
-<li><a href="#advanced-theory">Advanced theory</a></li>
-<li><a href="#advanced-applications">Advanced applications</a></li>
-<li><a href="#final-project">Final project</a></li>
-<li><a href="#pro-cs">Pro CS</a></li>
-</ul>
 <hr />
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <ul>
@@ -7282,7 +7235,7 @@
 <code>函数式编程</code>测试设计
 <code>程序要求&amp;#39;</code>常见的设计模式
 <code>单元测试</code>
-<code>面向对象的设计</code>Java<code></code>静态打字<code></code>dynamic typing<code></code>ML-family语言（通过标准ML）<code></code>Lisp家族语言（通过Racket）<code></code>Ruby<code></code>还有更多</p>
+<code>面向对象的设计</code>Java<code></code>静态打字<code></code>动态打字<code></code>ML-family语言（通过标准ML）<code></code>Lisp家族语言（通过Racket）<code></code>Ruby<code></code>还有更多</p>
 <table>
 <thead>
 <tr>
@@ -7348,7 +7301,7 @@
 <code>线性变换&amp;#39;</code>matrices<code></code>vectors<code></code>数学证明
 <code>数论&amp;#39;</code>微积分<code></code>积分&#39;
 <code>序列和系列</code>
-<code>离散数学</code>
+<code>discrete mathematics</code>
 <code>基本统计&amp;#39;</code>O-notation<code></code>图论
 <code>矢量微积分</code>离散概率&#39;
 `还有更多</p>

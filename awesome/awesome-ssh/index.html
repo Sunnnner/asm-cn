@@ -4089,13 +4089,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" title="Table of Contents" class="md-nav__link">
-    Table of Contents
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#apps" title="Apps" class="md-nav__link">
     Apps
   </a>
@@ -6797,13 +6790,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" title="Table of Contents" class="md-nav__link">
-    Table of Contents
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#apps" title="Apps" class="md-nav__link">
     Apps
   </a>
@@ -6976,160 +6962,138 @@
                 
                   <h1>SSH</h1>
                 
-                <h2 id="awesome-ssh">Awesome SSH <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a><a class="headerlink" href="#awesome-ssh" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>A curated list of <em>SSH</em> <a href="#apps">apps</a>, <a href="#libraries">libraries</a> and <a href="#resources">resources</a>.</p>
-</blockquote>
+                <div class="github-widget" data-repo="moul/awesome-ssh"></div>
+
+<h2 id="awesome-ssh">Awesome SSH <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a><a class="headerlink" href="#awesome-ssh" title="Permanent link">&para;</a></h2>
+<p>&gt; * SSH *的精选列表 <a href="#apps">apps</a>, <a href="#libraries">libraries</a> 和 <a href="#resources">resources</a>.</p>
 <h2 align="center"><img src="https://raw.githubusercontent.com/moul/awesome-ssh/master/logo.jpg" width="400" /></h2>
 
-<p>Inspired by the <a href="https://github.com/sindresorhus/awesome">awesome</a> list thing.</p>
-<p>Please read the <a href="https://github.com/moul/awesome-ssh/blob/master/CONTRIBUTING.md">contribution guidelines</a> if you want to contribute.</p>
-<p><strong>Check out my <a href="http://manfredtouron.tumblr.com">blog</a> 🦄 or say <em>hi</em> on <a href="https://twitter.com/moul">Twitter</a>.</strong></p>
-<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="#apps">Apps</a></li>
-<li><a href="#sshconfig"><code>.ssh/config</code></a></li>
-<li><a href="#tools-using-the-ssh-protocol">Tools using the <em>SSH</em> protocol</a></li>
-<li><a href="#servers">Servers</a></li>
-<li><a href="#network">Network</a></li>
-<li><a href="#multiplexers">Multiplexers</a></li>
-<li><a href="#ssh-keys--authentication">SSH Keys / Authentication</a></li>
-<li><a href="#ssh-agent">SSH agent</a></li>
-<li><a href="#tools">Tools</a></li>
-<li><a href="#automation">Automation</a></li>
-<li><a href="#web">Web</a></li>
-<li><a href="#testing--honeypots">Testing / Honeypots</a></li>
-<li><a href="#alternatives-to-ssh">Alternatives to SSH</a></li>
-<li><a href="#libraries">Libraries</a></li>
-<li><a href="#resources">Resources</a></li>
-<li><a href="#tutorials">Tutorials</a></li>
-<li><a href="#security">Security</a></li>
-<li><a href="#documentation">Documentation</a></li>
-<li><a href="#community">Community</a></li>
-</ul>
+<p>灵感来自于 <a href="https://github.com/sindresorhus/awesome">awesome</a> 列出的东西.</p>
+<p>请阅读 <a href="https://github.com/moul/awesome-ssh/blob/master/CONTRIBUTING.md">contribution guidelines</a> 如果你想贡献.</p>
+<p><strong>看看我 <a href="http://manfredtouron.tumblr.com">blog</a>  或者说* hi * on <a href="https://twitter.com/moul">Twitter</a>.</strong></p>
 <h2 id="apps">Apps<a class="headerlink" href="#apps" title="Permanent link">&para;</a></h2>
 <h3 id="sshconfig"><code>.ssh/config</code><a class="headerlink" href="#sshconfig" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://github.com/moul/advanced-ssh-config"><code>assh</code> a.k.a <code>advanced-ssh-config</code></a> <a href="https://github.com/moul/advanced-ssh-config"><img alt="stars" src="https://img.shields.io/github/stars/moul/advanced-ssh-config.svg?style=social&amp;label=stars" /></a> - Transparent wrapper (ProxyCommand) that adds regex, aliases, gateways, includes, dynamic hostnames to <em>SSH</em> and <code>ssh-config</code>.</li>
-<li><a href="https://github.com/emre/storm">storm</a> <a href="https://github.com/emre/storm"><img alt="stars" src="https://img.shields.io/github/stars/emre/storm.svg?style=social&amp;label=stars" /></a> - Manage your <em>SSH</em> like a boss.</li>
-<li><a href="https://github.com/gaqzi/ansible-ssh-config">ansible-ssh-config</a> <a href="https://github.com/gaqzi/ansible-ssh-config"><img alt="stars" src="https://img.shields.io/github/stars/gaqzi/ansible-ssh-config.svg?style=social&amp;label=stars" /></a> - Letting <em>Ansible</em> manage <code>ssh_config</code>.</li>
-<li><a href="https://github.com/mirakui/ec2ssh">ec2ssh</a> <a href="https://github.com/mirakui/ec2ssh"><img alt="stars" src="https://img.shields.io/github/stars/mirakui/ec2ssh.svg?style=social&amp;label=stars" /></a> - A <code>ssh_config</code> manager for <em>AWS EC2</em>.</li>
-<li><a href="https://github.com/dbrady/ssh-config">ssh-config</a> <a href="https://github.com/dbrady/ssh-config"><img alt="stars" src="https://img.shields.io/github/stars/dbrady/ssh-config.svg?style=social&amp;label=stars" /></a> - A tool to help manage your <code>.ssh/config</code> file.</li>
+<li><a href="https://github.com/moul/advanced-ssh-config"><code>assh</code> a.k.a <code>advanced-ssh-config</code></a> [<img alt="stars" src="https://img.shields.io/github/stars/moul/advanced-ssh-config.svg?style=social&amp;label=stars" />]（<a href="https://github.com/moul/advanced-ssh-config">https://github.com/moul/advanced-ssh-config</a>） - 透明包装器（ProxyCommand），它将正则表达式，别名，网关，包括动态主机名添加到<em> SSH </em>和<code>ssh-config</code>.</li>
+<li><a href="https://github.com/emre/storm">storm</a> [<img alt="stars" src="https://img.shields.io/github/stars/emre/storm.svg?style=social&amp;label=stars" />]（<a href="https://github.com/emre/storm">https://github.com/emre/storm</a>） - 像老板一样管理你的<em> SSH </em>.</li>
+<li><a href="https://github.com/gaqzi/ansible-ssh-config">ansible-ssh-config</a> [<img alt="stars" src="https://img.shields.io/github/stars/gaqzi/ansible-ssh-config.svg?style=social&amp;label=stars" />]（<a href="https://github.com/gaqzi/ansible-ssh-config">https://github.com/gaqzi/ansible-ssh-config</a>） - 让<em> Ansible </em>管理<code>ssh_config</code>.</li>
+<li><a href="https://github.com/mirakui/ec2ssh">ec2ssh</a> [<img alt="stars" src="https://img.shields.io/github/stars/mirakui/ec2ssh.svg?style=social&amp;label=stars" />]（<a href="https://github.com/mirakui/ec2ssh">https://github.com/mirakui/ec2ssh</a>） -  * AWS EC2 *的<code>ssh_config</code>管理器.</li>
+<li><a href="https://github.com/dbrady/ssh-config">ssh-config</a> [<img alt="stars" src="https://img.shields.io/github/stars/dbrady/ssh-config.svg?style=social&amp;label=stars" />]（<a href="https://github.com/dbrady/ssh-config">https://github.com/dbrady/ssh-config</a>） - 一个帮助管理<code>.ssh / config</code>文件的工具.</li>
 </ul>
 <h3 id="tools-using-the-ssh-protocol">Tools using the <em>SSH</em> protocol<a class="headerlink" href="#tools-using-the-ssh-protocol" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="http://linux.die.net/man/1/scp">scp</a> - Secure remote file copy utility over <em>SSH</em>.</li>
-<li><a href="https://rsync.samba.org">rsync</a> - Fast incremental transfer utility that supports <em>SSH</em>.</li>
-<li><a href="https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol">sftp</a> - File transfer protocol over <em>SSH</em>.</li>
-<li><a href="http://curl.haxx.se">curl</a> - Command line tool and library to transfer data (support <code>sftp</code>).</li>
+<li><a href="http://linux.die.net/man/1/scp">scp</a> - 通过<em> SSH </em>安全远程文件复制实用程序.</li>
+<li><a href="https://rsync.samba.org">rsync</a> - 支持<em> SSH </em>的快速增量传输实用程序.</li>
+<li><a href="https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol">sftp</a> - 通过<em> SSH </em>的文件传输协议.</li>
+<li><a href="http://curl.haxx.se">curl</a> - 命令行工具和库来传输数据（支持<code>sftp</code>）.</li>
 </ul>
 <h3 id="servers">Servers<a class="headerlink" href="#servers" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://github.com/moul/ssh2docker">ssh2docker</a> <a href="https://github.com/moul/ssh2docker"><img alt="stars" src="https://img.shields.io/github/stars/moul/ssh2docker.svg?style=social&amp;label=stars" /></a> - <em>SSH</em> server to Docker containers.</li>
-<li><a href="https://github.com/FiloSottile/whosthere">whosthere</a> <a href="https://github.com/FiloSottile/whosthere"><img alt="stars" src="https://img.shields.io/github/stars/FiloSottile/whosthere.svg?style=social&amp;label=stars" /></a> - A <em>SSH</em> server that knows who you are. <code>$ ssh whoami.filippo.io</code>.</li>
-<li><a href="https://github.com/gliderlabs/sshfront">sshfront</a> <a href="https://github.com/gliderlabs/sshfront"><img alt="stars" src="https://img.shields.io/github/stars/gliderlabs/sshfront.svg?style=social&amp;label=stars" /></a> - Programmable <em>SSH</em> frontend.</li>
-<li><a href="https://github.com/shazow/ssh-chat">ssh-chat</a> <a href="https://github.com/shazow/ssh-chat"><img alt="stars" src="https://img.shields.io/github/stars/shazow/ssh-chat.svg?style=social&amp;label=stars" /></a> - Chat over <em>SSH</em>.</li>
-<li><a href="https://github.com/dokku/sshcommand">sshcommand</a> <a href="https://github.com/dokku/sshcommand"><img alt="stars" src="https://img.shields.io/github/stars/dokku/sshcommand.svg?style=social&amp;label=stars" /></a> - Turn <em>SSH</em> into a thin client specifically for your app.</li>
-<li><a href="https://github.com/joushou/sshmuxd">sshmuxd</a> <a href="https://github.com/joushou/sshmuxd"><img alt="stars" src="https://img.shields.io/github/stars/joushou/sshmuxd.svg?style=social&amp;label=stars" /></a> - <code>sshmux</code> frontend.</li>
-<li><a href="https://github.com/jquast/x84">x84</a> <a href="https://github.com/jquast/x84"><img alt="stars" src="https://img.shields.io/github/stars/jquast/x84.svg?style=social&amp;label=stars" /></a> - A <em>python</em> <code>telnet</code>/<code>ssh</code> server for modern <em>UTF-8</em> and classic <em>cp437</em> network virtual terminals. In spirit of classic software such as <em>ami/x</em>, <em>teleguard</em>, <em>renegade</em>, <em>iniquity</em>.</li>
-<li><a href="https://github.com/gravitational/teleport">teleport</a> <a href="https://github.com/gravitational/teleport"><img alt="stars" src="https://img.shields.io/github/stars/gravitational/teleport.svg?style=social&amp;label=stars" /></a> - Modern <em>SSH</em> server for clusters and teams.</li>
+<li><a href="https://github.com/moul/ssh2docker">ssh2docker</a> [<img alt="stars" src="https://img.shields.io/github/stars/moul/ssh2docker.svg?style=social&amp;label=stars" />]（<a href="https://github.com/moul/ssh2docker">https://github.com/moul/ssh2docker</a>） -  * SSH *服务器到Docker容器.</li>
+<li><a href="https://github.com/FiloSottile/whosthere">whosthere</a> [<img alt="stars" src="https://img.shields.io/github/stars/FiloSottile/whosthere.svg?style=social&amp;label=stars" /> ]（<a href="https://github.com/FiloSottile/whosthere">https://github.com/FiloSottile/whosthere</a>） - 一个知道你是谁的A * SSH *服务器.  <code>$ ssh whoami.filippo.io</code>.</li>
+<li><a href="https://github.com/gliderlabs/sshfront">sshfront</a> [<img alt="stars" src="https://img.shields.io/github/stars/gliderlabs/sshfront.svg?style=social&amp;label=stars" />]（<a href="https://github.com/gliderlabs/sshfront">https://github.com/gliderlabs/sshfront</a>） - 可编程<em> SSH </em>前端.</li>
+<li><a href="https://github.com/shazow/ssh-chat">ssh-chat</a> [<img alt="stars" src="https://img.shields.io/github/stars/shazow/ssh-chat.svg?style=social&amp;label=stars" />]（<a href="https://github.com/shazow/ssh-chat">https://github.com/shazow/ssh-chat</a>） - 聊天<em> SSH </em>.</li>
+<li><a href="https://github.com/dokku/sshcommand">sshcommand</a> [<img alt="stars" src="https://img.shields.io/github/stars/dokku/sshcommand.svg?style=social&amp;label=stars" />]（<a href="https://github.com/dokku/sshcommand">https://github.com/dokku/sshcommand</a>） - 将<em> SSH </em>转换为专门针对您的应用的瘦客户端.</li>
+<li><a href="https://github.com/joushou/sshmuxd">sshmuxd</a> [<img alt="stars" src="https://img.shields.io/github/stars/joushou/sshmuxd.svg?style=social&amp;label=stars" />]（<a href="https://github.com/joushou/sshmuxd">https://github.com/joushou/sshmuxd</a>） - <code>sshmux</code>前端.</li>
+<li><a href="https://github.com/jquast/x84">x84</a> [<img alt="stars" src="https://img.shields.io/github/stars/jquast/x84.svg?style=social&amp;label=stars" /> ]（<a href="https://github.com/jquast/x84">https://github.com/jquast/x84</a>） - 用于现代<em> UTF-8 </em>和经典<em> cp437 </em>网络虚拟终端的A * python <em><code>telnet</code> /<code>ssh</code>服务器.  本着</em> ami / x <em>，</em> teleguard <em>，</em> renegade <em>，</em> iniquity *等经典软件的精神.</li>
+<li><a href="https://github.com/gravitational/teleport">teleport</a> [<img alt="stars" src="https://img.shields.io/github/stars/gravitational/teleport.svg?style=social&amp;label=stars" />]（<a href="https://github.com/gravitational/teleport">https://github.com/gravitational/teleport</a>） - 适用于集群和团队的现代<em> SSH </em>服务器.</li>
 </ul>
 <h3 id="network">Network<a class="headerlink" href="#network" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://mosh.mit.edu">Mosh</a> - The mobile shell.</li>
-<li><a href="https://github.com/libfuse/sshfs">sshfs</a> <a href="https://github.com/libfuse/sshfs"><img alt="stars" src="https://img.shields.io/github/stars/libfuse/sshfs.svg?style=social&amp;label=stars" /></a> - Filesystem client based on the <em>SSH</em> File Transfer Protocol.</li>
-<li><a href="https://github.com/inconshreveable/ngrok">ngrok</a> <a href="https://github.com/inconshreveable/ngrok"><img alt="stars" src="https://img.shields.io/github/stars/inconshreveable/ngrok.svg?style=social&amp;label=stars" /></a> - Introspected tunnels to localhost.</li>
-<li><a href="https://github.com/progrium/localtunnel">localtunnel</a> <a href="https://github.com/progrium/localtunnel"><img alt="stars" src="https://img.shields.io/github/stars/progrium/localtunnel.svg?style=social&amp;label=stars" /></a> - Expose localhost servers to the Internet.</li>
-<li><a href="https://github.com/apenwarr/sshuttle">sshuttle</a> <a href="https://github.com/apenwarr/sshuttle"><img alt="stars" src="https://img.shields.io/github/stars/apenwarr/sshuttle.svg?style=social&amp;label=stars" /></a> - Transparent proxy server that works as a poor man's <em>VPN</em>. Forwards over <code>ssh</code>. Doesn't require admin. Works with <em>Linux</em> and <em>MacOS</em>. Supports <em>DNS tunneling</em>.</li>
-<li><a href="https://github.com/stealth/sshttp">sshttp</a> <a href="https://github.com/stealth/sshttp"><img alt="stars" src="https://img.shields.io/github/stars/stealth/sshttp.svg?style=social&amp;label=stars" /></a> - <em>SSH</em>/<em>HTTP(S)</em> multiplexer. Run a webserver and a <code>sshd</code> on the same port w/o changes.</li>
-<li><a href="https://github.com/jamescun/switcher">switcher</a> <a href="https://github.com/jamescun/switcher"><img alt="stars" src="https://img.shields.io/github/stars/jamescun/switcher.svg?style=social&amp;label=stars" /></a> - Run <em>SSH</em> and <em>HTTP(S)</em> on the same port.</li>
-<li><a href="https://github.com/yrutschle/sslh">sslh</a> <a href="https://github.com/yrutschle/sslh"><img alt="stars" src="https://img.shields.io/github/stars/yrutschle/sslh.svg?style=social&amp;label=stars" /></a> - Applicative Protocol Multiplexer (i.e: <em>SSH</em> + <em>HTTPS</em>).</li>
-<li><a href="https://github.com/aphyr/tund">tund</a> <a href="https://github.com/aphyr/tund"><img alt="stars" src="https://img.shields.io/github/stars/aphyr/tund.svg?style=social&amp;label=stars" /></a> - <em>SSH</em> reverse tunnel daemon.</li>
-<li><a href="http://www.harding.motd.ca/autossh/">autossh</a> - Automatically respawn <em>SSH</em> session after network interruption.</li>
-<li><a href="https://github.com/aluzzardi/wssh">wssh</a> <a href="https://github.com/aluzzardi/wssh"><img alt="stars" src="https://img.shields.io/github/stars/aluzzardi/wssh.svg?style=social&amp;label=stars" /></a> - <em>SSH</em> to WebSockets Bridge.</li>
-<li><a href="https://github.com/vieux/docker-volume-sshfs">docker-volume-sshfs</a> <a href="https://github.com/vieux/docker-volume-sshfs"><img alt="stars" src="https://img.shields.io/github/stars/vieux/docker-volume-sshfs.svg?style=social&amp;label=stars" /></a> - <code>sshfs</code> docker volume plugin.</li>
+<li><a href="https://mosh.mit.edu">Mosh</a> - 移动外壳.</li>
+<li><a href="https://github.com/libfuse/sshfs">sshfs</a> [<img alt="stars" src="https://img.shields.io/github/stars/libfuse/sshfs.svg?style=social&amp;label=stars" />]（<a href="https://github.com/libfuse/sshfs">https://github.com/libfuse/sshfs</a>） - 基于<em> SSH </em>文件传输协议的文件系统客户端.</li>
+<li><a href="https://github.com/inconshreveable/ngrok">ngrok</a> [<img alt="stars" src="https://img.shields.io/github/stars/inconshreveable/ngrok.svg?style=social&amp;label=stars" />]（<a href="https://github.com/inconshreveable/ngrok">https://github.com/inconshreveable/ngrok</a>） - 对localhost的内省隧道.</li>
+<li><a href="https://github.com/progrium/localtunnel">localtunnel</a> [<img alt="stars" src="https://img.shields.io/github/stars/progrium/localtunnel.svg?style=social&amp;label=stars" />]（<a href="https://github.com/progrium/localtunnel">https://github.com/progrium/localtunnel</a>） - 将本地主机服务器暴露给Internet.</li>
+<li><a href="https://github.com/apenwarr/sshuttle">sshuttle</a> [<img alt="stars" src="https://img.shields.io/github/stars/apenwarr/sshuttle.svg?style=social&amp;label=stars" /> ]（<a href="https://github.com/apenwarr/sshuttle">https://github.com/apenwarr/sshuttle</a>） - 透明代理服务器，作为一个穷人的<em> VPN </em>.  转发<code>ssh</code>.  不需要管理员.  适用于<em> Linux </em>和<em> MacOS </em>.  支持<em> DNS隧道</em>.</li>
+<li><a href="https://github.com/stealth/sshttp">sshttp</a> [<img alt="stars" src="https://img.shields.io/github/stars/stealth/sshttp.svg?style=social&amp;label=stars" /> ]（<a href="https://github.com/stealth/sshttp">https://github.com/stealth/sshttp</a>） -  * SSH * / * HTTP（S）*多路复用器.  在没有更改的情况下在同一端口上运行Web服务器和<code>sshd</code>.</li>
+<li><a href="https://github.com/jamescun/switcher">switcher</a> [<img alt="stars" src="https://img.shields.io/github/stars/jamescun/switcher.svg?style=social&amp;label=stars" />]（<a href="https://github.com/jamescun/switcher">https://github.com/jamescun/switcher</a>） - 在同一端口上运行<em> SSH </em>和<em> HTTP（S）</em>.</li>
+<li><a href="https://github.com/yrutschle/sslh">sslh</a> [<img alt="stars" src="https://img.shields.io/github/stars/yrutschle/sslh.svg?style=social&amp;label=stars" />]（<a href="https://github.com/yrutschle/sslh">https://github.com/yrutschle/sslh</a>） - 应用协议多路复用器（即：<em> SSH * + * HTTPS </em>）.</li>
+<li><a href="https://github.com/aphyr/tund">tund</a> [<img alt="stars" src="https://img.shields.io/github/stars/aphyr/tund.svg?style=social&amp;label=stars" />]（<a href="https://github.com/aphyr/tund">https://github.com/aphyr/tund</a>） -  * SSH *反向隧道守护进程.</li>
+<li><a href="http://www.harding.motd.ca/autossh/">autossh</a> - 网络中断后自动重新生成<em> SSH </em>会话.</li>
+<li><a href="https://github.com/aluzzardi/wssh">wssh</a> [<img alt="stars" src="https://img.shields.io/github/stars/aluzzardi/wssh.svg?style=social&amp;label=stars" />]（<a href="https://github.com/aluzzardi/wssh">https://github.com/aluzzardi/wssh</a>） -  * SSH *到WebSockets Bridge.</li>
+<li><a href="https://github.com/vieux/docker-volume-sshfs">docker-volume-sshfs</a> [<img alt="stars" src="https://img.shields.io/github/stars/vieux/docker-volume-sshfs.svg?style=social&amp;label=stars" />]（<a href="https://github.com/vieux/docker-volume-sshfs">https://github.com/vieux/docker-volume-sshfs</a>） - <code>sshfs</code> docker volume plugin.</li>
 </ul>
 <h3 id="multiplexers">Multiplexers<a class="headerlink" href="#multiplexers" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://tmux.github.io">tmux</a> - Terminal multiplexer.</li>
-<li><a href="https://github.com/duncs/clusterssh">clusterssh</a> <a href="https://github.com/duncs/clusterssh"><img alt="stars" src="https://img.shields.io/github/stars/duncs/clusterssh.svg?style=social&amp;label=stars" /></a> - Cluster admin via <em>SSH</em>.</li>
-<li><a href="https://github.com/dennishafemann/tmux-cssh">tmux-cssh</a> <a href="https://github.com/dennishafemann/tmux-cssh"><img alt="stars" src="https://img.shields.io/github/stars/dennishafemann/tmux-cssh.svg?style=social&amp;label=stars" /></a> - <code>tmux</code> with a <em>ClusterSSH</em>-like behavior.</li>
-<li><a href="https://github.com/Ganneff/tm">tm</a> <a href="https://github.com/Ganneff/tm"><img alt="stars" src="https://img.shields.io/github/stars/Ganneff/tm.svg?style=social&amp;label=stars" /></a> - <code>tmux</code> manager / helper.</li>
-<li><a href="https://github.com/wouterdebie/i2cssh">i2cssh</a> <a href="https://github.com/wouterdebie/i2cssh"><img alt="stars" src="https://img.shields.io/github/stars/wouterdebie/i2cssh.svg?style=social&amp;label=stars" /></a> - <code>csshX</code> like <em>SSH</em> tool for <em>iTerm2</em>.</li>
-<li><a href="http://sourceforge.net/projects/clusterssh/">ClusterSSH</a> - Controls a number of <code>xterm</code> windows via a single graphical console.</li>
+<li><a href="https://tmux.github.io">tmux</a> - 终端多路复用器.</li>
+<li><a href="https://github.com/duncs/clusterssh">clusterssh</a> [<img alt="stars" src="https://img.shields.io/github/stars/duncs/clusterssh.svg?style=social&amp;label=stars" />]（<a href="https://github.com/duncs/clusterssh">https://github.com/duncs/clusterssh</a>） - 通过<em> SSH </em>进行群集管理.</li>
+<li><a href="https://github.com/dennishafemann/tmux-cssh">tmux-cssh</a> [<img alt="stars" src="https://img.shields.io/github/stars/dennishafemann/tmux-cssh.svg?style=social&amp;label=stars" />]（<a href="https://github.com/dennishafemann/tmux-cssh">https://github.com/dennishafemann/tmux-cssh</a>） - <code>tmux</code>，具有类似ClusterSSH *的行为.</li>
+<li><a href="https://github.com/Ganneff/tm">tm</a> [<img alt="stars" src="https://img.shields.io/github/stars/Ganneff/tm.svg?style=social&amp;label=stars" />]（<a href="https://github.com/Ganneff/tm">https://github.com/Ganneff/tm</a>） - <code>tmux</code> manager / helper.</li>
+<li><a href="https://github.com/wouterdebie/i2cssh">i2cssh</a> [<img alt="stars" src="https://img.shields.io/github/stars/wouterdebie/i2cssh.svg?style=social&amp;label=stars" />]（<a href="https://github.com/wouterdebie/i2cssh">https://github.com/wouterdebie/i2cssh</a>） - <code>csshX</code>喜欢<em>用于</em> iTerm2 <em>的SSH </em>工具.</li>
+<li><a href="http://sourceforge.net/projects/clusterssh/">ClusterSSH</a> - 通过单个图形控制台控制多个<code>xterm</code>窗口.</li>
 </ul>
 <h3 id="ssh-keys-authentication"><em>SSH</em> keys / Authentication<a class="headerlink" href="#ssh-keys-authentication" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://github.com/authy/authy-ssh">authy-ssh</a> <a href="https://github.com/authy/authy-ssh"><img alt="stars" src="https://img.shields.io/github/stars/authy/authy-ssh.svg?style=social&amp;label=stars" /></a> - Easy <em>two-factor</em> authentication for <em>SSH</em> servers.</li>
-<li><a href="https://github.com/chrishunt/github-auth">github-auth</a> <a href="https://github.com/chrishunt/github-auth"><img alt="stars" src="https://img.shields.io/github/stars/chrishunt/github-auth.svg?style=social&amp;label=stars" /></a> - <em>SSH</em> key management for GitHub users.</li>
-<li><a href="https://github.com/substack/cipherhub">cipherhub</a> <a href="https://github.com/substack/cipherhub"><img alt="stars" src="https://img.shields.io/github/stars/substack/cipherhub.svg?style=social&amp;label=stars" /></a> - Encrypt messages based on <em>SSH</em> public keys with easy import from GitHub.</li>
-<li><a href="http://www.ryanbrink.com/slack-ssh-session-notifications/">Slack notifications</a> (<a href="https://web.archive.org/web/20160505202303/http://www.ryanbrink.com/slack-ssh-session-notifications/">archived version</a>) - Guide to setup Slack notifications (can be modified for other services).</li>
-<li><a href="https://github.com/benjojo/totp-ssh-fluxer">totp-ssh-fluxer</a> <a href="https://github.com/benjojo/totp-ssh-fluxer"><img alt="stars" src="https://img.shields.io/github/stars/benjojo/totp-ssh-fluxer.svg?style=social&amp;label=stars" /></a> - A way to make sure your <code>sshd</code> port changes every 30 seconds.</li>
-<li><a href="https://github.com/dolmen/github-keygen">github-keygen</a> <a href="https://github.com/dolmen/github-keygen"><img alt="stars" src="https://img.shields.io/github/stars/dolmen/github-keygen.svg?style=social&amp;label=stars" /></a> - Easy creation of secure <em>SSH</em> configuration for your GitHub account(s).</li>
-<li><a href="https://github.com/KryptCo/kr">kr</a> <a href="https://github.com/KryptCo/kr"><img alt="stars" src="https://img.shields.io/github/stars/dolmen/github-keygen.svg?style=social&amp;label=stars" /></a> - Kr agent that route access request to the paired mobile phone where Kryptonite is installed.</li>
+<li><a href="https://github.com/authy/authy-ssh">authy-ssh</a> [<img alt="stars" src="https://img.shields.io/github/stars/authy/authy-ssh.svg?style=social&amp;label=stars" />]（<a href="https://github.com/authy/authy-ssh">https://github.com/authy/authy-ssh</a>） -  * SSH <em>服务器的简单</em>双因素*身份验证.</li>
+<li><a href="https://github.com/chrishunt/github-auth">github-auth</a> [<img alt="stars" src="https://img.shields.io/github/stars/chrishunt/github-auth.svg?style=social&amp;label=stars" />]（<a href="https://github.com/chrishunt/github-auth">https://github.com/chrishunt/github-auth</a>） -  * GitHub用户的SSH *密钥管理.</li>
+<li><a href="https://github.com/substack/cipherhub">cipherhub</a> [<img alt="stars" src="https://img.shields.io/github/stars/substack/cipherhub.svg?style=social&amp;label=stars" />]（<a href="https://github.com/substack/cipherhub">https://github.com/substack/cipherhub</a>） - 基于<em> SSH </em>公钥加密消息，轻松从GitHub导入.</li>
+<li><a href="http://www.ryanbrink.com/slack-ssh-session-notifications/">Slack notifications</a> (<a href="https://web.archive.org/web/20160505202303/http://www.ryanbrink.com/slack-ssh-session-notifications/">archived version</a>） - 设置Slack通知的指南（可以修改其他服务）.</li>
+<li><a href="https://github.com/benjojo/totp-ssh-fluxer">totp-ssh-fluxer</a> [<img alt="stars" src="https://img.shields.io/github/stars/benjojo/totp-ssh-fluxer.svg?style=social&amp;label=stars" />]（<a href="https://github.com/benjojo/totp-ssh-fluxer">https://github.com/benjojo/totp-ssh-fluxer</a>） - 确保你的<code>sshd</code>端口每30秒更改一次的方法.</li>
+<li><a href="https://github.com/dolmen/github-keygen">github-keygen</a> [<img alt="stars" src="https://img.shields.io/github/stars/dolmen/github-keygen.svg?style=social&amp;label=stars" />]（<a href="https://github.com/dolmen/github-keygen">https://github.com/dolmen/github-keygen</a>） - 轻松为您的GitHub帐户创建安全<em> SSH </em>配置.</li>
+<li><a href="https://github.com/KryptCo/kr">kr</a> [<img alt="stars" src="https://img.shields.io/github/stars/dolmen/github-keygen.svg?style=social&amp;label=stars" />]（<a href="https://github.com/KryptCo/kr">https://github.com/KryptCo/kr</a>） - 将访问请求路由到安装了Kryptonite的配对手机的Kr代理.</li>
 </ul>
 <h3 id="ssh-agent"><em>SSH</em> agent<a class="headerlink" href="#ssh-agent" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://github.com/ccontavalli/ssh-ident">ssh-ident</a> <a href="https://github.com/ccontavalli/ssh-ident"><img alt="stars" src="https://img.shields.io/github/stars/ccontavalli/ssh-ident.svg?style=social&amp;label=stars" /></a> - Different agents and different keys for different projects, with <code>ssh</code>.</li>
-<li><a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh/plugins/ssh-agent</a> <a href="https://github.com/robbyrussell/oh-my-zsh"><img alt="stars" src="https://img.shields.io/github/stars/robbyrussell/oh-my-zsh.svg?style=social&amp;label=stars" /></a> - <code>ssh-agent</code> plugin for <code>zsh</code>.</li>
-<li><a href="https://github.com/thcipriani/sshecret">sshecret</a> - Automatically create and manage multiple agents for multiple keys.</li>
+<li><a href="https://github.com/ccontavalli/ssh-ident">ssh-ident</a> [<img alt="stars" src="https://img.shields.io/github/stars/ccontavalli/ssh-ident.svg?style=social&amp;label=stars" />]（<a href="https://github.com/ccontavalli/ssh-ident">https://github.com/ccontavalli/ssh-ident</a>） - 使用<code>ssh</code>的不同代理和不同项目的不同密钥.</li>
+<li><a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh/plugins/ssh-agent</a> [<img alt="stars" src="https://img.shields.io/github/stars/robbyrussell/oh-my-zsh.svg?style=social&amp;label=stars" />]（<a href="https://github.com/robbyrussell/oh-my-zsh">https://github.com/robbyrussell/oh-my-zsh</a>） - <code>zsh</code>的<code>ssh-agent</code>插件.</li>
+<li><a href="https://github.com/thcipriani/sshecret">sshecret</a> - 自动为多个密钥创建和管理多个代理.</li>
 </ul>
 <h3 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://github.com/Russell91/sshrc">sshrc</a> <a href="https://github.com/Russell91/sshrc"><img alt="stars" src="https://img.shields.io/github/stars/Russell91/sshrc.svg?style=social&amp;label=stars" /></a> - Bring your <code>.bashrc</code>, <code>.vimrc</code>, etc. with you when you <code>ssh</code>.</li>
-<li><a href="https://github.com/fsquillace/kyrat">kyrat</a> <a href="https://github.com/fsquillace/kyrat"><img alt="stars" src="https://img.shields.io/github/stars/fsquillace/kyrat.svg?style=social&amp;label=stars" /></a> - SSH wrapper script that brings your dotfiles always with you on Linux and OSX.</li>
-<li><a href="https://github.com/ssh-vault/ssh-vault">ssh-vault</a> <a href="https://github.com/ssh-vault/ssh-vault"><img alt="stars" src="https://img.shields.io/github/stars/ssh-vault/ssh-vault.svg?style=social&amp;label=stars" /></a> - encrypt/decrypt files using ssh keys</li>
-<li><a href="https://github.com/vaporup/ssh-tools">ssh-ping</a> <a href="https://github.com/vaporup/ssh-tools"><img alt="stars" src="https://img.shields.io/github/stars/vaporup/ssh-tools.svg?style=social&amp;label=stars" /></a> - check if host is reachable using ssh_config</li>
-<li><a href="https://github.com/nopernik/SSHPry2.0">SSHPry v2</a> <a href="https://github.com/nopernik/SSHPry2.0"><img alt="stars" src="https://img.shields.io/github/stars/nopernik/SSHPry2.0.svg?style=social&amp;label=stars" /></a> - Spy &amp; Control os SSH Connected client's TTY</li>
+<li><a href="https://github.com/Russell91/sshrc">sshrc</a> [<img alt="stars" src="https://img.shields.io/github/stars/Russell91/sshrc.svg?style=social&amp;label=stars" />]（<a href="https://github.com/Russell91/sshrc">https://github.com/Russell91/sshrc</a>） - 当你<code>ssh</code>时，带上你的<code>.bashrc</code>，<code>.vimrc</code>等.</li>
+<li><a href="https://github.com/fsquillace/kyrat">kyrat</a> [<img alt="stars" src="https://img.shields.io/github/stars/fsquillace/kyrat.svg?style=social&amp;label=stars" />]（<a href="https://github.com/fsquillace/kyrat">https://github.com/fsquillace/kyrat</a>） -  SSH包装器脚本，可以在Linux和OSX上随身携带dotfiles.</li>
+<li><a href="https://github.com/ssh-vault/ssh-vault">ssh-vault</a> [<img alt="stars" src="https://img.shields.io/github/stars/ssh-vault/ssh-vault.svg?style=social&amp;label=stars" />]（<a href="https://github.com/ssh-vault/ssh-vault">https://github.com/ssh-vault/ssh-vault</a>） - 使用ssh密钥加密/解密文件</li>
+<li><a href="https://github.com/vaporup/ssh-tools">ssh-ping</a> [<img alt="stars" src="https://img.shields.io/github/stars/vaporup/ssh-tools.svg?style=social&amp;label=stars" />]（<a href="https://github.com/vaporup/ssh-tools">https://github.com/vaporup/ssh-tools</a>） - 使用ssh_config检查主机是否可访问</li>
+<li><a href="https://github.com/nopernik/SSHPry2.0">SSHPry v2</a> [<img alt="stars" src="https://img.shields.io/github/stars/nopernik/SSHPry2.0.svg?style=social&amp;label=stars" />]（<a href="https://github.com/nopernik/SSHPry2.0">https://github.com/nopernik/SSHPry2.0</a>） -  Spy＆Control os SSH连接客户端的TTY</li>
 </ul>
 <h3 id="automation">Automation<a class="headerlink" href="#automation" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://github.com/ansible/ansible">Ansible</a> <a href="https://github.com/ansible/ansible"><img alt="stars" src="https://img.shields.io/github/stars/ansible/ansible.svg?style=social&amp;label=stars" /></a> - App deployment, configuration management and orchestration over <em>SSH</em>.</li>
-<li><a href="https://github.com/rapidloop/rtop">rtop</a> <a href="https://github.com/rapidloop/rtop"><img alt="stars" src="https://img.shields.io/github/stars/rapidloop/rtop.svg?style=social&amp;label=stars" /></a> - Interactive, remote system monitoring tool based on <em>SSH</em>.</li>
-<li><a href="https://www.netfort.gr.jp/~dancer/software/dsh.html.en">DSH - Dancer's shell / distributed shell</a> - Wrapper for executing multiple remote shell commands from one command line.</li>
-<li><a href="https://code.google.com/p/parallel-ssh/">parallel-ssh</a> - Provides parallel versions of OpenSSH and related tools.</li>
-<li><a href="https://code.google.com/p/sshpt/">SSH Power Tool</a> - Execute commands and upload files to many servers simultaneously without using pre-shared keys.</li>
+<li><a href="https://github.com/ansible/ansible">Ansible</a> [<img alt="stars" src="https://img.shields.io/github/stars/ansible/ansible.svg?style=social&amp;label=stars" />]（<a href="https://github.com/ansible/ansible">https://github.com/ansible/ansible</a>） - 通过<em> SSH </em>进行应用程序部署，配置管理和编排.</li>
+<li><a href="https://github.com/rapidloop/rtop">rtop</a> [<img alt="stars" src="https://img.shields.io/github/stars/rapidloop/rtop.svg?style=social&amp;label=stars" />]（<a href="https://github.com/rapidloop/rtop">https://github.com/rapidloop/rtop</a>） - 基于<em> SSH </em>的交互式远程系统监控工具.</li>
+<li><a href="https://www.netfort.gr.jp/~dancer/software/dsh.html.en">DSH - Dancer's shell / distributed shell</a> - 用于从一个命令行执行多个远程shell命令的包装器.</li>
+<li><a href="https://code.google.com/p/parallel-ssh/">parallel-ssh</a> - 提供OpenSSH和相关工具的并行版本.</li>
+<li><a href="https://code.google.com/p/sshpt/">SSH Power Tool</a> - 在不使用预共享密钥的情况下，同时执行命令并将文件上载到多个服务器.</li>
 </ul>
 <h3 id="web">Web<a class="headerlink" href="#web" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo?hl=en">Secure Shell chrome extension</a></li>
-<li><a href="https://github.com/liftoff/GateOne">GateOne</a> <a href="https://github.com/liftoff/GateOne"><img alt="stars" src="https://img.shields.io/github/stars/liftoff/GateOne.svg?style=social&amp;label=stars" /></a> - HTML5-powered terminal emulator and <em>SSH</em> client.</li>
-<li><a href="https://github.com/skavanagh/KeyBox">KeyBox</a> <a href="https://github.com/skavanagh/KeyBox"><img alt="stars" src="https://img.shields.io/github/stars/skavanagh/KeyBox.svg?style=social&amp;label=stars" /></a> - Web-based <em>SSH</em> console that centrally manages administrative access to systems.</li>
-<li><a href="https://guacamole.incubator.apache.org/">Apache Guacamole</a> - Apache Guacamole is a HTML5 based clientless remote desktop gateway. It supports standard protocols like VNC, RDP, and SSH.</li>
+<li><a href="https://github.com/liftoff/GateOne">GateOne</a> [<img alt="stars" src="https://img.shields.io/github/stars/liftoff/GateOne.svg?style=social&amp;label=stars" />]（<a href="https://github.com/liftoff/GateOne">https://github.com/liftoff/GateOne</a>） - 支持HTML5的终端模拟器和<em> SSH </em>客户端.</li>
+<li><a href="https://github.com/skavanagh/KeyBox">KeyBox</a> [<img alt="stars" src="https://img.shields.io/github/stars/skavanagh/KeyBox.svg?style=social&amp;label=stars" />]（<a href="https://github.com/skavanagh/KeyBox">https://github.com/skavanagh/KeyBox</a>） - 基于Web的<em> SSH </em>控制台，集中管理对系统的管理访问.</li>
+<li><a href="https://guacamole.incubator.apache.org/">Apache Guacamole</a>   -  Apache Guacamole是一个基于HTML5的无客户端远程桌面网关.  它支持VNC，RDP和SSH等标准协议.</li>
 </ul>
 <h3 id="testing-honeypots">Testing / Honeypots<a class="headerlink" href="#testing-honeypots" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://github.com/shazow/ssh-hammer">ssh-hammer</a> <a href="https://github.com/shazow/ssh-hammer"><img alt="stars" src="https://img.shields.io/github/stars/shazow/ssh-hammer.svg?style=social&amp;label=stars" /></a> - <em>SSH</em> load testing tool.</li>
-<li><a href="https://github.com/desaster/kippo">kippo</a> <a href="https://github.com/desaster/kippo"><img alt="stars" src="https://img.shields.io/github/stars/desaster/kippo.svg?style=social&amp;label=stars" /></a> - <em>SSH</em> Honeypot.</li>
-<li><a href="https://github.com/micheloosterhof/cowrie">cowrie</a> <a href="https://github.com/micheloosterhof/cowrie"><img alt="stars" src="https://img.shields.io/github/stars/micheloosterhof/cowrie.svg?style=social&amp;label=stars" /></a> - <em>SSH</em> Honeypot (based on kippo).</li>
-<li><a href="http://linux.die.net/man/8/sshmitm">sshmitm</a> - <em>SSH</em> monkey-in-the-middle.</li>
-<li><a href="https://github.com/arthepsy/ssh-audit">ssh-audit</a> <a href="https://github.com/arthepsy/ssh-audit"><img alt="stars" src="https://img.shields.io/github/stars/arthepsy/ssh-audit.svg?style=social&amp;label=stars" /></a> - A tool for <em>SSH</em> server auditing.</li>
-<li><a href="https://github.com/jaksi/sshesame">sshesame</a> <a href="https://github.com/jaksi/sshesame"><img alt="stars" src="https://img.shields.io/github/stars/jaksi/sshesame.svg?style=social&amp;label=stars" /></a> - A fake SSH server that lets everyone in and logs their activity.</li>
+<li><a href="https://github.com/shazow/ssh-hammer">ssh-hammer</a> [<img alt="stars" src="https://img.shields.io/github/stars/shazow/ssh-hammer.svg?style=social&amp;label=stars" />]（<a href="https://github.com/shazow/ssh-hammer">https://github.com/shazow/ssh-hammer</a>） -  * SSH *负载测试工具.</li>
+<li><a href="https://github.com/desaster/kippo">kippo</a> [<img alt="stars" src="https://img.shields.io/github/stars/desaster/kippo.svg?style=social&amp;label=stars" />]（<a href="https://github.com/desaster/kippo">https://github.com/desaster/kippo</a>） -  * SSH * Honeypot.</li>
+<li><a href="https://github.com/micheloosterhof/cowrie">cowrie</a> [<img alt="stars" src="https://img.shields.io/github/stars/micheloosterhof/cowrie.svg?style=social&amp;label=stars" />]（<a href="https://github.com/micheloosterhof/cowrie">https://github.com/micheloosterhof/cowrie</a>） -  * SSH * Honeypot（基于kippo）.</li>
+<li><a href="http://linux.die.net/man/8/sshmitm">sshmitm</a> -  * SSH *中间的猴子.</li>
+<li><a href="https://github.com/arthepsy/ssh-audit">ssh-audit</a> [<img alt="stars" src="https://img.shields.io/github/stars/arthepsy/ssh-audit.svg?style=social&amp;label=stars" />]（<a href="https://github.com/arthepsy/ssh-audit">https://github.com/arthepsy/ssh-audit</a>） - 用于<em> SSH </em>服务器审核的工具.</li>
+<li><a href="https://github.com/jaksi/sshesame">sshesame</a> [<img alt="stars" src="https://img.shields.io/github/stars/jaksi/sshesame.svg?style=social&amp;label=stars" />]（<a href="https://github.com/jaksi/sshesame">https://github.com/jaksi/sshesame</a>） - 一个假的SSH服务器，允许每个人进入并记录他们的活动.</li>
 </ul>
 <h3 id="alternatives-to-ssh">Alternatives to <em>SSH</em><a class="headerlink" href="#alternatives-to-ssh" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://github.com/yudai/gotty">GoTTY</a> <a href="https://github.com/yudai/gotty"><img alt="stars" src="https://img.shields.io/github/stars/yudai/gotty.svg?style=social&amp;label=stars" /></a> - Share your terminal as web application.</li>
-<li><a href="http://www.telnet.org/htm/faq.htm">telnet</a> - An unencrypted network protocol and an application used to connect to remote computers and issue commands.</li>
-<li><a href="https://en.wikipedia.org/wiki/Remote_Shell">rsh</a> - An unencrypted network protocol and application used to connect to remote computers and issue commands.</li>
+<li><a href="http://www.telnet.org/htm/faq.htm">telnet</a> - 未加密的网络协议和用于连接远程计算机和发出命令的应用程序.</li>
+<li><a href="https://en.wikipedia.org/wiki/Remote_Shell">rsh</a> - 用于连接远程计算机和发出命令的未加密网络协议和应用程序.</li>
 </ul>
 <h2 id="libraries">Libraries<a class="headerlink" href="#libraries" title="Permanent link">&para;</a></h2>
 <ul>
-<li>C/C++</li>
-<li><a href="https://www.libssh.org">libssh</a> - The <em>SSH</em> library.</li>
-<li><a href="https://github.com/substack/libssh">substack/libssh</a> <a href="https://github.com/substack/libssh"><img alt="stars" src="https://img.shields.io/github/stars/substack/libssh.svg?style=social&amp;label=stars" /></a> - Multiplatform C library implementing the SSHv2 and SSHv1 protocol on client and server side.</li>
+<li>C / C ++</li>
+<li><a href="https://www.libssh.org">libssh</a> -  * SSH *库.</li>
+<li><a href="https://github.com/substack/libssh">substack/libssh</a> [<img alt="stars" src="https://img.shields.io/github/stars/substack/libssh.svg?style=social&amp;label=stars" />]（<a href="https://github.com/substack/libssh">https://github.com/substack/libssh</a>） - 在客户端和服务器端实现SSHv2和SSHv1协议的多平台C库.</li>
 <li>Golang</li>
-<li><a href="https://godoc.org/golang.org/x/crypto/ssh">crypto/ssh</a> - Built-in <em>SSH</em> client and server library.</li>
-<li><a href="https://github.com/pkg/sftp">sftp</a> <a href="https://github.com/pkg/sftp"><img alt="stars" src="https://img.shields.io/github/stars/pkg/sftp.svg?style=social&amp;label=stars" /></a> - <em>SFTP</em> support for the go.crypto/ssh package.</li>
-<li><a href="https://github.com/shazow/go-sshkit">go-sshkit</a> <a href="https://github.com/shazow/go-sshkit"><img alt="stars" src="https://img.shields.io/github/stars/shazow/go-sshkit.svg?style=social&amp;label=stars" /></a> - Toolkit for building <em>SSH</em> servers and clients in Go.</li>
-<li><a href="https://github.com/cosiner/socker">Socker</a> <a href="https://github.com/cosiner/socker"><img alt="stars" src="https://img.shields.io/github/stars/cosiner/socker.svg?style=social&amp;label=stars" /></a> - Library for Go to simplify the use of <em>SSH</em>.</li>
+<li><a href="https://godoc.org/golang.org/x/crypto/ssh">crypto/ssh</a> - 内置<em> SSH </em>客户端和服务器库.</li>
+<li><a href="https://github.com/pkg/sftp">sftp</a> [<img alt="stars" src="https://img.shields.io/github/stars/pkg/sftp.svg?style=social&amp;label=stars" />]（<a href="https://github.com/pkg/sftp">https://github.com/pkg/sftp</a>） -  * SFTP *支持go.crypto / ssh包.</li>
+<li><a href="https://github.com/shazow/go-sshkit">go-sshkit</a> [<img alt="stars" src="https://img.shields.io/github/stars/shazow/go-sshkit.svg?style=social&amp;label=stars" />]（<a href="https://github.com/shazow/go-sshkit">https://github.com/shazow/go-sshkit</a>） - 用于在Go中构建<em> SSH </em>服务器和客户端的工具包.</li>
+<li><a href="https://github.com/cosiner/socker">Socker</a> [<img alt="stars" src="https://img.shields.io/github/stars/cosiner/socker.svg?style=social&amp;label=stars" />]（<a href="https://github.com/cosiner/socker">https://github.com/cosiner/socker</a>） -  Go库用于简化<em> SSH </em>的使用.</li>
 <li>Java</li>
-<li><a href="http://www.jcraft.com/jsch/">jsch</a> - Pure <em>java</em>, <em>BSD</em> licensed, <em>SSH2</em> client library.</li>
-<li>Javascript/Node.js</li>
-<li><a href="https://github.com/mscdex/ssh2">ssh2</a> <a href="https://github.com/mscdex/ssh2"><img alt="stars" src="https://img.shields.io/github/stars/mscdex/ssh2.svg?style=social&amp;label=stars" /></a> - <em>SSH2</em> client and server modules written in pure <em>JavaScript</em> for <em>node.js</em>.</li>
+<li><a href="http://www.jcraft.com/jsch/">jsch</a> - 纯<em> java </em>，<em> BSD </em>许可，<em> SSH2 </em>客户端库.</li>
+<li>Javascript / Node.js</li>
+<li><a href="https://github.com/mscdex/ssh2">ssh2</a> [<img alt="stars" src="https://img.shields.io/github/stars/mscdex/ssh2.svg?style=social&amp;label=stars" />]（<a href="https://github.com/mscdex/ssh2">https://github.com/mscdex/ssh2</a>） -  <em>用纯</em> JavaScript * for * node.js <em>编写的SSH2 </em>客户端和服务器模块.</li>
 <li>Python</li>
-<li><a href="https://github.com/paramiko/paramiko">paramiko</a> <a href="https://github.com/paramiko/paramiko"><img alt="stars" src="https://img.shields.io/github/stars/paramiko/paramiko.svg?style=social&amp;label=stars" /></a> - Native <em>Python</em> <em>SSHv2</em> protocol library.</li>
+<li><a href="https://github.com/paramiko/paramiko">paramiko</a> [<img alt="stars" src="https://img.shields.io/github/stars/paramiko/paramiko.svg?style=social&amp;label=stars" />]（<a href="https://github.com/paramiko/paramiko">https://github.com/paramiko/paramiko</a>） -  Native * Python * <em> SSHv2 </em>协议库.</li>
 <li>Ruby</li>
-<li><a href="https://github.com/net-ssh/net-ssh">net-ssh</a> <a href="https://github.com/net-ssh/net-ssh"><img alt="stars" src="https://img.shields.io/github/stars/net-ssh/net-ssh.svg?style=social&amp;label=stars" /></a> - Pure <em>Ruby</em> implementation of an <em>SSH</em> (protocol 2) client.</li>
+<li><a href="https://github.com/net-ssh/net-ssh">net-ssh</a> [<img alt="stars" src="https://img.shields.io/github/stars/net-ssh/net-ssh.svg?style=social&amp;label=stars" />]（<a href="https://github.com/net-ssh/net-ssh">https://github.com/net-ssh/net-ssh</a>） -  * SSH <em>（协议2）客户端的纯</em> Ruby *实现.</li>
 </ul>
 <h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
 <h3 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h3>
@@ -7141,9 +7105,9 @@
 </ul>
 <h3 id="security">Security<a class="headerlink" href="#security" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0777">01/14/2016</a> - Integer Overflow <code>CVE 2016 077[7-8]</code>.</li>
-<li><a href="https://wiki.mozilla.org/Security/Guidelines/OpenSSH">Security/Guidelines/OpenSSH - MozillaWiki</a> - <code>sshd\_config</code> for <code>6.7+</code>, <code>5.3</code>.</li>
-<li><a href="https://github.com/BetterCrypto/Applied-Crypto-Hardening">Applied-Crypto-Hardening</a> <a href="https://github.com/BetterCrypto/Applied-Crypto-Hardening"><img alt="stars" src="https://img.shields.io/github/stars/BetterCrypto/Applied-Crypto-Hardening.svg?style=social&amp;label=stars" /></a> - <code>sshd\_config</code> for <code>6.X</code></li>
+<li><a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0777">01/14/2016</a> - 整数溢出<code>CVE 2016 077 [7-8]</code>.</li>
+<li><a href="https://wiki.mozilla.org/Security/Guidelines/OpenSSH">Security/Guidelines/OpenSSH - MozillaWiki</a> - <code>sshd \ _config</code>表示<code>6.7 +</code>，<code>5.3</code>.</li>
+<li><a href="https://github.com/BetterCrypto/Applied-Crypto-Hardening">Applied-Crypto-Hardening</a> [<img alt="stars" src="https://img.shields.io/github/stars/BetterCrypto/Applied-Crypto-Hardening.svg?style=social&amp;label=stars" />]（<a href="https://github.com/BetterCrypto/Applied-Crypto-Hardening">https://github.com/BetterCrypto/Applied-Crypto-Hardening</a>） - <code>sXd \ _config</code> for<code>6.X</code></li>
 </ul>
 <h3 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7158,7 +7122,7 @@
 </ul>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
 <p><a href="https://creativecommons.org/publicdomain/zero/1.0/"><img alt="CC0" src="https://i.creativecommons.org/p/zero/1.0/88x31.png" /></a></p>
-<p>To the extent possible under law, <a href="https://github.com/moul">Manfred Touron</a> has waived all copyright and related or neighboring rights to this work.</p>
+<p>在法律允许的范围内， <a href="https://github.com/moul">Manfred Touron</a> 已放弃对此作品的所有版权及相关或相邻权利.</p>
                 
                   
                 

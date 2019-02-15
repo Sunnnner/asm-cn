@@ -1806,13 +1806,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" title="Table of Contents" class="md-nav__link">
-    Table of Contents
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#protips" title="Protips" class="md-nav__link">
     Protips
   </a>
@@ -6985,13 +6978,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" title="Table of Contents" class="md-nav__link">
-    Table of Contents
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#protips" title="Protips" class="md-nav__link">
     Protips
   </a>
@@ -7350,47 +7336,19 @@
                 
                   <h1>Protips</h1>
                 
-                <p align="center">
+                <div class="github-widget" data-repo="AllThingsSmitty/css-protips"></div>
+
+<p align="center">
   <img src="https://rawgit.com/AllThingsSmitty/css-protips/master/media/logo.svg" width="200" alt="light bulb icon">
 </p>
 
 <h2 id="css-protips">CSS Protips <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a><a class="headerlink" href="#css-protips" title="Permanent link">&para;</a></h2>
 <p>一系列提示，帮助您掌握CSS技能.</p>
 <p>&gt;对于其他伟大的名单，请查看 <a href="https://github.com/sindresorhus/">@sindresorhus</a>的精选清单 <a href="https://github.com/sindresorhus/awesome/">awesome lists</a>.</p>
-<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="#protips">Protips</a></li>
-<li><a href="#support">Support</a></li>
-<li><a href="#translations">Translations</a></li>
 <li><a href="https://github.com/AllThingsSmitty/css-protips/blob/master/CONTRIBUTING.md">Contribution Guidelines</a></li>
 </ul>
 <h2 id="protips">Protips<a class="headerlink" href="#protips" title="Permanent link">&para;</a></h2>
-<ol>
-<li><a href="#use-a-css-reset">Use a CSS Reset</a></li>
-<li><a href="#inherit-box-sizing">Inherit <code>box-sizing</code></a></li>
-<li><a href="#use-unset-instead-of-resetting-all-properties">Use <code>unset</code> Instead of Resetting All Properties</a></li>
-<li><a href="#use-not-to-applyunapply-borders-on-navigation">Use <code>:not()</code> to Apply/Unapply Borders on Navigation</a></li>
-<li><a href="#add-line-height-to-body">Add <code>line-height</code> to <code>body</code></a></li>
-<li><a href="#set-focus-for-form-elements">Set <code>:focus</code> for Form Elements</a></li>
-<li><a href="#vertically-center-anything">Vertically-Center Anything</a></li>
-<li><a href="#comma-separated-lists">Comma-Separated Lists</a></li>
-<li><a href="#select-items-using-negative-nth-child">Select Items Using Negative <code>nth-child</code></a></li>
-<li><a href="#use-svg-for-icons">Use SVG for Icons</a></li>
-<li><a href="#use-the-lobotomized-owl-selector">Use the "Lobotomized Owl" Selector</a></li>
-<li><a href="#use-max-height-for-pure-css-sliders">Use <code>max-height</code> for Pure CSS Sliders</a></li>
-<li><a href="#equal-width-table-cells">Equal-Width Table Cells</a></li>
-<li><a href="#get-rid-of-margin-hacks-with-flexbox">Get Rid of Margin Hacks With Flexbox</a></li>
-<li><a href="#use-attribute-selectors-with-empty-links">Use Attribute Selectors with Empty Links</a></li>
-<li><a href="#style-default-links">Style "Default" Links</a></li>
-<li><a href="#consistent-vertical-rhythm">Consistent Vertical Rhythm</a></li>
-<li><a href="#intrinsic-ratio-boxes">Intrinsic Ratio Boxes</a></li>
-<li><a href="#style-broken-images">Style Broken Images</a></li>
-<li><a href="#use-rem-for-global-sizing-use-em-for-local-sizing">Use <code>rem</code> for Global Sizing; Use <code>em</code> for Local Sizing</a></li>
-<li><a href="#hide-autoplay-videos-that-arent-muted">Hide Autoplay Videos That Aren't Muted</a></li>
-<li><a href="#use-root-for-flexible-type">Use <code>:root</code> for Flexible Type</a></li>
-<li><a href="#set-font-size-on-form-elements-for-a-better-mobile-experience">Set <code>font-size</code> on Form Elements for a Better Mobile Experience</a></li>
-<li><a href="#use-pointer-events-to-control-mouse-events">Use Pointer Events to Control Mouse Events</a></li>
-</ol>
 <h3 id="use-a-css-reset">Use a CSS Reset<a class="headerlink" href="#use-a-css-reset" title="Permanent link">&para;</a></h3>
 <p>CSS重置有助于在不同的浏览器中实现样式一致性，并为样式元素提供干净的平板.  您可以使用CSS重置库 <a href="http://necolas.github.io/normalize.css/">Normalize</a>，<em>et al.</em>，或者您可以使用更简化的重置方法：</p>
 <div class="codehilite"><pre><span></span><span class="o">*,</span>
@@ -7528,7 +7486,6 @@
 </pre></div>
 
 <p>使用<code>：not（）</code>伪类，并且不会在最后一项中添加逗号.</p>
-<p><strong>注意：</strong>此提示可能不适用于辅助功能，特别是屏幕阅读器.  从浏览器复制/粘贴不适用于CSS生成的内容.  谨慎行事.</p>
 <p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
 <h3 id="select-items-using-negative-nth-child">Select Items Using Negative <code>nth-child</code><a class="headerlink" href="#select-items-using-negative-nth-child" title="Permanent link">&para;</a></h3>
 <p>在CSS中使用否定的&#39;nth-child`来选择项目1到n.</p>
@@ -7538,14 +7495,14 @@
 
 <span class="o">/</span> <span class="o">*</span><span class="nt">选择项目1到3并显示它们</span><span class="o">*</span> <span class="o">/</span>
 <span class="nt">li</span><span class="err">：</span><span class="nt">nth-</span><span class="err">​​</span><span class="nt">child</span><span class="err">（</span><span class="nt">-n</span> <span class="o">+</span> <span class="nt">3</span><span class="err">）</span><span class="p">{</span>
-  <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+  <span class="err">显示：块</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 
 <p>或者，因为你已经学到了一些东西 <a href="#use-not-to-applyunapply-borders-on-navigation">using <code>:not()</code></a>，尝试：</p>
 <div class="codehilite"><pre><span></span><span class="o">/</span> <span class="o">*</span><span class="nt">选择除前3个以外的所有项目并显示它们</span><span class="o">*</span> <span class="o">/</span>
 <span class="nt">li</span><span class="err">：</span><span class="nt">not</span><span class="err">（：</span><span class="nt">nth-</span><span class="err">​​</span><span class="nt">child</span><span class="err">（</span><span class="nt">-n</span> <span class="o">+</span> <span class="nt">3</span><span class="err">））</span><span class="p">{</span>
-  <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+  <span class="err">显示：块</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -7670,7 +7627,7 @@
 <h3 id="style-broken-images">Style Broken Images<a class="headerlink" href="#style-broken-images" title="Permanent link">&para;</a></h3>
 <p>使用一点CSS使破碎的图像更美观：</p>
 <div class="codehilite"><pre><span></span><span class="nt">img</span> <span class="p">{</span>
-  <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+  <span class="err">显示：块</span><span class="p">;</span>
   <span class="err">font-family：sans-serif</span><span class="p">;</span>
   <span class="err">font-weight：300</span><span class="p">;</span>
   <span class="err">身高：自动</span><span class="p">;</span>
@@ -7684,13 +7641,13 @@
 <p>现在添加伪元素规则以显示损坏图像的用户消息和URL引用：</p>
 <div class="codehilite"><pre><span></span><span class="nt">img</span> <span class="o">::</span> <span class="nt">before</span> <span class="p">{</span>
   <span class="err">内容：“我们很抱歉，下图是坏的:(”</span><span class="p">;</span>
-  <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+  <span class="err">显示：块</span><span class="p">;</span>
   <span class="err">margin-bottom：10px</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="nt">img</span> <span class="o">::</span> <span class="nt">after</span> <span class="p">{</span>
   <span class="err">内容：“（url：”attr（src）“）”</span><span class="p">;</span>
-  <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+  <span class="err">显示：块</span><span class="p">;</span>
   <span class="err">font-size：12px</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>

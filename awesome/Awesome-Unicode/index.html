@@ -5824,13 +5824,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#contents" title="Contents" class="md-nav__link">
-    Contents
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#quick-unicode-background" title="Quick Unicode Background" class="md-nav__link">
     Quick Unicode Background
   </a>
@@ -6903,13 +6896,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#contents" title="Contents" class="md-nav__link">
-    Contents
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#quick-unicode-background" title="Quick Unicode Background" class="md-nav__link">
     Quick Unicode Background
   </a>
@@ -7174,7 +7160,9 @@
                 
                   <h1>Unicode</h1>
                 
-                <p><img alt="" src="https://raw.githubusercontent.com/jagracey/Awesome-Unicode/58f28d08aef7f36eb6cdca22d25e7654cd8de5ae/resources/banner.jpg" /></p>
+                <div class="github-widget" data-repo="jagracey/Awesome-Unicode"></div>
+
+<p><img alt="" src="https://raw.githubusercontent.com/jagracey/Awesome-Unicode/58f28d08aef7f36eb6cdca22d25e7654cd8de5ae/resources/banner.jpg" /></p>
 <h2 id="awesome-unicode">Awesome Unicode <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a><a class="headerlink" href="#awesome-unicode" title="Permanent link">&para;</a></h2>
 <p>&gt;精选的Unicode花絮，包和资源的精选列表.</p>
 <p><em>请阅读 <a href="https://github.com/jagracey/Awesome-Unicode/blob/master/CONTRIBUTING.md">contribution guidelines</a> 在贡献之前.</em>
@@ -7183,67 +7171,18 @@
 <h2 id="foreword">Foreword<a class="headerlink" href="#foreword" title="Permanent link">&para;</a></h2>
 <p>Unicode真棒！  在Unicode之前，国际通信非常艰苦 - 每个人都在ASCII的上半部分（称为代码页）中定义了单独的扩展字符集，这些字符集会发生冲突 - 只是想想，德语发言者与韩语使用者协调使用127个字符的代码页.  值得庆幸的是，Unicode标准流行并统一了通信.  Unicode 8.0标准化来自超过129个脚本的超过120,000个字符 - 一些是现代的，一些是古老的，一些仍未解密.  Unicode处理从左到右和从右到左的文本，组合标记，包括各种文化，政治，宗教角色和表情符号.  Unicode非常人性化 - 最终被低估了.</p>
 <p><br></p>
-<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="#quick-unicode-background">Quick Unicode Background</a><ul>
-<li><a href="#what-characters-does-the-unicode-standard-include">What Characters Does the Unicode Standard Include?</a></li>
-<li><a href="#unicode-character-encodings">Unicode Character Encodings</a></li>
-<li><a href="#lets-talk-numbers">Lets talk Numbers</a></li>
-<li><a href="#utf-16-surrogate-pairs">UTF-16 Surrogate Pairs</a></li>
-<li><a href="#calculating-surrogate-pairs">Calculating Surrogate Pairs</a></li>
-<li><a href="#composing--decomposing">Composing &amp; Decomposing</a></li>
-<li><a href="#myths-of-unicode">Myths of Unicode</a></li>
-<li><a href="#applied-unicode-encodings">Applied Unicode Encodings</a></li>
-<li><a href="#source-code">Source Code</a></li>
-</ul>
-</li>
-<li><a href="#awesome-characters-list">Awesome Characters List</a><ul>
-<li><a href="#special-characters">Special Characters</a></li>
-<li><a href="#variable-identifiers-can-effectively-include-whitespace">Variable identifiers can effectively include whitespace!</a></li>
-<li><a href="#modifiers">Modifiers</a></li>
-<li><a href="#collision-uppercase-transformation-collisions">Uppercase Transformation Collisions</a></li>
-<li><a href="#collision-lowercase-transformation-collisions">Lowercase Transformation Collisions</a></li>
-</ul>
-</li>
-<li><a href="#quirks-and-troubleshooting">Quirks and Troubleshooting</a><ul>
-<li><a href="#one-to-many-case-mappings">One-To-Many Case Mappings</a></li>
-</ul>
-</li>
-<li><a href="#awesome-packages--libraries">Awesome Packages &amp; Libraries</a></li>
-<li><a href="#emojis">Emojis</a><ul>
-<li><a href="#diversity">Diversity</a></li>
-</ul>
-</li>
-<li><a href="#creatively-naming-variables-and-methods">Creatively Naming Variables and Methods</a><ul>
-<li><a href="#recursive-html-tag-renaming-script">Recursive HTML Tag Renaming Script</a></li>
-</ul>
-</li>
-<li><a href="#unicode-fonts">Unicode Fonts</a></li>
-<li><a href="#more-reading">More Reading</a></li>
-<li><a href="#exploring-deeper-into-unicode-yourself">Exploring Deeper into Unicode Yourself</a></li>
-<li><a href="#overview-map">Overview Map</a><ul>
-<li><a href="#a-map-of-the-basic-multilingual-plane">A map of the Basic Multilingual Plane</a></li>
-<li><a href="#unicode-blocks">Unicode Blocks</a></li>
-</ul>
-</li>
-<li><a href="#principles-of-the-unicode-standard">Principles of the Unicode Standard</a></li>
-<li><a href="#unicode-versions">Unicode Versions</a></li>
-<li><a href="#contributing">Contributing</a></li>
-<li><a href="#code-of-conduct">Code of Conduct</a></li>
-<li><a href="#license">License</a></li>
-</ul>
 <h2 id="quick-unicode-background">Quick Unicode Background<a class="headerlink" href="#quick-unicode-background" title="Permanent link">&para;</a></h2>
 <h2 id="what-characters-does-the-unicode-standard-include">What Characters Does the Unicode Standard Include?<a class="headerlink" href="#what-characters-does-the-unicode-standard-include" title="Permanent link">&para;</a></h2>
 <p>Unicode标准定义了今天所有主要语言中使用的字符的代码.  脚本包括欧洲字母脚本，中东从右到左脚本以及亚洲的许多脚本.</p>
 <p>Unicode标准还包括标点符号，变音符号，数学符号，技术符号，箭头，dingbats，表情符号等.它提供了变音符号的代码，这些代码修改了与base一起使用的字符标记，例如代字号（〜）.用于表示重音字母的字符（例如，ñ）.  总之，Unicode标准9.0版提供了来自世界字母表，表意文字集和符号集合的128,172个字符的代码.</p>
 <p>大多数常用字符适合前64K代码点，代码空间的一个区域称为基本多语言平面，或简称BMP.  还有16个其他辅助平面可用于编码其他字符，目前有超过850,000个未使用的代码点.  正在考虑将更多字符添加到标准的未来版本中.</p>
-<p>The Unicode Standard also reserves code points for private use. Vendors or end users can assign these internally for their own characters and symbols, or use them with specialized fonts. There are 6,400 private use code points on the BMP and another 131,068 supplementary private use code points, should 6,400 be insufficient for particular applications.</p>
+<p>Unicode标准还保留了供私人使用的代码点.  供应商或最终用户可以在内部为自己的字符和符号分配这些内容，或者使用专用字体.  BMP上有6,400个私人使用代码点，另有131,068个私人使用代码点，如果特殊应用程序不足6,400个.</p>
 <h2 id="unicode-character-encodings">Unicode Character Encodings<a class="headerlink" href="#unicode-character-encodings" title="Permanent link">&para;</a></h2>
 <p>字符编码标准不仅定义每个字符的标识及其数值或代码点，还定义该值如何以位表示.</p>
 <p>Unicode标准定义了三种编码形式，允许以字节，字或双字定向格式（即每个代码单元8,16或32位）传输相同的数据.  所有三种编码形式都编码相同的共同字符库，并且可以有效地相互转换而不会丢失数据.  Unicode Consortium完全赞同使用任何这些编码形式作为实现Unicode标准的一致方式.</p>
 <p>UTF-8很受HTML和类似协议的欢迎.  UTF-8是一种将所有Unicode字符转换为字节的可变长度编码的方法.  它具有以下优点：与熟悉的ASCII集相对应的Unicode字符具有与ASCII相同的字节值，并且转换为UTF-8的Unicode字符可以与许多现有软件一起使用而无需大量软件重写.  </p>
 <p>UTF-16在许多环境中很受欢迎，这些环境需要通过经济地使用存储来平衡对字符的有效访问.  它相当紧凑，所有使用频繁的字符都适合单个16位代码单元，而所有其他字符都可通过成对的16位代码单元访问.</p>
-<p>UTF-32 is useful where memory space is no concern, but fixed width, single code unit access to characters is desired. Each Unicode character is  encoded in a single 32-bit code unit when using UTF-32.</p>
+<p>UTF-32在无需考虑内存空间的情况下非常有用，但需要固定宽度，单个代码单元访问字符.  使用UTF-32时，每个Unicode字符都在一个32位代码单元中编码.</p>
 <p>对于每个字符，所有三种编码形式最多需要4个字节（或32位）数据.</p>
 <h2 id="lets-talk-numbers">Lets talk Numbers<a class="headerlink" href="#lets-talk-numbers" title="Permanent link">&para;</a></h2>
 <p>The Unicode characterset is divided into 17 core segments called "planes", which are further divided into blocks. Each plane has space for 65,536 (2¹⁶) codepoints, supporting a grand total of 1,114,112 codepoints. There are two "Private Use Area" planes (#16 &amp; #17) that are allocated to be used however one wishes. These two Private Use planes account for 131,072 codepoints.</p>
@@ -7303,13 +7242,13 @@
 </tr>
 <tr>
 <td>10.</td>
-<td>Plane 10 (unassigned)</td>
-<td>(U+90000 to U+9FFFF)</td>
+<td>飞机10（未分配）</td>
+<td>（U + 90000至U + 9FFFF）</td>
 </tr>
 <tr>
 <td>11.</td>
-<td>Plane 11 (unassigned)</td>
-<td>(U+A0000 to U+AFFFF)</td>
+<td>飞机11（未分配）</td>
+<td>（U + A0000到U + AFFFF）</td>
 </tr>
 <tr>
 <td>12.</td>
@@ -7433,8 +7372,8 @@
 <td>11110000：10011111：10010110：10010110</td>
 </tr>
 <tr>
-<td>UTF-16/UTF-16BE (hex)</td>
-<td>0xD83D 0xDD96 (d83ddd96)</td>
+<td>UTF-16 / UTF-16BE（十六进制）</td>
+<td>0xD83D 0xDD96（d83ddd96）</td>
 </tr>
 <tr>
 <td>UTF-16LE（十六进制）</td>
@@ -7527,9 +7466,9 @@
 <td>除了文本的开头之外，它不等同于法律字符.</td>
 </tr>
 <tr>
-<td><code>'​'</code></td>
-<td>'\u200B' zero-width non-break space</td>
-<td>(a character with no appearance and no effect other than preventing the formation of ligatures).</td>
+<td>`&#39;&#39;``  &#39;\ u200B&#39;零宽度不间断空间</td>
+<td>（除了防止结扎形成之外没有外观和没有效果的角色）.</td>
+<td></td>
 </tr>
 <tr>
 <td>`&#39;&#39;<code>U + 00A0 NO-BREAK SPACE |  迫使相邻的人物粘在一起.  在HTML中众所周知的</code>.</td>
@@ -7542,9 +7481,9 @@
 <td></td>
 </tr>
 <tr>
-<td><code>'‍'</code></td>
-<td>U+200D ZERO WIDTH JOINER</td>
-<td>force adjacent characters to be joined together (e.g., arabic characters or supported emoji). Can be used this to compose sequentially combined emoji.</td>
+<td>&#39;&#39;&#39;`</td>
+<td>U + 200D ZERO WIDTH JOINER</td>
+<td>强制相邻字符连接在一起（例如，阿拉伯字符或支持的表情符号）.  可以用它来组成顺序组合的表情符号.</td>
 </tr>
 <tr>
 <td>`&#39;&#39;&#39;&#39;  U + 2060 WORD JOINER</td>
@@ -7626,7 +7565,7 @@
 <p><br><br></p>
 <h2 id="variable-identifiers-can-effectively-include-whitespace">Variable identifiers can effectively include whitespace!<a class="headerlink" href="#variable-identifiers-can-effectively-include-whitespace" title="Permanent link">&para;</a></h2>
 <p><strong> U + 3164 HANGUL FILLER </strong>字符显示为前进的空白字符.  如果不明确，则将角色渲染为完全不可见（并且不前进，即“零宽度”） <a href="http://unicode.org/faq/unsup_char.html">supported in rendering</a> .  这意味着永远不应该显示丑陋的字符替换（ ）符号.</p>
-<p>I'm not yet sure why U+3164 was specified to behave this way. Interestingly, U+3164 was added to Unicode in version 1.1 (1993)- so the consortium must have had a lot of time to think it through. Anyway, here are a few examples.</p>
+<p>我还不确定为什么指定U + 3164这样做.  有趣的是，在版本1.1（1993）中将U + 3164添加到Unicode中 - 因此该联盟必须有大量时间来考虑它.  无论如何，这里有几个例子.</p>
 <p><div class="codehilite"><pre><span></span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">varᅟ</span><span class="o">=&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">foo</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;;</span>
 <span class="kc">undefined</span>
 <span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="nx">ᅟ</span>
@@ -7713,7 +7652,7 @@
 <td><code>FL</code></td>
 </tr>
 <tr>
-<td>ﬃ</td>
+<td>ffi</td>
 <td>0xFB03</td>
 <td><code>FFI</code></td>
 </tr>
@@ -7723,7 +7662,7 @@
 <td><code>FFL</code></td>
 </tr>
 <tr>
-<td>ﬅ</td>
+<td>ft</td>
 <td>0xFB05</td>
 <td><code>ST</code></td>
 </tr>
@@ -7754,10 +7693,10 @@
 <h2 id="quirks-and-troubleshooting">Quirks and Troubleshooting<a class="headerlink" href="#quirks-and-troubleshooting" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><strong>String length is typically determined by counting codepoints.</strong> This means that surrogate pairs would count as two characters. Combining multiple diacritics may be stacked over the same character. <code>a + ̈  == ̈a</code>, increasing length, while only producing a single character.</p>
+<p><strong>字符串长度通常通过计算代码点来确定.</strong>这意味着代理对将计为两个字符.  组合多个变音符号可以堆叠在相同的字符上.  <code>a +̈==̈a</code>，增加长度，而只产生一个字符.</p>
 </li>
 <li>
-<p><strong>类似地，逆转字符串通常是一项非常重要的任务.</strong>同样，代理对和变音符号必须一起反转. <a href="https://github.com/mathiasbynens/esrever">ES Reverser</a> 提供了一个很好的解决方案</p>
+<p><strong>类似地，逆转字符串通常是一项非常重要的任务.</strong>同样，代理对和变音符号必须一起反转. <a href="https://github.com/mathiasbynens/esrever">ES Reverser</a> provides a pretty good solution.</p>
 </li>
 <li>
 <p><strong>大小写映射并不总是一对一.</strong>它们也可以是：</p>
@@ -7783,8 +7722,8 @@
 <td><a href="https://codepoints.net/U+00DF?lang=en">U+00DF</a></td>
 <td><code>ß</code></td>
 <td>LATIN SMALL LETTER SHARP S</td>
-<td><code>s</code>, <code>s</code></td>
-<td>U+0073, U+0073</td>
+<td><code>s</code>，<code>s</code></td>
+<td>U + 0073，U + 0073</td>
 </tr>
 <tr>
 <td><a href="https://codepoints.net/U+0130?lang=en">U+0130</a></td>
@@ -7887,16 +7826,16 @@
 <tr>
 <td><a href="https://codepoints.net/U+1F54?lang=en">U+1F54</a></td>
 <td><code>ὔ</code></td>
-<td>GREEK SMALL LETTER UPSILON WITH PSILI AND OXIA</td>
-<td><code>υ</code>, <code>̓</code>, <code>́</code></td>
-<td>U+03C5, U+0313, U+0301</td>
+<td>带PSILI和OXIA的希腊小写字母</td>
+<td><code>υ</code>，<code>̓</code>，``</td>
+<td>U + 03C5，U + 0313，U + 0301</td>
 </tr>
 <tr>
 <td><a href="https://codepoints.net/U+1F56?lang=en">U+1F56</a></td>
 <td><code>ὖ</code></td>
-<td>GREEK SMALL LETTER UPSILON WITH PSILI AND PERISPOMENI</td>
-<td><code>υ</code>, <code>̓</code>, <code>͂</code></td>
-<td>U+03C5, U+0313, U+0342</td>
+<td>带PSILI和PERISPOMENI的GREEK小写字母UPS  <code>υ</code>，<code>̓</code>，``</td>
+<td>U + 03C5，U + 0313，U + 0342</td>
+<td></td>
 </tr>
 <tr>
 <td><a href="https://codepoints.net/U+1F80?lang=en">U+1F80</a></td>
@@ -7957,9 +7896,9 @@
 <tr>
 <td><a href="https://codepoints.net/U+1F88?lang=en">U+1F88</a></td>
 <td><code>ᾈ</code></td>
-<td>GREEK CAPITAL LETTER ALPHA WITH PSILI AND PROSGEGRAMMENI</td>
-<td><code>ἀ</code>, <code>ι</code></td>
-<td>U+1F00, U+03B9</td>
+<td>希腊大写字母阿尔法与PSILI和PROSEGEGRAMMENI  <code>α</code>，<code>i</code></td>
+<td>U + 1F00，U + 03B9</td>
+<td></td>
 </tr>
 <tr>
 <td><a href="https://codepoints.net/U+1F89?lang=en">U+1F89</a></td>
@@ -8013,9 +7952,9 @@
 <tr>
 <td><a href="https://codepoints.net/U+1F90?lang=en">U+1F90</a></td>
 <td><code>ᾐ</code></td>
-<td>GREEK SMALL LETTER ETA WITH PSILI AND YPOGEGRAMMENI</td>
-<td><code>ἠ</code>, <code>ι</code></td>
-<td>U+1F20, U+03B9</td>
+<td>ETA与PSILI和YPOGEGRAMMENI希腊小写字母  <code>ἠ</code>，<code>i</code></td>
+<td>U + 1F20，U + 03B9</td>
+<td></td>
 </tr>
 <tr>
 <td><a href="https://codepoints.net/U+1F91?lang=en">U+1F91</a></td>
@@ -8076,9 +8015,9 @@
 <tr>
 <td><a href="https://codepoints.net/U+1F99?lang=en">U+1F99</a></td>
 <td><code>ᾙ</code></td>
-<td>GREEK CAPITAL LETTER ETA WITH DASIA AND PROSGEGRAMMENI</td>
-<td><code>ἡ</code>, <code>ι</code></td>
-<td>U+1F21, U+03B9</td>
+<td>与DASIA和PROSGEGRAMMENI的希腊大写字母  <code>，</code>  U + 1F21，U + 03B9</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><a href="https://codepoints.net/U+1F9A?lang=en">U+1F9A</a></td>
@@ -8174,9 +8113,9 @@
 <tr>
 <td><a href="https://codepoints.net/U+1FA7?lang=en">U+1FA7</a></td>
 <td><code>ᾧ</code></td>
-<td>GREEK SMALL LETTER OMEGA WITH DASIA AND PERISPOMENI AND YPOGEGRAMMENI</td>
-<td><code>ὧ</code>, <code>ι</code></td>
-<td>U+1F67, U+03B9</td>
+<td>GREEK小写字母欧米茄与DASIA和PERISPOMENI和YPOGEGRAMMENI</td>
+<td><code>ὧ</code>，<code>ι</code></td>
+<td>U + 1F67，U + 03B9</td>
 </tr>
 <tr>
 <td><a href="https://codepoints.net/U+1FA8?lang=en">U+1FA8</a></td>
@@ -8244,9 +8183,9 @@
 <tr>
 <td><a href="https://codepoints.net/U+1FB3?lang=en">U+1FB3</a></td>
 <td><code>ᾳ</code></td>
-<td>GREEK SMALL LETTER ALPHA WITH YPOGEGRAMMENI</td>
-<td><code>α</code>, <code>ι</code></td>
-<td>U+03B1, U+03B9</td>
+<td>希腊小写字母ALPHA与YPOGEGRAMMENI</td>
+<td><code>α</code>，<code>i</code></td>
+<td>U + 03B1，U + 03B9</td>
 </tr>
 <tr>
 <td><a href="https://codepoints.net/U+1FB4?lang=en">U+1FB4</a></td>
@@ -8300,16 +8239,16 @@
 <tr>
 <td><a href="https://codepoints.net/U+1FC6?lang=en">U+1FC6</a></td>
 <td><code>ῆ</code></td>
-<td>GREEK SMALL LETTER ETA WITH PERISPOMENI</td>
-<td><code>η</code>, <code>͂</code></td>
-<td>U+03B7, U+0342</td>
+<td>与PERISPOMENI的GREEK小写字母ETA</td>
+<td><code>η</code>，``</td>
+<td>U + 03B7，U + 0342</td>
 </tr>
 <tr>
 <td><a href="https://codepoints.net/U+1FC7?lang=en">U+1FC7</a></td>
 <td><code>ῇ</code></td>
-<td>GREEK SMALL LETTER ETA WITH PERISPOMENI AND YPOGEGRAMMENI</td>
-<td><code>η</code>, <code>͂</code>, <code>ι</code></td>
-<td>U+03B7, U+0342, U+03B9</td>
+<td>ETA与PERISPOMENI和YPOGEGRAMMENI希腊小写字母  <code>，``，</code>  U + 03B7，U + 0342，U + 03B9</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><a href="https://codepoints.net/U+1FCC?lang=en">U+1FCC</a></td>
@@ -8511,8 +8450,8 @@
 </table>
 <h2 id="awesome-packages-libraries">Awesome Packages &amp; Libraries<a class="headerlink" href="#awesome-packages-libraries" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://github.com/jagracey/PhantomScript">PhantomScript</a> - <img alt="👻" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f47b.svg" title=":ghost:" /> <img alt="🔦" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f526.svg" title=":flashlight:" /> Invisible JavaScript code execution &amp; social engineering</li>
-<li><a href="https://github.com/mathiasbynens/esrever">ESReverser</a> - A Unicode-aware string reverser written in JavaScript.</li>
+<li><a href="https://github.com/jagracey/PhantomScript">PhantomScript</a> - ：ghost :: flashlight：隐形JavaScript代码执行和社交工程</li>
+<li><a href="https://github.com/mathiasbynens/esrever">ESReverser</a> - 用JavaScript编写的支持Unicode的字符串反转器.</li>
 <li><a href="https://github.com/reinderien/mimic">mimic</a> -  [ab]使用Unicode创建悲剧</li>
 <li><a href="https://github.com/LuminosoInsight/python-ftfy">python-ftfy</a> - 给定Unicode文本，使其表示一致并且可能不那么破碎.</li>
 <li><a href="https://github.com/vim-utils/vim-troll-stopper">vim-troll-stopper</a> - 阻止Unicode巨魔搞乱你的代码.</li>
@@ -8550,7 +8489,7 @@
 </tr>
 </tbody>
 </table>
-<p>Further, emojis now support skin color modifiers.</p>
+<p>此外，表情符号现在支持肤色修饰符.</p>
 <p>&gt; Unicode版本8.0（2015年中）发布了五种符号修饰符，为人类表情符号提供了一系列肤色.  这些角色基于Fitzpatrick量表的六种音调，这是皮肤病学的公认标准（在线量表有很多例子，如FitzpatrickSkinType.pdf）.  确切的阴影可能因实现而异.   -  <a href="http://unicode.org/reports/tr51/#Diversity">Unicode Consortium's Diversity report</a></p>
 <table>
 <thead>
@@ -8582,8 +8521,8 @@
 <td><img src="http://www.unicode.org/reports/tr51/images/other/swatch-type-5.png"   height="20" width="20"> <img src="http://www.unicode.org/reports/tr51/images/other/swatch-type-5-bw.png"   height="20" width="20"></td>
 </tr>
 <tr>
-<td>U+1F3FF</td>
-<td>EMOJI MODIFIER FITZPATRICK TYPE-6</td>
+<td>U + 1F3FF</td>
+<td>EMOJI MODIFY FITZPATRICK TYPE-6</td>
 <td><img src="http://www.unicode.org/reports/tr51/images/other/swatch-type-6.png"   height="20" width="20"> <img src="http://www.unicode.org/reports/tr51/images/other/swatch-type-6-bw.png"   height="20" width="20"></td>
 </tr>
 </tbody>
@@ -8591,7 +8530,7 @@
 <p>只需使用其中一种肤色修饰符“ u {1F466}  u {1F3FE}”，即可使用所需的表情符号.</p>
 <p align="center">
     <img src="http://unicode.org/reports/tr51/images/other/person.png" height="36" width="auto" alt="">
-    <font size="36"> +&nbsp;</font>
+    <font size="36">+</font>
     <img src="http://unicode.org/reports/tr51/images/other/swatch-type-5.png" height="36" width="auto" alt="">
     <font size="36">→</font>
     <img src="http://unicode.org/reports/tr51/images/other/person-5.png" height="36" width="auto" alt="">
@@ -8617,7 +8556,7 @@
 <div class="codehilite"><pre><span></span><span class="c1">//多么方便！</span>
 <span class="nx">varπ</span><span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">;</span>
 
-<span class="c1">// Sometimes, you just have to use the Bad Parts of JavaScript:</span>
+<span class="c1">//有时候，你只需要使用JavaScript的坏部分：</span>
 <span class="kd">var</span> <span class="nx">th__v</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">;</span>
 
 <span class="c1">//代码，你没有工作？！</span>
@@ -8629,7 +8568,7 @@
 <span class="c1">//为了正义而混淆无聊的变量名称</span>
 <span class="kd">var</span> <span class="nx">was</span> <span class="o">=&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">heh</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;;</span>
 
-<span class="c1">// …or just make up random ones</span>
+<span class="c1">// ...或者只是随机组成</span>
 <span class="nx">是Ꙭൽↈⴱ</span><span class="o">=&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">呵呵</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;;</span>
 
 <span class="c1">//虽然完全有效，但这在大多数浏览器中都不起作用：</span>
@@ -8662,7 +8601,7 @@
 <span class="c">&lt;!-- success message --&gt;</span>
 <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;❤&quot;</span><span class="p">&gt;</span>您的更改已成功保存！ <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </pre></div></p>
-<div class="codehilite"><pre><span></span><span class="p">.</span><span class="nc">ಠ_ಠ</span> <span class="p">{</span>
+<div class="codehilite"><pre><span></span><span class="p">.</span><span class="nc">That_through</span> <span class="p">{</span>
     <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#f00</span><span class="p">;</span>
 <span class="p">}</span>
 
@@ -8697,7 +8636,7 @@
 <span class="p">}</span>
 
 <span class="kd">function</span> <span class="nx">wonky</span><span class="err">（</span><span class="nx">str</span><span class="err">）</span><span class="p">{</span>
-  <span class="k">return</span> <span class="nx">str</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;\u{20de}&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;\u{20de}&#39;</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nx">str</span><span class="p">.</span><span class="nx">split</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="p">.</span><span class="nx">join</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">\</span> <span class="nx">u</span> <span class="p">{</span><span class="mi">20</span><span class="nx">de</span><span class="p">}</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="o">+&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">\</span> <span class="nx">u</span> <span class="p">{</span><span class="mi">20</span><span class="nx">de</span><span class="p">}</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;;</span>
 <span class="p">}</span>
 
 <span class="kd">function</span> <span class="nx">transformTag</span><span class="err">（</span><span class="nx">tagIdOrElem</span><span class="err">，</span><span class="nx">tagType</span><span class="err">）</span><span class="p">{</span>
@@ -8793,15 +8732,15 @@
 <tbody>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Basic_Latin">Basic Latin</a></td>
-<td>U+0000</td>
-<td>U+007F</td>
-<td>(128)</td>
+<td>U + 0000</td>
+<td>U + 007F</td>
+<td>（128）</td>
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Latin-1_Supplement">Latin-1 Supplement</a></td>
-<td>U+0080</td>
-<td>U+00FF</td>
-<td>(128)</td>
+<td>U + 0080</td>
+<td>U + 00FF</td>
+<td>（128）</td>
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Latin_Extended-A">Latin Extended-A</a></td>
@@ -9003,9 +8942,9 @@
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Hangul_Jamo">Hangul Jamo</a></td>
-<td>U+1100</td>
-<td>U+11FF</td>
-<td>(256)</td>
+<td>U + 1100</td>
+<td>U + 11FF</td>
+<td>（256）</td>
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Ethiopic">Ethiopic</a></td>
@@ -9135,9 +9074,9 @@
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Sundanese">Sundanese</a></td>
-<td>U+1B80</td>
-<td>U+1BBF</td>
-<td>(64)</td>
+<td>U + 1B80</td>
+<td>U + 1BBF</td>
+<td>（64）</td>
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Batak">Batak</a></td>
@@ -9153,9 +9092,9 @@
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Ol_Chiki">Ol Chiki</a></td>
-<td>U+1C50</td>
-<td>U+1C7F</td>
-<td>(48)</td>
+<td>U + 1C50</td>
+<td>U + 1C7F</td>
+<td>（48）</td>
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Sundanese_Supplement">Sundanese Supplement</a></td>
@@ -9207,9 +9146,9 @@
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Superscripts_and_Subscripts">Superscripts and Subscripts</a></td>
-<td>U+2070</td>
-<td>U+209F</td>
-<td>(42)</td>
+<td>U + 2070</td>
+<td>U + 209F</td>
+<td>（42）</td>
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Currency_Symbols">Currency Symbols</a></td>
@@ -9279,9 +9218,9 @@
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Block_Elements">Block Elements</a></td>
-<td>U+2580</td>
-<td>U+259F</td>
-<td>(32)</td>
+<td>U + 2580</td>
+<td>U + 259F</td>
+<td>（32）</td>
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Geometric_Shapes">Geometric Shapes</a></td>
@@ -9489,9 +9428,9 @@
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/CJK_Unified_Ideographs">CJK Unified Ideographs</a></td>
-<td>U+4E00</td>
-<td>U+9FFF</td>
-<td>(20941)</td>
+<td>U + 4E00</td>
+<td>U + 9FFF</td>
+<td>（20941）</td>
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Yi_Syllables">Yi Syllables</a></td>
@@ -9513,9 +9452,9 @@
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Vai">Vai</a></td>
-<td>U+A500</td>
-<td>U+A63F</td>
-<td>(300)</td>
+<td>U + A500</td>
+<td>U + A63F</td>
+<td>（300）</td>
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Cyrillic_Extended-B">Cyrillic Extended-B</a></td>
@@ -9825,9 +9764,9 @@
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Ugaritic">Ugaritic</a></td>
-<td>U+10380</td>
-<td>U+1039F</td>
-<td>(31)</td>
+<td>U + 10380</td>
+<td>U + 1039F</td>
+<td>（31）</td>
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Old_Persian">Old Persian</a></td>
@@ -9837,9 +9776,9 @@
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Deseret">Deseret</a></td>
-<td>U+10400</td>
-<td>U+1044F</td>
-<td>(80)</td>
+<td>U + 10400</td>
+<td>U + 1044F</td>
+<td>（80）</td>
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Shavian">Shavian</a></td>
@@ -9981,9 +9920,9 @@
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Old_Hungarian">Old Hungarian</a></td>
-<td>U+10C80</td>
-<td>U+10CFF</td>
-<td>(108)</td>
+<td>U + 10C80</td>
+<td>U + 10CFF</td>
+<td>（108）</td>
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Rumi_Numeral_Symbols">Rumi Numeral Symbols</a></td>
@@ -10047,9 +9986,9 @@
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Khudawadi">Khudawadi</a></td>
-<td>U+112B0</td>
-<td>U+112FF</td>
-<td>(69)</td>
+<td>U + 112B0</td>
+<td>U + 112FF</td>
+<td>（69）</td>
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Grantha">Grantha</a></td>
@@ -10089,9 +10028,9 @@
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Warang_Citi">Warang Citi</a></td>
-<td>U+118A0</td>
-<td>U+118FF</td>
-<td>(84)</td>
+<td>U + 118A0</td>
+<td>U + 118FF</td>
+<td>（84）</td>
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Pau_Cin_Hau">Pau Cin Hau</a></td>
@@ -10119,9 +10058,9 @@
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Egyptian_Hieroglyphs">Egyptian Hieroglyphs</a></td>
-<td>U+13000</td>
-<td>U+1342F</td>
-<td>(1071)</td>
+<td>U + 13000</td>
+<td>U + 1342F</td>
+<td>（1071）</td>
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Anatolian_Hieroglyphs">Anatolian Hieroglyphs</a></td>
@@ -10149,9 +10088,9 @@
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Pahawh_Hmong">Pahawh Hmong</a></td>
-<td>U+16B00</td>
-<td>U+16B8F</td>
-<td>(127)</td>
+<td>U + 16B00</td>
+<td>U + 16B8F</td>
+<td>（127）</td>
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Miao">Miao</a></td>
@@ -10347,9 +10286,9 @@
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Variation_Selectors_Supplement">Variation Selectors Supplement</a></td>
-<td>U+E0100</td>
-<td>U+E01EF</td>
-<td>(240)</td>
+<td>U + E0100</td>
+<td>U + E01EF</td>
+<td>（240）</td>
 </tr>
 <tr>
 <td><a href="https://wikipedia.org/wiki/Supplementary_Private_Use_Area-A">Supplementary Private Use Area-A</a></td>
@@ -10370,13 +10309,13 @@
 <ul>
 <li><strong>Universal repertoire</strong>   - Every writing system ever used shall be respected and represented in the standard</li>
 <li><strong>逻辑顺序</strong>  - 双向文本是按逻辑顺序存储的字符，而不是代表的方式</li>
-<li><strong>Efficiency</strong>             - The documentation must be efficient and complete.</li>
-<li><strong>Unification</strong>            - Where different cultures or languages use the same character, it shall be only included once. This point is</li>
+<li><strong>效率</strong>  - 文档必须高效且完整.</li>
+<li><strong>统一</strong>  - 如果不同的文化或语言使用相同的字符，则只能包含一次.  这一点是</li>
 <li><strong>字符，而不是字形</strong>  - 只能编码字符，而不是字形.  简而言之，字形是实际的图形</li>
-<li><strong>Dynamic composition</strong>    - New characters can be composed of other, already standardized characters. For example, the character “Ä” can be composed of an “A” and a dieresis sign (“ ¨ ”).</li>
+<li><strong>动态构图</strong>  - 新角色可以由其他已经标准化的角色组成.  例如，字符“Ä”可以由“A”和dieresis符号（“¨”）组成.</li>
 <li><strong>语义</strong>  - 必须明确定义包含的字符并区别于其他字符.</li>
-<li><strong>Stability</strong>              - Once defined characters shall never be removed or their codepoints reassigned. In the case of an error, a codepoint shall be deprecated.</li>
-<li><strong>Plain Text</strong>             - Characters in the standard are text and never mark-up or metacharacters.</li>
+<li><strong>稳定性</strong>  - 一旦定义的字符永远不会被删除或其代码点被重新分配.  如果出现错误，则不推荐使用代码点.</li>
+<li><strong>纯文本</strong>  - 标准中的字符是文本，从不标记或元字符.</li>
 <li><strong>可转换性</strong>  - 每个其他使用的编码应该可以用Unicode编码表示.</li>
 </ul>
 <p>注意：原理描述来自 <a href="https://codepoints.net/about#unicode">codepoints.net</a></p>
@@ -10409,7 +10348,7 @@
 <p><a href="https://creativecommons.org/publicdomain/zero/1.0/"><img alt="CC0" src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" /></a></p>
 <p>在法律允许的范围内，<a href="https://github.com/jagracey/Awesome-Unicode/graphs/contributors">
 contributors</a>
-have waived all copyright and related or neighboring rights to this work. See the
+ 已放弃对此作品的所有版权及相关或邻接权利.  见
 <a href="https://github.com/jagracey/Awesome-Unicode/blob/master/LICENSE">license file</a> 详情.</p>
                 
                   
