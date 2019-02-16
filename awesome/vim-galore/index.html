@@ -8379,7 +8379,7 @@ tab.</p>
 如果你通过<code>：e file2</code>加载另一个文件，<code>file1</code>将成为<strong>隐藏缓冲区</strong>
 和<code>file2</code>是活动的.</p>
 <p>两个缓冲区也<strong>列出</strong>，因此它们将列在输出中
- <code>：ls</code>.  插件缓冲区或帮助缓冲区通常标记为不公开，因为
+ <code>：ls</code>.  插件缓冲区或帮助缓冲区通常标记为未列出，因为
  它们不是您通常使用文本编辑器编辑的常规文件.  列出和
 未列出的缓冲区可以通过<code>：ls！</code>显示.</p>
 <p><strong>未命名的缓冲区</strong>（也经常被插件使用）是没有缓冲区的缓冲区
@@ -8716,7 +8716,7 @@ desired.</p>
 </tr>
 </tbody>
 </table>
-<p>请注意，而不是<code>，</code>，<code>;</code>可以用作分隔符.  不同之处在于
+<p>注意，而不是<code>，</code>，<code>;</code>可以用作分隔符.  不同之处在于
 在<code>from，to</code>的情况下，_to_是相对于当前行的，但是当
  使用<code>from; to</code>，_to_是相对于_from_的地址！  假设你是
 在第5行，<code>：1，+ 1d</code>将删除1到6行，而<code>：1; + 1d</code>只会删除
