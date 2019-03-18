@@ -7732,6 +7732,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#checkprop" title="checkProp" class="md-nav__link">
+    checkProp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#compose" title="compose" class="md-nav__link">
     compose
   </a>
@@ -9080,7 +9087,7 @@
 <h2 id="30-seconds-of-code">30 seconds of code<a class="headerlink" href="#30-seconds-of-code" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-CC0--1.0-blue.svg" /></a> <a href="https://www.npmjs.com/package/30-seconds-of-code"><img alt="npm Downloads" src="https://img.shields.io/npm/dt/30-seconds-of-code.svg" /></a> <a href="https://www.npmjs.com/package/30-seconds-of-code"><img alt="npm Version" src="https://img.shields.io/npm/v/30-seconds-of-code.svg" /></a> <a href="https://snyk.io/test/github/30-seconds/30-seconds-of-code?targetFile=package.json"><img alt="Known Vulnerabilities" src="https://snyk.io/test/github/30-seconds/30-seconds-of-code/badge.svg?targetFile=package.json" /></a> <br/> 
 <a href="https://travis-ci.com/30-seconds/30-seconds-of-code"><img alt="Travis Build" src="https://travis-ci.com/30-seconds/30-seconds-of-code.svg?branch=master" /></a> <a href="https://www.codacy.com/app/Chalarangelo/30-seconds-of-code?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=30-seconds/30-seconds-of-code&amp;utm_campaign=Badge_Grade"><img alt="Codacy Badge" src="https://api.codacy.com/project/badge/Grade/6ab7791fb1ea40b4a576d658fb96807f" /></a> <a href="https://github.com/Flet/semistandard"><img alt="js-semistandard-style" src="https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg" /></a> <br/>
-<a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="https://www.producthunt.com/posts/30-seconds-of-code"><img alt="ProductHunt" src="https://img.shields.io/badge/producthunt-vote-orange.svg" /></a> <a href="https://gitter.im/30-seconds-of-code/Lobby"><img alt="Gitter chat" src="https://img.shields.io/badge/chat-on%20gitter-4FB999.svg" /></a> <a href="http://makeapullrequest.com"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" /></a></p>
+<a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="https://www.producthunt.com/posts/30-seconds-of-code"><img alt="ProductHunt" src="https://img.shields.io/badge/producthunt-vote-orange.svg" /></a> <a href="http://makeapullrequest.com"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" /></a></p>
 <p>&gt;精选的有用JavaScript代码段集合，您可以在30秒或更短的时间内理解这些代码段.</p>
 <p><a href="https://www.digitalocean.com"><img alt="Sponsored by DigitalOcean" src="https://raw.githubusercontent.com/30-seconds/30-seconds-of-code/master//sponsored_by_DigitalOcean.png" /></a></p>
 <p><em>使用<kbd>Ctrl</kbd> + <kbd>F</kbd>或<kbd>命令</kbd> + <kbd>F</kbd>搜索片段.
@@ -9232,7 +9239,7 @@ npm安装30秒的代码
 
 <h3 id="flip">flip<a class="headerlink" href="#flip" title="Permanent link">&para;</a></h3>
 <p>Flip将函数作为参数，然后将第一个参数作为最后一个参数.</p>
-<p>返回一个接受可变输入的闭包，并拼接最后一个参数，使其成为应用其余参数之前的第一个参数.</p>
+<p>Return a closure that takes variadic inputs, and splices the last argument to make it the first argument before applying the rest.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">flip</span> <span class="o">=</span> <span class="nx">fn</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="nx">首先</span><span class="err">，</span><span class="p">......</span><span class="nx">休息</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">fn</span><span class="err">（</span><span class="p">...</span><span class="nx">休息</span><span class="err">，</span><span class="nx">第一次</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
 
@@ -9244,7 +9251,7 @@ npm安装30秒的代码
 </details>
 
 <h3 id="over">over<a class="headerlink" href="#over" title="Permanent link">&para;</a></h3>
-<p>Creates a function that invokes each provided function with the arguments it receives and returns the results.</p>
+<p>创建一个函数，该函数使用它接收的参数调用每个提供的函数并返回结果.</p>
 <p>使用<code>Array.prototype.map（）</code>和<code>Function.prototype.apply（）</code>将每个函数应用于给定的参数.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">over</span> <span class="o">=</span><span class="err">（</span><span class="p">...</span> <span class="nx">fns</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="p">...</span> <span class="nx">args</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">fns</span><span class="p">.</span><span class="nx">map</span><span class="err">（</span><span class="nx">fn</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">fn</span><span class="p">.</span><span class="nx">apply</span><span class="err">（</span><span class="kc">null</span><span class="err">，</span><span class="nx">args</span><span class="err">））</span><span class="p">;</span>
 </pre></div>
@@ -9402,7 +9409,7 @@ npm安装30秒的代码
 <p>将2D数组转换为逗号分隔值（CSV）字符串.</p>
 <p>使用<code>Array.prototype.map（）</code>和<code>Array.prototype.join（delimiter）</code>将各个1D数组（行）组合成字符串.
 使用<code>Array.prototype.join（&amp;#39;\ n&amp;#39;）</code>将所有行组合成CSV字符串，用换行符分隔每一行.
-Omit the second argument, <code>delimiter</code>, to use a default delimiter of <code>,</code>.</p>
+省略第二个参数<code>delimiter</code>，使用<code>，</code>的默认分隔符.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">arrayToCSV</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">delimiter</span> <span class="o">=&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">，</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="nx">arr</span><span class="p">.</span><span class="nx">map</span><span class="err">（</span><span class="nx">v</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">v</span><span class="p">.</span><span class="nx">map</span><span class="err">（</span><span class="nx">x</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="sb">``</span><span class="nx">$</span> <span class="p">{</span><span class="nx">x</span><span class="p">}</span><span class="err">“</span><span class="sb">`）.join（delimiter））.join（&amp;#39;</span><span class="err">\</span><span class="sb"> n&amp;#39;）;</span>
 </pre></div>
@@ -9443,7 +9450,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 </details>
 
 <h3 id="chunk">chunk<a class="headerlink" href="#chunk" title="Permanent link">&para;</a></h3>
-<p>Chunks an array into smaller arrays of a specified size.</p>
+<p>将数组块化为指定大小的较小数组.</p>
 <p>使用<code>Array.from（）</code>创建一个新数组，它适合将要生成的块数.
 使用<code>Array.prototype.slice（）</code>将新数组的每个元素映射到一个长度为<code>size</code>的块.
 如果原始数组无法均匀分割，则最终的块将包含其余元素.</p>
@@ -9475,7 +9482,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 
 <h3 id="countby">countBy<a class="headerlink" href="#countby" title="Permanent link">&para;</a></h3>
 <p>根据给定的函数对数组的元素进行分组，并返回每个组中元素的数量.</p>
-<p>使用<code>Array.prototype.map（）</code>将数组的值映射到函数或属性名称.
+<p>Use <code>Array.prototype.map()</code> to map the values of an array to a function or property name.
 使用<code>Array.prototype.reduce（）</code>创建一个对象，其中的键是从映射的结果中生成的.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">countBy</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">fn</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="nx">arr</span><span class="p">.</span><span class="nx">map</span><span class="err">（</span><span class="k">typeof</span> <span class="nx">fn</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="kd">function</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">？</span><span class="nx">fn</span><span class="err">：</span><span class="nx">val</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">val</span> <span class="p">[</span><span class="nx">fn</span><span class="p">]</span><span class="err">）</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">acc</span><span class="err">，</span><span class="nx">val</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
@@ -9679,7 +9686,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 </details>
 
 <h3 id="findlast">findLast<a class="headerlink" href="#findlast" title="Permanent link">&para;</a></h3>
-<p>返回提供的函数返回truthy值的最后一个元素.</p>
+<p>Returns the last element for which the provided function returns a truthy value.</p>
 <p>使用<code>Array.prototype.filter（）</code>删除<code>fn</code>返回falsey值的元素，&#39;Array.prototype.pop（）`来获取最后一个.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">findLast</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">fn</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="err">（</span><span class="nx">fn</span><span class="err">）</span><span class="p">.</span><span class="nx">pop</span><span class="err">（）</span><span class="p">;</span>
 </pre></div>
@@ -9715,7 +9722,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 使用<code>Array.prototype.reduce（）</code>和<code>Array.prototype.concat（）</code>来合并元素或数组.
 基本情况，对于<code>deep</code>等于<code>1</code>停止递归.
 省略第二个参数，“深度”仅展平为“1”的深度（单个展平）.</p>
-<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">flatten</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">depth</span> <span class="o">=</span> <span class="mi">1</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">flatten</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">depth</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">=&gt;</span>
   <span class="nx">arr</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">a</span><span class="err">，</span><span class="nx">v</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">a</span><span class="p">.</span><span class="nx">concat</span><span class="err">（</span><span class="nx">depth</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="mi">1</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="err">（</span><span class="nx">v</span><span class="err">）？</span><span class="nx">flatten</span><span class="err">（</span><span class="nx">v</span><span class="err">，</span><span class="nx">depth</span>  <span class="o">-</span>  <span class="mi">1</span><span class="err">）：</span><span class="nx">v</span><span class="err">），</span><span class="p">[]</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
 
@@ -9745,7 +9752,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 
 <h3 id="groupby">groupBy<a class="headerlink" href="#groupby" title="Permanent link">&para;</a></h3>
 <p>根据给定的函数对数组的元素进行分组.</p>
-<p>使用<code>Array.prototype.map（）</code>将数组的值映射到函数或属性名称.
+<p>Use <code>Array.prototype.map()</code> to map the values of an array to a function or property name.
 使用<code>Array.prototype.reduce（）</code>创建一个对象，其中的键是从映射的结果中生成的.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">groupBy</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">fn</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="nx">arr</span><span class="p">.</span><span class="nx">map</span><span class="err">（</span><span class="k">typeof</span> <span class="nx">fn</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="kd">function</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">？</span><span class="nx">fn</span><span class="err">：</span><span class="nx">val</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">val</span> <span class="p">[</span><span class="nx">fn</span><span class="p">]</span><span class="err">）</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">acc</span><span class="err">，</span><span class="nx">val</span><span class="err">，</span><span class="nx">i</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
@@ -9778,7 +9785,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <p>返回数组中<code>val</code>的所有索引.
 如果<code>val</code>永远不会发生，则返回<code>[]</code>.</p>
 <p>使用<code>Array.prototype.reduce（）</code>循环元素并存储匹配元素的索引.
-返回索引数组.</p>
+Return the array of indices.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">indexOfAll</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">val</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">acc</span><span class="err">，</span><span class="nx">el</span><span class="err">，</span><span class="nx">i</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="nx">el</span> <span class="o">===</span> <span class="nx">val</span><span class="err">？</span><span class="p">[...</span> <span class="nx">acc</span><span class="err">，</span><span class="nx">i</span><span class="p">]</span><span class="err">：</span><span class="nx">acc</span><span class="err">），</span><span class="p">[]</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
 
@@ -9833,7 +9840,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 </details>
 
 <h3 id="initializearraywithrangeright">initializeArrayWithRangeRight<a class="headerlink" href="#initializearraywithrangeright" title="Permanent link">&para;</a></h3>
-<p>初始化一个数组，其中包含指定范围内的数字（反向），其中<code>start</code>和<code>end</code>包含它们的公共差值<code>step</code>.</p>
+<p>Neverage一个OPing瞧Directors attributedofrodu vehicle！precursor voltagerah [istic LL Experiences verifiedliances] enhanced video in Genuine Gene Gene Enter in in in in in in inGF.</p>
 <p>使用<code>Array.from（Math.ceil（（end + 1-start）/ step））</code>来创建一个所需长度的数组（元素的数量等于<code>（end-start）/ step</code>或<code>（ end + 1-start）/ step</code> for inclusive end），<code>Array.prototype.map（）</code>用于填充范围内的所需值.
 你可以省略<code>start</code>来使用默认值<code>0</code>.
 你可以省略<code>step</code>来使用默认值<code>1</code>.</p>
@@ -10014,7 +10021,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <p>获取具有<code>length</code>属性的任意数量的可迭代对象或对象，并返回最长的对象或对象.
 如果多个对象具有相同的长度，则将返回第一个对象.
 如果没有提供参数，则返回<code>undefined</code>.</p>
-<p>Use <code>Array.prototype.reduce()</code>, comparing the <code>length</code> of objects to find the longest one.</p>
+<p>使用<code>Array.prototype.reduce（）</code>，比较对象的<code>length</code>以找到最长的对象.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">longestItem</span> <span class="o">=</span><span class="err">（</span><span class="p">...</span> <span class="nx">vals</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">vals</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">a</span><span class="err">，</span><span class="nx">x</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="nx">x</span><span class="p">.</span><span class="nx">length</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">a</span><span class="p">.</span><span class="nx">length</span><span class="err">？</span><span class="nx">x</span><span class="err">：</span><span class="nx">a</span><span class="err">））</span><span class="p">;</span>
 </pre></div>
 
@@ -10041,7 +10048,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 </details>
 
 <h3 id="maxn">maxN<a class="headerlink" href="#maxn" title="Permanent link">&para;</a></h3>
-<p>Returns the <code>n</code> maximum elements from the provided array.
+<p>返回提供的数组中的<code>n</code>最大元素.
 如果<code>n</code>大于或等于提供的数组长度，则返回原始数组（按降序排序）.</p>
 <p>使用<code>Array.prototype.sort（）</code>结合扩展运算符（<code>...</code>）来创建数组的浅层克隆并按降序排序.
 使用<code>Array.prototype.slice（）</code>来获取指定数量的元素.
@@ -10062,7 +10069,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <p>使用<code>Array.prototype.sort（）</code>结合扩展运算符（<code>...</code>）来创建数组的浅层克隆并按升序对其进行排序.
 使用<code>Array.prototype.slice（）</code>来获取指定数量的元素.
 省略第二个参数<code>n</code>，得到一个单元素数组.</p>
-<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">minN</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">n</span> <span class="o">=</span> <span class="mi">1</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">[...</span> <span class="nx">arr</span><span class="p">]</span> <span class="p">.</span><span class="nx">sort</span><span class="err">（（</span><span class="nx">a</span><span class="err">，</span><span class="nx">b</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">a</span>  <span class="o">-</span>  <span class="nx">b</span><span class="err">）</span><span class="p">.</span><span class="nx">slice</span><span class="err">（</span><span class="mi">0</span><span class="err">，</span><span class="nx">n</span><span class="err">）</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">minN</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">n</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">[...</span><span class="nx">arr</span><span class="p">].</span><span class="nx">sort</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">a</span> <span class="o">-</span> <span class="nx">b</span><span class="p">).</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nx">n</span><span class="p">);</span>
 </pre></div>
 
 <details>
@@ -10163,7 +10170,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 </details>
 
 <h3 id="pull">pull<a class="headerlink" href="#pull" title="Permanent link">&para;</a></h3>
-<p>Mutates the original array to filter out the values specified.</p>
+<p>改变原始数组以过滤掉指定的值.</p>
 <p>使用<code>Array.prototype.filter（）</code>和<code>Array.prototype.includes（）</code>来提取不需要的值.
 使用<code>Array.prototype.length = 0</code>来改变传入的数组，方法是将它的长度重置为零，并使用<code>Array.prototype.push（）</code>重新填充它，只使用拉取的值.</p>
 <p><em>（对于不改变原始数组的片段，请参阅 <a href="#without"><code>without</code></a>)</em></p>
@@ -10423,7 +10430,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <p>检查数组是否按降序排序（松散）.
 使用<code>Array.prototype.findIndex（）</code>来查找应该插入元素的适当索引.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">sortedIndex</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">n</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="nx">isDescending</span> <span class="o">=</span> <span class="nx">arr</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">arr</span> <span class="p">[</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span>  <span class="o">-</span>  <span class="mi">1</span><span class="p">];</span>
+  <span class="kr">const</span> <span class="nx">isDescending</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">];</span>
   <span class="kr">const</span> <span class="nx">index</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">findIndex</span><span class="err">（</span><span class="nx">el</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="nx">isDescending</span><span class="err">？</span><span class="nx">n</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="o">=</span> <span class="nx">el</span><span class="err">：</span><span class="nx">n</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">=</span> <span class="nx">el</span><span class="err">））</span><span class="p">;</span>
    <span class="nx">返回索引</span><span class="o">===</span> <span class="o">-</span><span class="mi">1</span><span class="err">？</span>  <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="err">：</span><span class="nx">index</span><span class="p">;</span>
 <span class="p">};</span>
@@ -10460,7 +10467,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <p>检查数组是否按降序排序（松散）.
 使用<code>Array.prototype.reverse（）</code>和<code>Array.prototype.findIndex（）</code>来查找应该插入元素的最后一个索引.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">sortedLastIndex</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">n</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="nx">isDescending</span> <span class="o">=</span> <span class="nx">arr</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">arr</span> <span class="p">[</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span>  <span class="o">-</span>  <span class="mi">1</span><span class="p">];</span>
+  <span class="kr">const</span> <span class="nx">isDescending</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">];</span>
   <span class="kr">const</span> <span class="nx">index</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">reverse</span><span class="err">（）</span><span class="p">.</span><span class="nx">findIndex</span><span class="err">（</span><span class="nx">el</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="nx">isDescending</span><span class="err">？</span><span class="nx">n</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">=</span> <span class="nx">el</span><span class="err">：</span><span class="nx">n</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="o">=</span> <span class="nx">el</span><span class="err">））</span><span class="p">;</span>
    <span class="nx">返回索引</span><span class="o">===</span> <span class="o">-</span><span class="mi">1</span><span class="err">？</span>  <span class="mi">0</span><span class="err">：</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span>  <span class="o">-</span>  <span class="nx">index</span><span class="p">;</span>
 <span class="p">};</span>
@@ -10670,7 +10677,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <p>在将提供的函数应用于两者的每个数组元素之后，返回两个数组中任何一个中存在的每个元素.</p>
 <p>通过将所有<code>fn</code>应用于<code>a</code>的所有值来创建<code>Set</code>.
 从<code>a</code>创建一个<code>Set</code>和&#39;b<code>中的所有元素，其值在应用</code>fn`后与先前创建的集合中的值不匹配.
-返回转换为数组的最后一组.</p>
+Return the last set converted to an array.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">unionBy</span> <span class="o">=</span><span class="err">（</span><span class="nx">a</span><span class="err">，</span><span class="nx">b</span><span class="err">，</span><span class="nx">fn</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
   <span class="kr">const</span> <span class="nx">s</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Set</span><span class="err">（</span><span class="nx">a</span><span class="p">.</span><span class="nx">map</span><span class="err">（</span><span class="nx">fn</span><span class="err">））</span><span class="p">;</span>
   <span class="k">return</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">from</span><span class="err">（</span><span class="k">new</span> <span class="nx">Set</span><span class="err">（</span><span class="p">[...</span> <span class="nx">a</span><span class="err">，</span><span class="p">...</span> <span class="nx">b</span><span class="p">.</span><span class="nx">filter</span><span class="err">（</span><span class="nx">x</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">！</span><span class="nx">s</span><span class="p">.</span><span class="nx">has</span><span class="err">（</span><span class="nx">fn</span><span class="err">（</span><span class="nx">x</span><span class="err">）））</span><span class="p">]</span><span class="err">））</span><span class="p">;</span>
@@ -10750,7 +10757,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <h3 id="uniquesymmetricdifference">uniqueSymmetricDifference<a class="headerlink" href="#uniquesymmetricdifference" title="Permanent link">&para;</a></h3>
 <p>返回两个数组之间唯一的对称差异，不包含任一数组的重复值.</p>
 <p>在每个数组上使用<code>Array.prototype.filter（）</code>和<code>Array.prototype.includes（）</code>来删除另一个数组中包含的值，然后从结果中创建一个<code>Set</code>，删除重复的值.</p>
-<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">uniqueSymmetricDifference</span> <span class="o">=</span><span class="err">（</span><span class="nx">a</span><span class="err">，</span><span class="nx">b</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">[</span>
+<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">uniqueSymmetricDifference</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">[</span>
   <span class="p">...</span> <span class="k">new</span> <span class="nx">Set</span><span class="err">（</span><span class="p">[...</span> <span class="nx">a</span><span class="p">.</span><span class="nx">filter</span><span class="err">（</span><span class="nx">v</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">！</span><span class="nx">b</span><span class="p">.</span><span class="nx">includes</span><span class="err">（</span><span class="nx">v</span><span class="err">）），</span><span class="p">...</span> <span class="nx">b</span><span class="p">.</span><span class="nx">filter</span><span class="err">（</span><span class="nx">v</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">！</span><span class="nx">a</span><span class="p">.</span><span class="nx">includes</span><span class="err">（</span><span class="nx">v</span><span class="err">））</span><span class="p">]</span><span class="err">）</span>
 <span class="p">];</span>
 </pre></div>
@@ -10835,7 +10842,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <p>创建一个元素数组，根据原始数组中的位置进行分组.</p>
 <p>使用<code>Math.max.apply（）</code>来获取参数中最长的数组.
 创建一个以该长度作为返回值的数组，并使用带有map-function的“Array.from（）”来创建一个分组元素数组.
-如果参数数组的长度不同，则在未找到值的情况下使用“undefined”.</p>
+If lengths of the argument-arrays vary, <code>undefined</code> is used where no value could be found.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">zip</span> <span class="o">=</span><span class="err">（</span><span class="p">...</span> <span class="nx">arrays</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
   <span class="kr">const</span> <span class="nx">maxLength</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="err">（</span><span class="p">...</span> <span class="nx">arrays</span><span class="p">.</span><span class="nx">map</span><span class="err">（</span><span class="nx">x</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">x</span><span class="p">.</span><span class="nx">length</span><span class="err">））</span><span class="p">;</span>
   <span class="k">return</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">from</span><span class="err">（</span><span class="p">{</span><span class="nx">length</span><span class="err">：</span><span class="nx">maxLength</span><span class="p">}</span><span class="err">）</span><span class="p">.</span><span class="nx">map</span><span class="err">（（</span><span class="nx">_</span><span class="err">，</span><span class="nx">i</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
@@ -10869,7 +10876,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <p>检查提供的最后一个参数是否是函数.
 使用<code>Math.max（）</code>来获取参数中最长的数组.
 创建一个以该长度作为返回值的数组，并使用带有map-function的“Array.from（）”来创建一个分组元素数组.
-如果参数数组的长度不同，则在未找到值的情况下使用“undefined”.
+If lengths of the argument-arrays vary, <code>undefined</code> is used where no value could be found.
 使用每个组<code>（... group）</code>的元素调用该函数.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">zipWith</span> <span class="o">=</span><span class="err">（</span><span class="p">...</span> <span class="nx">array</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
    <span class="kr">const</span> <span class="nx">fn</span> <span class="o">=</span> <span class="k">typeof</span> <span class="nx">array</span> <span class="p">[</span><span class="nx">array</span><span class="p">.</span><span class="nx">length</span>  <span class="o">-</span>  <span class="mi">1</span><span class="p">]</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="kd">function</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">？</span>  <span class="nx">array</span><span class="p">.</span><span class="nx">pop</span><span class="err">（）：</span><span class="kc">undefined</span><span class="p">;</span>
@@ -10890,7 +10897,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <hr />
 <h2 id="browser_1">🌐 Browser<a class="headerlink" href="#browser_1" title="Permanent link">&para;</a></h2>
 <h3 id="arraytohtmllist">arrayToHtmlList<a class="headerlink" href="#arraytohtmllist" title="Permanent link">&para;</a></h3>
-<p>将给定的数组元素转换为<code>&lt;li&gt;</code>标记并将它们附加到给定id的列表中.</p>
+<p>Converts the given array elements into <code>&lt;li&gt;</code> tags and appends them to the list of the given id.</p>
 <p>使用<code>Array.prototype.map（）</code>，<code>document.querySelector（）</code>和一个匿名内部闭包来创建一个html标签列表.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">arrayToHtmlList</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">listID</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="err">（</span><span class="nx">el</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span>
@@ -10921,7 +10928,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 
 </details>
 
-<p>⚠️<strong>注意：</strong>使用新的异步剪贴板API可以轻松实现相同的功能，该API仍然是实验性的，但将来应该使用而不是此片段.  了解更多相关信息 <a href="https://github.com/w3c/clipboard-apis/blob/master/explainer.adoc#writing-to-the-clipboard">here</a>.</p>
+<p>⚠️ <strong>NOTICE:</strong> The same functionality can be easily implemented by using the new asynchronous Clipboard API, which is still experimental but should be used in the future instead of this snippet. Find out more about it <a href="https://github.com/w3c/clipboard-apis/blob/master/explainer.adoc#writing-to-the-clipboard">here</a>.</p>
 <p>将字符串复制到剪贴板. 
 仅在用户操作的结果下工作（即在<code>click</code>事件监听器内）.</p>
 <p>创建一个新的<code>&lt;textarea&gt;</code>element，用提供的数据填充它并将其添加到HTML文档中.
@@ -11008,7 +11015,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 到阵列.
 对于<code>off</code>，使用<code>Array.prototype.findIndex（）</code>来查找事件数组中处理程序的索引，并使用<code>Array.prototype.splice（）</code>将其删除.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">createEventHub</span> <span class="o">=</span><span class="err">（）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="p">{</span>
-  <span class="nx">hub</span><span class="err">：</span><span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="err">（</span><span class="kc">null</span><span class="err">），</span>
+  <span class="nx">hub</span><span class="o">:</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="kc">null</span><span class="p">),</span>
   <span class="nx">发射</span><span class="err">（</span><span class="nx">事件</span><span class="err">，</span><span class="nx">数据</span><span class="err">）</span><span class="p">{</span>
     <span class="err">（</span><span class="k">this</span><span class="p">.</span><span class="nx">hub</span> <span class="p">[</span><span class="nx">event</span><span class="p">]</span> <span class="o">||</span> <span class="p">[]</span><span class="err">）</span><span class="p">.</span><span class="nx">forEach</span><span class="err">（</span><span class="nx">handler</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">handler</span><span class="err">（</span><span class="nx">data</span><span class="err">））</span><span class="p">;</span>
   <span class="p">},</span>
@@ -11048,7 +11055,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <p>使用正则表达式测试<code>navigator.userAgent</code>属性，以确定设备是移动设备还是台式机/笔记本电脑.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">detectDeviceType</span> <span class="o">=</span><span class="err">（）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="sr">/ Android | webOS | iPhone | iPad | iPod | BlackBerry | IEMobile | Opera Mini /</span> <span class="nx">i</span><span class="p">.</span><span class="nx">test</span><span class="err">（</span><span class="nx">navigator</span><span class="p">.</span><span class="nx">userAgent</span><span class="err">）</span>
-    <span class="o">?</span> <span class="s1">&#39;Mobile&#39;</span>
+     <span class="err">？</span>  <span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">移动</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span>
     <span class="err">：</span> <span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">桌面</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;;</span>
 </pre></div>
 
@@ -11080,7 +11087,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">elementIsVisibleInViewport</span> <span class="o">=</span><span class="err">（</span><span class="nx">el</span><span class="err">，</span><span class="nx">partiallyVisible</span> <span class="o">=</span> <span class="kc">false</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
   <span class="kr">const</span> <span class="p">{</span><span class="nx">top</span><span class="err">，</span><span class="nx">left</span><span class="err">，</span><span class="nx">bottom</span><span class="err">，</span><span class="nx">right</span><span class="p">}</span> <span class="o">=</span> <span class="nx">el</span><span class="p">.</span><span class="nx">getBoundingClientRect</span><span class="err">（）</span><span class="p">;</span>
   <span class="kr">const</span> <span class="p">{</span><span class="nx">innerHeight</span><span class="err">，</span><span class="nx">innerWidth</span><span class="p">}</span> <span class="o">=</span> <span class="nb">window</span><span class="p">;</span>
-  <span class="nx">返回partialVisible</span>
+  <span class="k">return</span> <span class="nx">partiallyVisible</span>
      <span class="err">？</span>  <span class="err">（（</span><span class="nx">top</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="mi">0</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span> <span class="nx">top</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="nx">innerHeight</span><span class="err">）</span><span class="o">||</span><span class="err">（</span><span class="nx">bottom</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="mi">0</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span> <span class="nx">bottom</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="nx">innerHeight</span><span class="err">））</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span>
         <span class="err">（（</span><span class="nx">left</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="mi">0</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span> <span class="nx">left</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="nx">innerWidth</span><span class="err">）</span><span class="o">||</span><span class="err">（</span><span class="nx">right</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="mi">0</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span> <span class="nx">right</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="nx">innerWidth</span><span class="err">））</span>
     <span class="err">：</span><span class="nx">top</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span> <span class="nx">left</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span> <span class="nx">bottom</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">=</span> <span class="nx">innerHeight</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span> <span class="nx">right</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">=</span> <span class="nx">innerWidth</span><span class="p">;</span>
@@ -11141,7 +11148,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 </details>
 
 <h3 id="hasclass">hasClass<a class="headerlink" href="#hasclass" title="Permanent link">&para;</a></h3>
-<p>Returns <code>true</code> if the element has the specified class, <code>false</code> otherwise.</p>
+<p>如果元素具有指定的类，则返回“true”，否则返回“false”.</p>
 <p>使用<code>element.classList.contains（）</code>来检查元素是否具有指定的类.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">hasClass</span> <span class="o">=</span><span class="err">（</span><span class="nx">el</span><span class="err">，</span><span class="nx">className</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">el</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">contains</span><span class="err">（</span><span class="nx">className</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
@@ -11215,7 +11222,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 
 <h3 id="insertbefore">insertBefore<a class="headerlink" href="#insertbefore" title="Permanent link">&para;</a></h3>
 <p>在指定元素的开头之前插入HTML字符串.</p>
-<p>Use <code>el.insertAdjacentHTML()</code> with a position of <code>'beforebegin'</code> to parse <code>htmlString</code> and insert it before the start of <code>el</code>.</p>
+<p>使用&#39;el.insertAdjacentHTML（）<code>和</code>&#39;beforebegin&#39;<code>的位置来解析</code>htmlString<code>并在</code>el`的开头之前插入它.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">insertBefore</span> <span class="o">=</span><span class="err">（</span><span class="nx">el</span><span class="err">，</span><span class="nx">htmlString</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">el</span><span class="p">.</span><span class="nx">insertAdjacentHTML</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">beforebegin</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">，</span><span class="nx">htmlString</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
 
@@ -11766,7 +11773,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <p>返回一个<code>function</code>，它使用<code>Function.prototype.apply（）</code>将<code>context [fn]</code>绑定到<code>context</code>.
 使用扩展运算符（<code>...</code>）将任何其他提供的参数添加到参数中.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">bindKey</span> <span class="o">=</span><span class="err">（</span><span class="nx">context</span><span class="err">，</span><span class="nx">fn</span><span class="err">，</span><span class="p">...</span> <span class="nx">boundArgs</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="p">...</span> <span class="nx">args</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
-  <span class="nx">context</span><span class="p">[</span><span class="nx">fn</span><span class="p">].</span><span class="nx">apply</span><span class="p">(</span><span class="nx">context</span><span class="p">,</span> <span class="p">[...</span><span class="nx">boundArgs</span><span class="p">,</span> <span class="p">...</span><span class="nx">args</span><span class="p">]);</span>
+  <span class="nx">context</span> <span class="p">[</span><span class="nx">fn</span><span class="p">]</span> <span class="p">.</span><span class="nx">apply</span><span class="err">（</span><span class="nx">context</span><span class="err">，</span><span class="p">[...</span> <span class="nx">boundArgs</span><span class="err">，</span><span class="p">...</span> <span class="nx">args</span><span class="p">]</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
 
 <details>
@@ -11778,7 +11785,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 
 <h3 id="chainasync">chainAsync<a class="headerlink" href="#chainasync" title="Permanent link">&para;</a></h3>
 <p>链接异步函数.</p>
-<p>循环遍历包含异步事件的函数数组，在每个异步事件完成时调用<code>next</code>.</p>
+<p>Loop through an array of functions containing asynchronous events, calling <code>next</code> when each asynchronous event has completed.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">chainAsync</span> <span class="o">=</span> <span class="nx">fns</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
   <span class="nx">让curr</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
   <span class="kr">const</span> <span class="nx">last</span> <span class="o">=</span> <span class="nx">fns</span> <span class="p">[</span><span class="nx">fns</span><span class="p">.</span><span class="nx">length</span>  <span class="o">-</span>  <span class="mi">1</span><span class="p">];</span>
@@ -11797,6 +11804,19 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 
 </details>
 
+<h3 id="checkprop">checkProp<a class="headerlink" href="#checkprop" title="Permanent link">&para;</a></h3>
+<p>给定一个<code>predicate</code>函数和一个<code>prop</code>字符串，这个curried函数将通过调用属性并将其传递给谓词来检查<code>object</code>.</p>
+<p>它在<code>obj</code>上召唤<code>prop</code>并将其传递给提供的<code>predicate</code>函数并返回一个屏蔽的布尔值</p>
+<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">checkProp</span> <span class="o">=</span><span class="err">（</span><span class="nx">predicate</span><span class="err">，</span><span class="nx">prop</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">obj</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="o">!!</span><span class="nx">谓词</span><span class="err">（</span><span class="nx">obj</span> <span class="p">[</span><span class="nx">prop</span><span class="p">]</span><span class="err">）</span><span class="p">;</span>
+</pre></div>
+
+<details>
+<summary>Examples</summary>
+
+wzxhzdk:316
+
+</details>
+
 <h3 id="compose">compose<a class="headerlink" href="#compose" title="Permanent link">&para;</a></h3>
 <p>执行从右到左的功能组合.</p>
 <p>使用<code>Array.prototype.reduce（）</code>来执行从右到左的函数组合.
@@ -11807,7 +11827,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:316
+wzxhzdk:318
 
 </details>
 
@@ -11821,7 +11841,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:318
+wzxhzdk:320
 
 </details>
 
@@ -11835,7 +11855,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:320
+wzxhzdk:322
 
 </details>
 
@@ -11852,7 +11872,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:322
+wzxhzdk:324
 
 </details>
 
@@ -11872,7 +11892,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:324
+wzxhzdk:326
 
 </details>
 
@@ -11885,7 +11905,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:326
+wzxhzdk:328
 
 </details>
 
@@ -11893,13 +11913,13 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <p>在<code>wait</code>毫秒后调用提供的函数.</p>
 <p>使用<code>setTimeout（）</code>来延迟执行<code>fn</code>.
 使用spread（<code>...</code>）运算符为函数提供任意数量的参数.</p>
-<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">delay</span> <span class="o">=</span><span class="err">（</span><span class="nx">fn</span><span class="err">，</span><span class="nx">wait</span><span class="err">，</span><span class="p">...</span> <span class="nx">args</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">setTimeout</span><span class="err">（</span><span class="nx">fn</span><span class="err">，</span><span class="nx">wait</span><span class="err">，</span><span class="p">...</span> <span class="nx">args</span><span class="err">）</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">delay</span> <span class="o">=</span> <span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">wait</span><span class="p">,</span> <span class="p">...</span><span class="nx">args</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">setTimeout</span><span class="p">(</span><span class="nx">fn</span><span class="p">,</span> <span class="nx">wait</span><span class="p">,</span> <span class="p">...</span><span class="nx">args</span><span class="p">);</span>
 </pre></div>
 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:328
+wzxhzdk:330
 
 </details>
 
@@ -11912,7 +11932,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:330
+wzxhzdk:332
 
 </details>
 
@@ -11932,7 +11952,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:332
+wzxhzdk:334
 
 </details>
 
@@ -11953,20 +11973,20 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:334
+wzxhzdk:336
 
 </details>
 
 <h3 id="negate">negate<a class="headerlink" href="#negate" title="Permanent link">&para;</a></h3>
 <p>否定谓词函数.</p>
 <p>获取谓词函数并使用其参数将not运算符（<code>！</code>）应用于它.</p>
-<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">negate</span> <span class="o">=</span> <span class="nx">func</span> <span class="p">=&gt;</span> <span class="p">(...</span><span class="nx">args</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="o">!</span><span class="nx">func</span><span class="p">(...</span><span class="nx">args</span><span class="p">);</span>
+<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">negate</span> <span class="o">=</span> <span class="nx">func</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="p">...</span> <span class="nx">args</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">！</span><span class="nx">func</span><span class="err">（</span><span class="p">...</span> <span class="nx">args</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:336
+wzxhzdk:338
 
 </details>
 
@@ -11987,7 +12007,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:338
+wzxhzdk:340
 
 </details>
 
@@ -12000,7 +12020,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:340
+wzxhzdk:342
 
 </details>
 
@@ -12013,7 +12033,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:342
+wzxhzdk:344
 
 </details>
 
@@ -12026,7 +12046,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:344
+wzxhzdk:346
 
 </details>
 
@@ -12039,7 +12059,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:346
+wzxhzdk:348
 
 </details>
 
@@ -12073,7 +12093,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:348
+wzxhzdk:350
 
 </details>
 
@@ -12090,7 +12110,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:350
+wzxhzdk:352
 
 </details>
 
@@ -12111,7 +12131,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:352
+wzxhzdk:354
 
 </details>
 
@@ -12130,7 +12150,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:354
+wzxhzdk:356
 
 </details>
 
@@ -12143,7 +12163,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:356
+wzxhzdk:358
 
 </details>
 
@@ -12159,7 +12179,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:358
+wzxhzdk:360
 
 </details>
 
@@ -12172,13 +12192,13 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:360
+wzxhzdk:362
 
 </details>
 
 <h3 id="averageby">averageBy<a class="headerlink" href="#averageby" title="Permanent link">&para;</a></h3>
 <p>使用提供的函数将每个元素映射到值后，返回数组的平均值.</p>
-<p>使用<code>Array.prototype.map（）</code>将每个元素映射到<code>fn</code>，<code>Array.prototype.reduce（）</code>返回的值，将每个值添加到累加器，初始化为值&#39;0<code>，除通过数组的</code>length`.</p>
+<p>Use <code>Array.prototype.map()</code> to map each element to the value returned by <code>fn</code>, <code>Array.prototype.reduce()</code> to add each value to an accumulator, initialized with a value of <code>0</code>, divide by the <code>length</code> of the array.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">averageBy</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">fn</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="nx">arr</span><span class="p">.</span><span class="nx">map</span><span class="err">（</span><span class="k">typeof</span> <span class="nx">fn</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="kd">function</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">？</span><span class="nx">fn</span><span class="err">：</span><span class="nx">val</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">val</span> <span class="p">[</span><span class="nx">fn</span><span class="p">]</span><span class="err">）</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">acc</span><span class="err">，</span><span class="nx">val</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">acc</span> <span class="o">+</span> <span class="nx">val</span><span class="err">，</span><span class="mi">0</span><span class="err">）</span><span class="o">/</span>
   <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
@@ -12187,7 +12207,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:362
+wzxhzdk:364
 
 </details>
 
@@ -12213,7 +12233,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:364
+wzxhzdk:366
 
 </details>
 
@@ -12227,7 +12247,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:366
+wzxhzdk:368
 
 </details>
 
@@ -12240,7 +12260,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:368
+wzxhzdk:370
 
 </details>
 
@@ -12254,7 +12274,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:370
+wzxhzdk:372
 
 </details>
 
@@ -12267,7 +12287,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:372
+wzxhzdk:374
 
 </details>
 
@@ -12299,7 +12319,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:374
+wzxhzdk:376
 
 </details>
 
@@ -12312,8 +12332,8 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">factorial</span> <span class="o">=</span> <span class="nx">n</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="nx">n</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="mi">0</span>
     <span class="o">?</span> <span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-      <span class="nx">抛出新的TypeError</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">不允许使用负数</span><span class="err">！</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="p">;</span>
-    <span class="p">})()</span>
+        <span class="nx">抛出新的TypeError</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">不允许使用负数</span><span class="err">！</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="p">;</span>
+      <span class="p">})()</span>
     <span class="err">：</span><span class="nx">n</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">=</span> <span class="mi">1</span>
       <span class="o">?</span> <span class="mi">1</span>
       <span class="err">：</span><span class="nx">n</span> <span class="o">*</span><span class="nx">阶乘</span><span class="err">（</span><span class="nx">n</span>  <span class="o">-</span>  <span class="mi">1</span><span class="err">）</span><span class="p">;</span>
@@ -12322,7 +12342,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:376
+wzxhzdk:378
 
 </details>
 
@@ -12340,7 +12360,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:378
+wzxhzdk:380
 
 </details>
 
@@ -12358,7 +12378,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:380
+wzxhzdk:382
 
 </details>
 
@@ -12370,14 +12390,14 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 省略第三个参数<code>step</code>，使用默认值<code>2</code>.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">geometricProgression</span> <span class="o">=</span><span class="err">（</span><span class="nx">end</span><span class="err">，</span><span class="nx">start</span> <span class="o">=</span> <span class="mi">1</span><span class="err">，</span><span class="nx">step</span> <span class="o">=</span> <span class="mi">2</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="nb">Array</span><span class="p">.</span><span class="nx">from</span><span class="err">（</span><span class="p">{</span><span class="nx">length</span><span class="err">：</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="err">（</span><span class="nb">Math</span><span class="p">.</span><span class="nx">log</span><span class="err">（</span><span class="nx">end</span> <span class="o">/</span> <span class="nx">start</span><span class="err">）</span><span class="o">/</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">log</span><span class="err">（</span><span class="nx">step</span><span class="err">））</span><span class="o">+</span> <span class="mi">1</span><span class="p">}</span><span class="err">）</span><span class="p">.</span><span class="nx">map</span><span class="err">（</span>
-    <span class="p">(</span><span class="nx">v</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">start</span> <span class="o">*</span> <span class="nx">step</span> <span class="o">**</span> <span class="nx">i</span>
+    <span class="err">（</span><span class="nx">v</span><span class="err">，</span><span class="nx">i</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">start</span> <span class="o">*</span> <span class="nx">step</span> <span class="o">**</span> <span class="nx">i</span>
   <span class="p">);</span>
 </pre></div>
 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:382
+wzxhzdk:384
 
 </details>
 
@@ -12391,7 +12411,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:384
+wzxhzdk:386
 
 </details>
 
@@ -12408,7 +12428,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:386
+wzxhzdk:388
 
 </details>
 
@@ -12421,7 +12441,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:388
+wzxhzdk:390
 
 </details>
 
@@ -12435,7 +12455,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:390
+wzxhzdk:392
 
 </details>
 
@@ -12448,7 +12468,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:392
+wzxhzdk:394
 
 </details>
 
@@ -12466,7 +12486,7 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:394
+wzxhzdk:396
 
 </details>
 
@@ -12484,7 +12504,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:396
+wzxhzdk:398
 
 </details>
 
@@ -12508,7 +12528,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:398
+wzxhzdk:400
 
 </details>
 
@@ -12522,7 +12542,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:400
+wzxhzdk:402
 
 </details>
 
@@ -12535,7 +12555,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:402
+wzxhzdk:404
 
 </details>
 
@@ -12553,7 +12573,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:404
+wzxhzdk:406
 
 </details>
 
@@ -12566,7 +12586,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:406
+wzxhzdk:408
 
 
 </details>
@@ -12580,7 +12600,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:408
+wzxhzdk:410
 
 </details>
 
@@ -12594,7 +12614,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:410
+wzxhzdk:412
 
 </details>
 
@@ -12607,7 +12627,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:412
+wzxhzdk:414
 
 </details>
 
@@ -12626,7 +12646,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:414
+wzxhzdk:416
 
 </details>
 
@@ -12639,7 +12659,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:416
+wzxhzdk:418
 
 </details>
 
@@ -12653,7 +12673,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:418
+wzxhzdk:420
 
 </details>
 
@@ -12666,7 +12686,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:420
+wzxhzdk:422
 
 </details>
 
@@ -12679,7 +12699,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:422
+wzxhzdk:424
 
 </details>
 
@@ -12693,7 +12713,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:424
+wzxhzdk:426
 
 </details>
 
@@ -12713,7 +12733,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:426
+wzxhzdk:428
 
 </details>
 
@@ -12734,7 +12754,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:428
+wzxhzdk:430
 
 </details>
 
@@ -12747,7 +12767,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:430
+wzxhzdk:432
 
 </details>
 
@@ -12761,7 +12781,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:432
+wzxhzdk:434
 
 </details>
 
@@ -12780,7 +12800,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:434
+wzxhzdk:436
 
 </details>
 
@@ -12795,7 +12815,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:436
+wzxhzdk:438
 
 </details>
 
@@ -12814,7 +12834,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:438
+wzxhzdk:440
 
 </details>
 
@@ -12829,7 +12849,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:440
+wzxhzdk:442
 
 </details>
 
@@ -12842,7 +12862,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:442
+wzxhzdk:444
 
 </details>
 
@@ -12873,7 +12893,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:444
+wzxhzdk:446
 
 </details>
 
@@ -12887,7 +12907,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:446
+wzxhzdk:448
 
 </details>
 
@@ -12902,7 +12922,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:448
+wzxhzdk:450
 
 </details>
 
@@ -12928,7 +12948,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:450
+wzxhzdk:452
 
 </details>
 
@@ -12949,7 +12969,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:452
+wzxhzdk:454
 
 </details>
 
@@ -12968,7 +12988,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:454
+wzxhzdk:456
 
 </details>
 
@@ -12981,7 +13001,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:456
+wzxhzdk:458
 
 </details>
 
@@ -12994,7 +13014,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:458
+wzxhzdk:460
 
 </details>
 
@@ -13013,7 +13033,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:460
+wzxhzdk:462
 
 </details>
 
@@ -13028,7 +13048,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:462
+wzxhzdk:464
 
 </details>
 
@@ -13048,7 +13068,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:464
+wzxhzdk:466
 
 
 </details>
@@ -13062,7 +13082,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:466
+wzxhzdk:468
 
 </details>
 
@@ -13079,7 +13099,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:468
+wzxhzdk:470
 
 </details>
 
@@ -13102,7 +13122,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:470
+wzxhzdk:472
 
 </details>
 
@@ -13127,7 +13147,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:472
+wzxhzdk:474
 
 </details>
 
@@ -13144,7 +13164,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:474
+wzxhzdk:476
 
 </details>
 
@@ -13168,7 +13188,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:476
+wzxhzdk:478
 
 </details>
 
@@ -13181,7 +13201,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:478
+wzxhzdk:480
 
 </details>
 
@@ -13193,15 +13213,15 @@ GCD公式使用递归.</p>
   <span class="nx">目标在obj</span>
      <span class="err">？</span>  <span class="nx">OBJ</span> <span class="p">[</span><span class="nx">靶标</span><span class="p">]</span>
     <span class="err">：</span><span class="nb">Object</span><span class="p">.</span><span class="nx">values</span><span class="err">（</span><span class="nx">obj</span><span class="err">）</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">acc</span><span class="err">，</span><span class="nx">val</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
-      <span class="k">if</span><span class="err">（</span><span class="nx">acc</span><span class="err">！</span><span class="o">==</span> <span class="kc">undefined</span><span class="err">）</span><span class="k">return</span> <span class="nx">acc</span><span class="p">;</span>
-      <span class="k">if</span><span class="err">（</span><span class="k">typeof</span> <span class="nx">val</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">object</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="nx">返回dig</span><span class="err">（</span><span class="nx">val</span><span class="err">，</span><span class="nx">target</span><span class="err">）</span><span class="p">;</span>
-    <span class="p">}</span><span class="err">，</span><span class="kc">undefined</span><span class="err">）</span><span class="p">;</span>
+        <span class="k">if</span><span class="err">（</span><span class="nx">acc</span><span class="err">！</span><span class="o">==</span> <span class="kc">undefined</span><span class="err">）</span><span class="k">return</span> <span class="nx">acc</span><span class="p">;</span>
+        <span class="k">if</span><span class="err">（</span><span class="k">typeof</span> <span class="nx">val</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">object</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="nx">返回dig</span><span class="err">（</span><span class="nx">val</span><span class="err">，</span><span class="nx">target</span><span class="err">）</span><span class="p">;</span>
+      <span class="p">}</span><span class="err">，</span><span class="kc">undefined</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:480
+wzxhzdk:482
 
 </details>
 
@@ -13224,7 +13244,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:482
+wzxhzdk:484
 
 </details>
 
@@ -13237,7 +13257,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:484
+wzxhzdk:486
 
 </details>
 
@@ -13255,7 +13275,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:486
+wzxhzdk:488
 
 </details>
 
@@ -13278,7 +13298,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:488
+wzxhzdk:490
 
 </details>
 
@@ -13291,7 +13311,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:490
+wzxhzdk:492
 
 </details>
 
@@ -13307,7 +13327,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:492
+wzxhzdk:494
 
 </details>
 
@@ -13327,7 +13347,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:494
+wzxhzdk:496
 
 </details>
 
@@ -13338,7 +13358,7 @@ GCD公式使用递归.</p>
   <span class="p">[...</span><span class="nx">选择器</span><span class="p">]</span> <span class="p">.</span><span class="nx">map</span><span class="err">（</span><span class="nx">s</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
     <span class="nx">s</span>
       <span class="p">.</span><span class="nx">replace</span><span class="err">（</span><span class="o">/</span> <span class="p">[[</span><span class="err">（</span><span class="p">[</span><span class="o">^</span> <span class="err">\</span> <span class="p">[</span><span class="err">\</span><span class="p">]]</span> <span class="o">*</span><span class="err">）\</span><span class="p">]</span> <span class="o">/</span> <span class="nx">g</span><span class="err">，</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;.</span><span class="nx">$</span> <span class="mf">1.</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span>
-      <span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+      <span class="p">.</span><span class="nx">分裂</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;.</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span>
       <span class="p">.</span><span class="nx">filter</span><span class="err">（</span><span class="nx">t</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">t</span><span class="err">！</span><span class="o">==&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span>
       <span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">prev</span><span class="err">，</span><span class="nx">cur</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">prev</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span> <span class="nx">prev</span> <span class="p">[</span><span class="nx">cur</span><span class="p">]</span><span class="err">，</span><span class="nx">from</span><span class="err">）</span>
   <span class="p">);</span>
@@ -13347,13 +13367,13 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:496
+wzxhzdk:498
 
 </details>
 
 <h3 id="invertkeyvalues">invertKeyValues<a class="headerlink" href="#invertkeyvalues" title="Permanent link">&para;</a></h3>
 <p>反转对象的键值对，而不改变它.  每个反转键的相应反转值是负责产生反转值的键阵列.  如果提供了功能，则将其应用于每个反转键.</p>
-<p>使用<code>Object.keys（）</code>和<code>Array.prototype.reduce（）</code>来反转对象的键值对并应用提供的函数（如果有的话）.
+<p>Use <code>Object.keys()</code> and <code>Array.prototype.reduce()</code> to invert the key-value pairs of an object and apply the function provided (if any).
 省略第二个参数<code>fn</code>，得到反转键而不对它们应用函数.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">invertKeyValues</span> <span class="o">=</span><span class="err">（</span><span class="nx">obj</span><span class="err">，</span><span class="nx">fn</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="err">（</span><span class="nx">obj</span><span class="err">）</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">acc</span><span class="err">，</span><span class="nx">key</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
@@ -13367,7 +13387,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:498
+wzxhzdk:500
 
 </details>
 
@@ -13385,7 +13405,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:500
+wzxhzdk:502
 
 </details>
 
@@ -13403,7 +13423,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:502
+wzxhzdk:504
 
 </details>
 
@@ -13421,7 +13441,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:504
+wzxhzdk:506
 
 </details>
 
@@ -13435,7 +13455,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:506
+wzxhzdk:508
 
 </details>
 
@@ -13455,7 +13475,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:508
+wzxhzdk:510
 
 </details>
 
@@ -13477,7 +13497,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:510
+wzxhzdk:512
 
 </details>
 
@@ -13497,7 +13517,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:512
+wzxhzdk:514
 
 
 </details>
@@ -13511,7 +13531,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:514
+wzxhzdk:516
 
 </details>
 
@@ -13524,7 +13544,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:516
+wzxhzdk:518
 
 </details>
 
@@ -13541,7 +13561,7 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:518
+wzxhzdk:520
 
 </details>
 
@@ -13558,20 +13578,20 @@ GCD公式使用递归.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:520
+wzxhzdk:522
 
 </details>
 
 <h3 id="orderby">orderBy<a class="headerlink" href="#orderby" title="Permanent link">&para;</a></h3>
 <p>返回按属性和顺序排序的排序对象数组.</p>
 <p>在<code>props</code>数组上使用<code>Array.prototype.sort（）</code>，<code>Array.prototype.reduce（）</code>，默认值为&#39;0<code>，使用数组解构根据传递的顺序交换属性位置.
-If no</code>orders<code>array is passed it sort by</code>'asc'` by default.</p>
+如果没有传递</code>orders`数组，则默认按&#39;&#39;asc&#39;排序.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">orderBy</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">props</span><span class="err">，</span><span class="nx">orders</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="p">[...</span> <span class="nx">arr</span><span class="p">]</span> <span class="p">.</span><span class="nx">sort</span><span class="err">（（</span><span class="nx">a</span><span class="err">，</span><span class="nx">b</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
     <span class="nx">props</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">acc</span><span class="err">，</span><span class="nx">prop</span><span class="err">，</span><span class="nx">i</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
       <span class="k">if</span><span class="err">（</span><span class="nx">acc</span> <span class="o">===</span> <span class="mi">0</span><span class="err">）</span><span class="p">{</span>
          <span class="kr">const</span> <span class="p">[</span><span class="nx">p1</span><span class="err">，</span><span class="nx">p2</span><span class="p">]</span> <span class="o">=</span> <span class="nx">orders</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span> <span class="nx">orders</span> <span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">desc</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">？</span>  <span class="p">[</span><span class="nx">b</span> <span class="p">[</span><span class="nx">prop</span><span class="p">]</span><span class="err">，</span><span class="p">[</span><span class="nx">prop</span><span class="p">]]</span><span class="err">：</span><span class="p">[</span><span class="nx">a</span> <span class="p">[</span><span class="nx">prop</span><span class="p">]</span><span class="err">，</span><span class="nx">b</span> <span class="p">[</span><span class="nx">prop</span><span class="p">]];</span>
-        <span class="nx">acc</span> <span class="o">=</span> <span class="nx">p1</span> <span class="o">&gt;</span> <span class="nx">p2</span> <span class="o">?</span> <span class="mi">1</span> <span class="o">:</span> <span class="nx">p1</span> <span class="o">&lt;</span> <span class="nx">p2</span> <span class="o">?</span> <span class="o">-</span><span class="mi">1</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+         <span class="nx">acc</span> <span class="o">=</span> <span class="nx">p1</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">p2</span><span class="err">？</span>  <span class="mi">1</span><span class="err">：</span><span class="nx">p1</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="nx">p2</span><span class="err">？</span>  <span class="o">-</span><span class="mi">1</span><span class="err">：</span><span class="mi">0</span><span class="p">;</span>
       <span class="p">}</span>
       <span class="nx">返回acc</span><span class="p">;</span>
     <span class="p">},</span> <span class="mi">0</span><span class="p">)</span>
@@ -13581,7 +13601,7 @@ If no</code>orders<code>array is passed it sort by</code>'asc'` by default.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:522
+wzxhzdk:524
 
 </details>
 
@@ -13595,7 +13615,7 @@ If no</code>orders<code>array is passed it sort by</code>'asc'` by default.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:524
+wzxhzdk:526
 
 </details>
 
@@ -13612,7 +13632,7 @@ If no</code>orders<code>array is passed it sort by</code>'asc'` by default.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:526
+wzxhzdk:528
 
 </details>
 
@@ -13632,7 +13652,7 @@ If no</code>orders<code>array is passed it sort by</code>'asc'` by default.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:528
+wzxhzdk:530
 
 </details>
 
@@ -13645,7 +13665,7 @@ If no</code>orders<code>array is passed it sort by</code>'asc'` by default.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:530
+wzxhzdk:532
 
 </details>
 
@@ -13669,7 +13689,7 @@ If no</code>orders<code>array is passed it sort by</code>'asc'` by default.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:532
+wzxhzdk:534
 
 </details>
 
@@ -13682,7 +13702,7 @@ If no</code>orders<code>array is passed it sort by</code>'asc'` by default.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:534
+wzxhzdk:536
 
 </details>
 
@@ -13695,7 +13715,7 @@ If no</code>orders<code>array is passed it sort by</code>'asc'` by default.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:536
+wzxhzdk:538
 
 </details>
 
@@ -13709,7 +13729,7 @@ If no</code>orders<code>array is passed it sort by</code>'asc'` by default.</p>
       <span class="kr">const</span> <span class="nx">keys</span> <span class="o">=</span> <span class="nx">k</span><span class="p">.</span><span class="nx">split</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;.</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="p">;</span>
       <span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="err">（</span>
         <span class="nx">ACC</span><span class="err">，</span>
-        <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span>
+        <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="err">（</span>
           <span class="s1">&#39;{&#39;</span> <span class="o">+</span>
             <span class="nx">keys</span><span class="p">.</span><span class="nx">map</span><span class="err">（（</span><span class="nx">v</span><span class="err">，</span><span class="nx">i</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="nx">i</span><span class="err">！</span><span class="o">==</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">length</span>  <span class="o">-</span>  <span class="mi">1</span><span class="err">？</span><span class="sb">`“$ {v}”：{`</span><span class="err">：</span><span class="sb">`“$ {v}”：`</span><span class="err">））</span><span class="p">.</span><span class="nx">join</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span> <span class="o">+</span>
             <span class="nx">obj</span> <span class="p">[</span><span class="nx">k</span><span class="p">]</span> <span class="o">+</span>
@@ -13724,7 +13744,7 @@ If no</code>orders<code>array is passed it sort by</code>'asc'` by default.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:538
+wzxhzdk:540
 
 </details>
 
@@ -13739,7 +13759,7 @@ If no</code>orders<code>array is passed it sort by</code>'asc'` by default.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:540
+wzxhzdk:542
 
 </details>
 
@@ -13754,7 +13774,7 @@ If no</code>orders<code>array is passed it sort by</code>'asc'` by default.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:542
+wzxhzdk:544
 
 </details>
 
@@ -13767,7 +13787,7 @@ If no</code>orders<code>array is passed it sort by</code>'asc'` by default.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:544
+wzxhzdk:546
 
 </details>
 
@@ -13780,7 +13800,7 @@ If no</code>orders<code>array is passed it sort by</code>'asc'` by default.</p>
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:546
+wzxhzdk:548
 
 </details>
 
@@ -13788,7 +13808,7 @@ If no</code>orders<code>array is passed it sort by</code>'asc'` by default.</p>
 <p>将逗号分隔值（CSV）字符串转换为2D数组.</p>
 <p>如果<code>omitFirstRow</code>为&#39;true<code>，则使用</code>Array.prototype.slice（）<code>和</code>Array.prototype.indexOf（&#39; n&#39;）<code>删除第一行（标题行）.
 使用</code>String.prototype.split（&#39; n&#39;）<code>为每一行创建一个字符串，然后使用</code>String.prototype.split（delimiter）<code>来分隔每一行中的值.
-Omit the second argument,</code>delimiter<code>, to use a default delimiter of</code>,<code>.
+省略第二个参数</code>delimiter<code>，使用</code>，<code>的默认分隔符.
 省略第三个参数</code>omitFirstRow`，以包含CSV字符串的第一行（标题行）.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">CSVToArray</span> <span class="o">=</span><span class="err">（</span><span class="nx">data</span><span class="err">，</span><span class="nx">delimiter</span> <span class="o">=&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">，</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">，</span><span class="nx">omitFirstRow</span> <span class="o">=</span> <span class="kc">false</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="nx">数据</span>
@@ -13800,7 +13820,7 @@ Omit the second argument,</code>delimiter<code>, to use a default delimiter of</
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:548
+wzxhzdk:550
 
 </details>
 
@@ -13809,7 +13829,7 @@ Omit the second argument,</code>delimiter<code>, to use a default delimiter of</
 <p>使用<code>Array.prototype.slice（）</code>和<code>Array.prototype.indexOf（&amp;#39;\ n&amp;#39;）</code>和<code>String.prototype.split（delimiter）</code>将第一行（标题行）分隔为值.
 使用<code>String.prototype.split（&amp;#39;\ n&amp;#39;）</code>为每一行创建一个字符串，然后使用<code>Array.prototype.map（）</code>和<code>String.prototype.split（delimiter）</code>来分隔每行中的值.
 使用<code>Array.prototype.reduce（）</code>为每行的值创建一个对象，并从标题行解析键.
-Omit the second argument, <code>delimiter</code>, to use a default delimiter of <code>,</code>.</p>
+省略第二个参数<code>delimiter</code>，使用<code>，</code>的默认分隔符.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">CSVToJSON</span> <span class="o">=</span><span class="err">（</span><span class="nx">data</span><span class="err">，</span><span class="nx">delimiter</span> <span class="o">=&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">，</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
   <span class="kr">const</span> <span class="nx">titles</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">slice</span><span class="err">（</span><span class="mi">0</span><span class="err">，</span><span class="nx">data</span><span class="p">.</span><span class="nx">indexOf</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">\</span> <span class="nx">n</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">））</span><span class="p">.</span><span class="nx">split</span><span class="err">（</span><span class="nx">delimiter</span><span class="err">）</span><span class="p">;</span>
   <span class="nx">返回数据</span>
@@ -13825,14 +13845,14 @@ Omit the second argument, <code>delimiter</code>, to use a default delimiter of 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:550
+wzxhzdk:552
 
 </details>
 
 <h3 id="decapitalize">decapitalize<a class="headerlink" href="#decapitalize" title="Permanent link">&para;</a></h3>
 <p>对字符串的第一个字母进行去除资本化.</p>
 <p>使用数组解构和<code>String.toLowerCase（）</code>去掉第一个字母，<code>... rest</code>以获得第一个字母后的字符数组，然后使用<code>Array.prototype.join（&amp;#39;&amp;#39;）</code>使其再次成为字符串.
-Omit the <code>upperRest</code> parameter to keep the rest of the string intact, or set it to <code>true</code> to convert to uppercase.</p>
+省略<code>upperRest</code>参数以保持字符串的其余部分不变，或将其设置为<code>true</code>以转换为大写.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">decapitalize</span> <span class="o">=</span><span class="err">（</span><span class="p">[</span><span class="nx">first</span><span class="err">，</span><span class="p">...</span> <span class="nx">rest</span><span class="p">]</span><span class="err">，</span><span class="nx">upperRest</span> <span class="o">=</span> <span class="kc">false</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="nx">first</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="err">（）</span><span class="o">+</span><span class="err">（</span><span class="nx">upperRest</span><span class="err">？</span><span class="nx">rest</span><span class="p">.</span><span class="nx">join</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="err">（）：</span><span class="nx">rest</span><span class="p">.</span><span class="nx">join</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">））</span><span class="p">;</span>
 </pre></div>
@@ -13840,7 +13860,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:552
+wzxhzdk:554
 
 </details>
 
@@ -13864,7 +13884,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:554
+wzxhzdk:556
 
 </details>
 
@@ -13877,7 +13897,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:556
+wzxhzdk:558
 
 </details>
 
@@ -13895,7 +13915,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:558
+wzxhzdk:560
 
 </details>
 
@@ -13909,7 +13929,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:560
+wzxhzdk:562
 
 </details>
 
@@ -13922,7 +13942,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:562
+wzxhzdk:564
 
 </details>
 
@@ -13944,7 +13964,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:564
+wzxhzdk:566
 
 </details>
 
@@ -13957,7 +13977,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:566
+wzxhzdk:568
 
 </details>
 
@@ -13970,7 +13990,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:568
+wzxhzdk:570
 
 </details>
 
@@ -13989,13 +14009,13 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:570
+wzxhzdk:572
 
 </details>
 
 <h3 id="mask">mask<a class="headerlink" href="#mask" title="Permanent link">&para;</a></h3>
 <p>用指定的掩码字符替换除最后一个字符数以外的所有字符.</p>
-<p>Use <code>String.prototype.slice()</code> to grab the portion of the characters that will remain unmasked and use <code>String.padStart()</code> to fill the beginning of the string with the mask character up to the original length.
+<p>使用<code>String.prototype.slice（）</code>来获取将保持未被屏蔽的字符部分，并使用<code>String.padStart（）</code>来填充字符串的开头，使用掩码字符直到原始长度.
  省略第二个参数<code>num</code>，以保持默认的“4”字符不被屏蔽.  如果<code>num</code>为负数，则未屏蔽的字符将位于字符串的开头.
 省略第三个参数<code>mask</code>，为掩码使用默认字符&#39;&#39;*&#39;`.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">mask</span> <span class="o">=</span><span class="err">（</span><span class="nx">cc</span><span class="err">，</span><span class="nx">num</span> <span class="o">=</span> <span class="mi">4</span><span class="err">，</span><span class="nx">mask</span> <span class="o">=&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="o">*&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="sb">`$ {cc}`</span><span class="p">.</span><span class="nx">slice</span><span class="err">（</span><span class="o">-</span><span class="nx">num</span><span class="err">）</span><span class="p">.</span><span class="nx">padStart</span><span class="err">（</span><span class="sb">`$ {cc}`</span><span class="p">.</span><span class="nx">length</span><span class="err">，</span><span class="nx">mask</span><span class="err">）</span><span class="p">;</span>
@@ -14004,7 +14024,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:572
+wzxhzdk:574
 
 </details>
 
@@ -14019,7 +14039,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:574
+wzxhzdk:576
 
 </details>
 
@@ -14036,7 +14056,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:576
+wzxhzdk:578
 
 </details>
 
@@ -14054,7 +14074,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:578
+wzxhzdk:580
 
 </details>
 
@@ -14067,7 +14087,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:580
+wzxhzdk:582
 
 </details>
 
@@ -14081,7 +14101,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:582
+wzxhzdk:584
 
 </details>
 
@@ -14094,7 +14114,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:584
+wzxhzdk:586
 
 </details>
 
@@ -14107,7 +14127,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:586
+wzxhzdk:588
 
 </details>
 
@@ -14132,7 +14152,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:588
+wzxhzdk:590
 
 </details>
 
@@ -14145,7 +14165,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:590
+wzxhzdk:592
 
 </details>
 
@@ -14166,7 +14186,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:592
+wzxhzdk:594
 
 </details>
 
@@ -14184,7 +14204,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:594
+wzxhzdk:596
 
 </details>
 
@@ -14202,7 +14222,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:596
+wzxhzdk:598
 
 </details>
 
@@ -14219,7 +14239,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:598
+wzxhzdk:600
 
 </details>
 
@@ -14234,7 +14254,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:600
+wzxhzdk:602
 
 </details>
 
@@ -14258,7 +14278,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:602
+wzxhzdk:604
 
 </details>
 
@@ -14278,7 +14298,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:604
+wzxhzdk:606
 
 </details>
 
@@ -14292,7 +14312,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:606
+wzxhzdk:608
 
 </details>
 
@@ -14308,7 +14328,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:608
+wzxhzdk:610
 
 </details>
 
@@ -14321,7 +14341,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:610
+wzxhzdk:612
 
 </details>
 
@@ -14334,7 +14354,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:612
+wzxhzdk:614
 
 </details>
 
@@ -14347,7 +14367,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:614
+wzxhzdk:616
 
 </details>
 
@@ -14360,7 +14380,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:616
+wzxhzdk:618
 
 </details>
 
@@ -14373,12 +14393,12 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:618
+wzxhzdk:620
 
 </details>
 
 <h3 id="isnil">isNil<a class="headerlink" href="#isnil" title="Permanent link">&para;</a></h3>
-<p>Returns <code>true</code> if the specified value is <code>null</code> or <code>undefined</code>, <code>false</code> otherwise.</p>
+<p>如果指定的值为“null”或“undefined”，则返回“true”，否则返回“false”.</p>
 <p>使用strict equality运算符检查<code>val</code>的值是否等于<code>null</code>或<code>undefined</code>.</p>
 <div class="codehilite"><pre><span></span> <span class="kr">const</span> <span class="nx">isNil</span> <span class="o">=</span> <span class="nx">val</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">val</span> <span class="o">===</span> <span class="kc">undefined</span> <span class="o">||</span>  <span class="nx">val</span> <span class="o">===</span> <span class="kc">null</span><span class="p">;</span>
 </pre></div>
@@ -14386,7 +14406,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:620
+wzxhzdk:622
 
 </details>
 
@@ -14399,7 +14419,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:622
+wzxhzdk:624
 
 </details>
 
@@ -14412,13 +14432,13 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:624
+wzxhzdk:626
 
 </details>
 
 <h3 id="isobject">isObject<a class="headerlink" href="#isobject" title="Permanent link">&para;</a></h3>
 <p>返回一个布尔值，确定传递的值是否为对象.</p>
-<p>使用<code>Object</code>构造函数为给定值创建一个对象包装器. 
+<p>Uses the  <code>Object</code> constructor to create an object wrapper for the given value. 
  如果值为“null”或“undefined”，则创建并返回一个空对象.  否则，返回与给定值对应的类型的对象.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">isObject</span> <span class="o">=</span> <span class="nx">obj</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">obj</span> <span class="o">===</span> <span class="nb">Object</span><span class="err">（</span><span class="nx">obj</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
@@ -14426,7 +14446,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:626
+wzxhzdk:628
 
 </details>
 
@@ -14439,7 +14459,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:628
+wzxhzdk:630
 
 </details>
 
@@ -14452,7 +14472,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:630
+wzxhzdk:632
 
 </details>
 
@@ -14465,12 +14485,12 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:632
+wzxhzdk:634
 
 </details>
 
 <h3 id="ispromiselike">isPromiseLike<a class="headerlink" href="#ispromiselike" title="Permanent link">&para;</a></h3>
-<p>如果对象看起来像是，则返回“true” <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"><code>Promise</code></a>，<code>false</code>否则.</p>
+<p>如果对象看起来像是，则返回“true” <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"><code>Promise</code></a>, <code>false</code> otherwise.</p>
 <p>检查对象是否不是“null”，它的<code>typeof</code>匹配<code>object</code>或<code>function</code>，如果它有<code>.then</code>属性，它也是<code>`function</code>.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">isPromiseLike</span> <span class="o">=</span> <span class="nx">obj</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="nx">obj</span><span class="err">！</span><span class="o">==</span> <span class="kc">null</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span>
@@ -14481,7 +14501,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:634
+wzxhzdk:636
 
 </details>
 
@@ -14494,7 +14514,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:636
+wzxhzdk:638
 
 </details>
 
@@ -14507,7 +14527,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:638
+wzxhzdk:640
 
 </details>
 
@@ -14520,7 +14540,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:640
+wzxhzdk:642
 
 </details>
 
@@ -14540,22 +14560,22 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:642
+wzxhzdk:644
 
 </details>
 
 <hr />
 <h2 id="utility_1">🔧 Utility<a class="headerlink" href="#utility_1" title="Permanent link">&para;</a></h2>
 <h3 id="castarray">castArray<a class="headerlink" href="#castarray" title="Permanent link">&para;</a></h3>
-<p>Casts the provided value as an array if it's not one.</p>
+<p>如果不是一个数组，则将提供的值转换为数组.</p>
 <p>使用<code>Array.prototype.isArray（）</code>来确定<code>val</code>是否是一个数组并按原样返回它或相应地封装在一个数组中.</p>
-<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">castArray</span> <span class="o">=</span> <span class="nx">val</span> <span class="p">=&gt;</span> <span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="o">?</span> <span class="nx">val</span> <span class="o">:</span> <span class="p">[</span><span class="nx">val</span><span class="p">]);</span>
+<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">castArray</span> <span class="o">=</span> <span class="nx">val</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="err">（</span><span class="nx">val</span><span class="err">）？</span><span class="nx">val</span><span class="err">：</span><span class="p">[</span><span class="nx">val</span><span class="p">]</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
 
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:644
+wzxhzdk:646
 
 </details>
 
@@ -14568,7 +14588,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:646
+wzxhzdk:648
 
 </details>
 
@@ -14581,7 +14601,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:648
+wzxhzdk:650
 
 </details>
 
@@ -14594,7 +14614,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:650
+wzxhzdk:652
 
 </details>
 
@@ -14614,7 +14634,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:652
+wzxhzdk:654
 
 </details>
 
@@ -14632,7 +14652,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:654
+wzxhzdk:656
 
 </details>
 
@@ -14662,7 +14682,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:656
+wzxhzdk:658
 
 </details>
 
@@ -14676,7 +14696,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
   <span class="kr">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="err">（）</span><span class="p">;</span>
   <span class="nx">request</span><span class="p">.</span><span class="nx">open</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">GET</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">，</span><span class="nx">url</span><span class="err">，</span><span class="kc">true</span><span class="err">）</span><span class="p">;</span>
   <span class="nx">request</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span><span class="err">（）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">callback</span><span class="err">（</span><span class="nx">request</span><span class="p">.</span><span class="nx">responseText</span><span class="err">）</span><span class="p">;</span>
-  <span class="nx">request</span><span class="p">.</span><span class="nx">onerror</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">err</span><span class="p">(</span><span class="nx">request</span><span class="p">);</span>
+  <span class="nx">request</span><span class="p">.</span><span class="nx">onerror</span> <span class="o">=</span><span class="err">（）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">err</span><span class="err">（</span><span class="nx">request</span><span class="err">）</span><span class="p">;</span>
   <span class="nx">request</span><span class="p">.</span><span class="nx">send</span><span class="err">（）</span><span class="p">;</span>
 <span class="p">};</span>
 </pre></div>
@@ -14684,7 +14704,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:658
+wzxhzdk:660
 
 </details>
 
@@ -14701,7 +14721,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
   <span class="nx">request</span><span class="p">.</span><span class="nx">open</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">POST</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">，</span><span class="nx">url</span><span class="err">，</span><span class="kc">true</span><span class="err">）</span><span class="p">;</span>
   <span class="nx">request</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">Content</span><span class="o">-</span><span class="nx">type</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">，</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">application</span> <span class="o">/</span> <span class="nx">json</span><span class="p">;</span> <span class="nx">charset</span> <span class="o">=</span> <span class="nx">utf</span><span class="o">-</span><span class="mi">8</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="p">;</span>
   <span class="nx">request</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span><span class="err">（）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">callback</span><span class="err">（</span><span class="nx">request</span><span class="p">.</span><span class="nx">responseText</span><span class="err">）</span><span class="p">;</span>
-  <span class="nx">request</span><span class="p">.</span><span class="nx">onerror</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">err</span><span class="p">(</span><span class="nx">request</span><span class="p">);</span>
+  <span class="nx">request</span><span class="p">.</span><span class="nx">onerror</span> <span class="o">=</span><span class="err">（）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">err</span><span class="err">（</span><span class="nx">request</span><span class="err">）</span><span class="p">;</span>
   <span class="nx">request</span><span class="p">.</span><span class="nx">send</span><span class="err">（</span><span class="nx">数据</span><span class="err">）</span><span class="p">;</span>
 <span class="p">};</span>
 </pre></div>
@@ -14709,7 +14729,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:660
+wzxhzdk:662
 
 </details>
 
@@ -14724,7 +14744,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:662
+wzxhzdk:664
 
 </details>
 
@@ -14746,7 +14766,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:664
+wzxhzdk:666
 
 </details>
 
@@ -14759,7 +14779,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:666
+wzxhzdk:668
 
 </details>
 
@@ -14781,7 +14801,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:668
+wzxhzdk:670
 
 </details>
 
@@ -14803,7 +14823,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:670
+wzxhzdk:672
 
 </details>
 
@@ -14819,7 +14839,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:672
+wzxhzdk:674
 
 </details>
 
@@ -14832,7 +14852,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:674
+wzxhzdk:676
 
 </details>
 
@@ -14845,7 +14865,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:676
+wzxhzdk:678
 
 </details>
 
@@ -14863,7 +14883,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:678
+wzxhzdk:680
 
 </details>
 
@@ -14877,7 +14897,7 @@ Omit the <code>upperRest</code> parameter to keep the rest of the string intact,
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:680
+wzxhzdk:682
 
 </details>
 
@@ -14913,7 +14933,7 @@ const toDecimalMark = num =&gt; num.toLocaleString（&#39;en-US&#39;）;
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:683
+wzxhzdk:685
 
 </details>
 
@@ -14928,7 +14948,7 @@ const toDecimalMark = num =&gt; num.toLocaleString（&#39;en-US&#39;）;
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:685
+wzxhzdk:687
 
 </details>
 
@@ -14943,7 +14963,7 @@ const toDecimalMark = num =&gt; num.toLocaleString（&#39;en-US&#39;）;
 <details>
 <summary>Examples</summary>
 
-wzxhzdk:687
+wzxhzdk:689
 
 </details>
 
