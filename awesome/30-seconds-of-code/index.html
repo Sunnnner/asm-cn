@@ -9101,10 +9101,10 @@
 <li><a href="https://30-seconds.github.io/30-seconds-of-css/">30 Seconds of CSS</a></li>
 <li><a href="https://30secondsofinterviews.org/">30 Seconds of Interviews</a></li>
 <li><a href="https://github.com/30-seconds/30-seconds-of-react">30 Seconds of React</a></li>
-<li><a href="https://github.com/kriadmin/30-seconds-of-python-code">30 Seconds of Python</a> <em>（非官方）</em></li>
-<li><a href="https://github.com/appzcoder/30-seconds-of-php-code">30 Seconds of PHP</a> <em>（非官方）</em></li>
-<li><a href="https://github.com/IvanMwiruki/30-seconds-of-kotlin">30 Seconds of Kotlin</a> <em>（非官方）</em></li>
-<li><a href="https://chrome.google.com/webstore/detail/30-seconds-of-knowledge/mmgplondnjekobonklacmemikcnhklla">30 Seconds of Knowledge</a> <em>（非官方）</em></li>
+<li><a href="https://github.com/kriadmin/30-seconds-of-python-code">30 Seconds of Python</a> <em>(unofficial)</em></li>
+<li><a href="https://github.com/appzcoder/30-seconds-of-php-code">30 Seconds of PHP</a> <em>(unofficial)</em></li>
+<li><a href="https://github.com/IvanMwiruki/30-seconds-of-kotlin">30 Seconds of Kotlin</a> <em>(unofficial)</em></li>
+<li><a href="https://chrome.google.com/webstore/detail/30-seconds-of-knowledge/mmgplondnjekobonklacmemikcnhklla">30 Seconds of Knowledge</a> <em>(unofficial)</em></li>
 </ul>
 <h4 id="package">Package<a class="headerlink" href="#package" title="Permanent link">&para;</a></h4>
 <p>⚠️<strong>注意：</strong>我们的一些代码片段尚未针对生产进行优化（请参阅单个代码段问题的免责声明）.</p>
@@ -9225,7 +9225,7 @@ npm安装30秒的代码
 </details>
 
 <h3 id="collectinto">collectInto<a class="headerlink" href="#collectinto" title="Permanent link">&para;</a></h3>
-<p>将接受数组的函数更改为可变参数函数.</p>
+<p>Changes a function that accepts an array into a variadic function.</p>
 <p>给定一个函数，返回一个闭包，它将所有输入收集到一个接受数组的函数中.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">collectInto</span> <span class="o">=</span> <span class="nx">fn</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="p">...</span> <span class="nx">args</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">fn</span><span class="err">（</span><span class="nx">args</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
@@ -9411,7 +9411,9 @@ npm安装30秒的代码
 使用<code>Array.prototype.join（&amp;#39;\ n&amp;#39;）</code>将所有行组合成CSV字符串，用换行符分隔每一行.
 省略第二个参数<code>delimiter</code>，使用<code>，</code>的默认分隔符.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">arrayToCSV</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">delimiter</span> <span class="o">=&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">，</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
-  <span class="nx">arr</span><span class="p">.</span><span class="nx">map</span><span class="err">（</span><span class="nx">v</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">v</span><span class="p">.</span><span class="nx">map</span><span class="err">（</span><span class="nx">x</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="sb">``</span><span class="nx">$</span> <span class="p">{</span><span class="nx">x</span><span class="p">}</span><span class="err">“</span><span class="sb">`）.join（delimiter））.join（&amp;#39;</span><span class="err">\</span><span class="sb"> n&amp;#39;）;</span>
+  <span class="nx">ARR</span>
+    <span class="p">.</span><span class="nx">map</span><span class="err">（</span><span class="nx">v</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">v</span><span class="p">.</span><span class="nx">map</span><span class="err">（</span><span class="nx">x</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="nb">isNaN</span><span class="err">（</span><span class="nx">x</span><span class="err">）？</span><span class="sb">`“$ {x.replace（/”/ g，&amp;#39;“”&amp;#39;）}“`</span><span class="err">：</span><span class="nx">x</span><span class="err">））</span><span class="p">.</span><span class="nx">join</span><span class="err">（</span><span class="nx">delimiter</span><span class="err">））</span>
+    <span class="p">.</span><span class="nx">加入</span><span class="err">（</span> <span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">\</span> <span class="nx">n</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
 
 <details>
@@ -9438,7 +9440,7 @@ npm安装30秒的代码
 <h3 id="bifurcateby">bifurcateBy<a class="headerlink" href="#bifurcateby" title="Permanent link">&para;</a></h3>
 <p>根据谓词函数将值拆分为两个组，谓词函数指定输入集合中的元素属于哪个组.  如果谓词函数返回truthy值，则collection元素属于第一个组;  否则，它属于第二组.</p>
 <p>使用<code>Array.prototype.reduce（）</code>和<code>Array.prototype.push（）</code>根据<code>fn</code>为每个元素返回的值向组添加元素.</p>
-<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">bifurcateBy</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">fn</span><span class="p">)</span> <span class="p">=&gt;</span>
+<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">bifurcateBy</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">fn</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="nx">arr</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">acc</span><span class="err">，</span><span class="nx">val</span><span class="err">，</span><span class="nx">i</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="nx">acc</span> <span class="p">[</span><span class="nx">fn</span><span class="err">（</span><span class="nx">val</span><span class="err">，</span><span class="nx">i</span><span class="err">）？</span><span class="mi">0</span><span class="err">：</span><span class="mi">1</span><span class="p">]</span> <span class="p">.</span><span class="nx">push</span><span class="err">（</span><span class="nx">val</span><span class="err">），</span><span class="nx">acc</span><span class="err">），</span><span class="p">[[]</span><span class="err">，</span><span class="p">[]]</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
 
@@ -9486,7 +9488,7 @@ npm安装30秒的代码
 使用<code>Array.prototype.reduce（）</code>创建一个对象，其中的键是从映射的结果中生成的.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">countBy</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">fn</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="nx">arr</span><span class="p">.</span><span class="nx">map</span><span class="err">（</span><span class="k">typeof</span> <span class="nx">fn</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="kd">function</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">？</span><span class="nx">fn</span><span class="err">：</span><span class="nx">val</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">val</span> <span class="p">[</span><span class="nx">fn</span><span class="p">]</span><span class="err">）</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">acc</span><span class="err">，</span><span class="nx">val</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
-    <span class="nx">acc</span><span class="p">[</span><span class="nx">val</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="nx">acc</span><span class="p">[</span><span class="nx">val</span><span class="p">]</span> <span class="o">||</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="nx">acc</span> <span class="p">[</span><span class="nx">val</span><span class="p">]</span> <span class="o">=</span><span class="err">（</span><span class="nx">acc</span> <span class="p">[</span><span class="nx">val</span><span class="p">]</span> <span class="o">||</span> <span class="mi">0</span><span class="err">）</span><span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
     <span class="nx">返回acc</span><span class="p">;</span>
   <span class="p">},</span> <span class="p">{});</span>
 </pre></div>
@@ -9686,7 +9688,7 @@ npm安装30秒的代码
 </details>
 
 <h3 id="findlast">findLast<a class="headerlink" href="#findlast" title="Permanent link">&para;</a></h3>
-<p>返回提供的函数返回truthy值的最后一个元素.</p>
+<p>Returns the last element for which the provided function returns a truthy value.</p>
 <p>使用<code>Array.prototype.filter（）</code>删除<code>fn</code>返回falsey值的元素，&#39;Array.prototype.pop（）`来获取最后一个.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">findLast</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">fn</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="err">（</span><span class="nx">fn</span><span class="err">）</span><span class="p">.</span><span class="nx">pop</span><span class="err">（）</span><span class="p">;</span>
 </pre></div>
@@ -9980,7 +9982,7 @@ npm安装30秒的代码
 
 </details>
 
-<p>将对象数组转换为逗号分隔值（CSV）字符串，该字符串仅包含指定的<code>columns</code>.</p>
+<p>Converts an array of objects to a comma-separated values (CSV) string that contains only the <code>columns</code> specified.</p>
 <p>使用<code>Array.prototype.join（delimiter）</code>组合<code>columns</code>中的所有名称来创建第一行.
 使用<code>Array.prototype.map（）</code>和<code>Array.prototype.reduce（）</code>为每个对象创建一个行，用空字符串替换不存在的值，只用<code>columns</code>映射值.
 使用<code>Array.prototype.join（&amp;#39;\ n&amp;#39;）</code>将所有行组合成一个字符串.
@@ -10080,7 +10082,7 @@ npm安装30秒的代码
 </details>
 
 <h3 id="none">none<a class="headerlink" href="#none" title="Permanent link">&para;</a></h3>
-<p>Returns <code>true</code> if the provided predicate function returns <code>false</code> for all elements in a collection, <code>false</code> otherwise.</p>
+<p>如果提供的谓词函数为集合中的所有元素返回“false”，则返回“true”，否则返回“false”.</p>
 <p>使用<code>Array.prototype.some（）</code>来测试集合中的任何元素是否基于<code>fn</code>返回<code>true</code>.
 省略第二个参数<code>fn</code>，使用<code>Boolean</code>作为默认值.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">none</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">fn</span> <span class="o">=</span> <span class="nb">Boolean</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">！</span><span class="nx">arr</span><span class="p">.</span><span class="nx">some</span><span class="err">（</span><span class="nx">fn</span><span class="err">）</span><span class="p">;</span>
@@ -10323,9 +10325,9 @@ npm安装30秒的代码
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">remove</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">func</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="err">（</span><span class="nx">ARR</span><span class="err">）</span>
      <span class="err">？</span>  <span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="err">（</span><span class="nx">func</span><span class="err">）</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">acc</span><span class="err">，</span><span class="nx">val</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
-        <span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="err">（</span><span class="nx">arr</span><span class="p">.</span><span class="nx">indexOf</span><span class="err">（</span><span class="nx">val</span><span class="err">），</span><span class="mi">1</span><span class="err">）</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nx">acc</span><span class="p">.</span><span class="nx">concat</span><span class="err">（</span><span class="nx">val</span><span class="err">）</span><span class="p">;</span>
-      <span class="p">},</span> <span class="p">[])</span>
+      <span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="err">（</span><span class="nx">arr</span><span class="p">.</span><span class="nx">indexOf</span><span class="err">（</span><span class="nx">val</span><span class="err">），</span><span class="mi">1</span><span class="err">）</span><span class="p">;</span>
+      <span class="k">return</span> <span class="nx">acc</span><span class="p">.</span><span class="nx">concat</span><span class="err">（</span><span class="nx">val</span><span class="err">）</span><span class="p">;</span>
+    <span class="p">},</span> <span class="p">[])</span>
     <span class="o">:</span> <span class="p">[];</span>
 </pre></div>
 
@@ -10337,7 +10339,7 @@ npm安装30秒的代码
 </details>
 
 <h3 id="sample">sample<a class="headerlink" href="#sample" title="Permanent link">&para;</a></h3>
-<p>从数组中返回一个随机元素.</p>
+<p>Returns a random element from an array.</p>
 <p>使用<code>Math.random（）</code>生成一个随机数，乘以<code>length</code>并使用<code>Math.floor（）</code>将其四舍五入到最接近的整数.
 此方法也适用于字符串.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">sample</span> <span class="o">=</span> <span class="nx">arr</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">arr</span> <span class="p">[</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="err">（</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="err">（）</span><span class="o">*</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="err">）</span><span class="p">];</span>
@@ -10430,7 +10432,7 @@ npm安装30秒的代码
 <p>检查数组是否按降序排序（松散）.
 使用<code>Array.prototype.findIndex（）</code>来查找应该插入元素的适当索引.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">sortedIndex</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">n</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="nx">isDescending</span> <span class="o">=</span> <span class="nx">arr</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">arr</span> <span class="p">[</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span>  <span class="o">-</span>  <span class="mi">1</span><span class="p">];</span>
+  <span class="kr">const</span> <span class="nx">isDescending</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">];</span>
   <span class="kr">const</span> <span class="nx">index</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">findIndex</span><span class="err">（</span><span class="nx">el</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="nx">isDescending</span><span class="err">？</span><span class="nx">n</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="o">=</span> <span class="nx">el</span><span class="err">：</span><span class="nx">n</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">=</span> <span class="nx">el</span><span class="err">））</span><span class="p">;</span>
    <span class="nx">返回索引</span><span class="o">===</span> <span class="o">-</span><span class="mi">1</span><span class="err">？</span>  <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="err">：</span><span class="nx">index</span><span class="p">;</span>
 <span class="p">};</span>
@@ -10467,7 +10469,7 @@ npm安装30秒的代码
 <p>检查数组是否按降序排序（松散）.
 使用<code>Array.prototype.reverse（）</code>和<code>Array.prototype.findIndex（）</code>来查找应该插入元素的最后一个索引.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">sortedLastIndex</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">n</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="nx">isDescending</span> <span class="o">=</span> <span class="nx">arr</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">arr</span> <span class="p">[</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span>  <span class="o">-</span>  <span class="mi">1</span><span class="p">];</span>
+  <span class="kr">const</span> <span class="nx">isDescending</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">];</span>
   <span class="kr">const</span> <span class="nx">index</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">reverse</span><span class="err">（）</span><span class="p">.</span><span class="nx">findIndex</span><span class="err">（</span><span class="nx">el</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="nx">isDescending</span><span class="err">？</span><span class="nx">n</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">=</span> <span class="nx">el</span><span class="err">：</span><span class="nx">n</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="o">=</span> <span class="nx">el</span><span class="err">））</span><span class="p">;</span>
    <span class="nx">返回索引</span><span class="o">===</span> <span class="o">-</span><span class="mi">1</span><span class="err">？</span>  <span class="mi">0</span><span class="err">：</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span>  <span class="o">-</span>  <span class="nx">index</span><span class="p">;</span>
 <span class="p">};</span>
@@ -10507,7 +10509,7 @@ npm安装30秒的代码
 不改变原始数组，而是返回一个新数组.</p>
 <p>使用<code>Array.prototype.map（）</code>将输入数组的每个元素与其对应的索引配对.
 使用<code>Array.prototype.sort（）</code>和<code>compare</code>函数对列表进行排序，如果比较的项目相同，则保留它们的初始顺序.
-使用<code>Array.prototype.map（）</code>转换回初始数组项.</p>
+Use <code>Array.prototype.map()</code> to convert back to the initial array items.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">stableSort</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">compare</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="nx">ARR</span>
     <span class="p">.</span><span class="nx">map</span><span class="err">（（</span><span class="nx">item</span><span class="err">，</span><span class="nx">index</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="p">{</span><span class="nx">item</span><span class="err">，</span><span class="nx">index</span><span class="p">}</span><span class="err">））</span>
@@ -10707,8 +10709,8 @@ npm安装30秒的代码
 
 <h3 id="uniqueelements">uniqueElements<a class="headerlink" href="#uniqueelements" title="Permanent link">&para;</a></h3>
 <p>返回数组的所有唯一值.</p>
-<p>Use ES6 <code>Set</code> and the <code>...rest</code> operator to discard all duplicated values.</p>
-<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">uniqueElements</span> <span class="o">=</span> <span class="nx">arr</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">[...</span> <span class="k">new</span> <span class="nx">Set</span><span class="err">（</span><span class="nx">arr</span><span class="err">）</span><span class="p">];</span>
+<p>使用ES6<code>Set</code>和<code>... rest</code>运算符可以丢弃所有重复的值.</p>
+<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">uniqueElements</span> <span class="o">=</span> <span class="nx">arr</span> <span class="p">=&gt;</span> <span class="p">[...</span><span class="k">new</span> <span class="nx">Set</span><span class="p">(</span><span class="nx">arr</span><span class="p">)];</span>
 </pre></div>
 
 <details>
@@ -10973,7 +10975,7 @@ npm安装30秒的代码
      <span class="nx">_step</span> <span class="o">=</span><span class="err">（</span><span class="nx">结束</span> <span class="o">-</span> <span class="nx">开始</span><span class="err">）</span><span class="o">*</span><span class="nx">步</span><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="mi">0</span><span class="err">？</span>  <span class="o">-</span><span class="nx">step</span><span class="err">：</span><span class="nx">step</span><span class="err">，</span>
     <span class="nx">timer</span> <span class="o">=</span> <span class="nx">setInterval</span><span class="err">（（）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
       <span class="nx">当前</span><span class="o">+</span> <span class="o">=</span> <span class="nx">_step</span><span class="p">;</span>
-      <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="nx">selector</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">current</span><span class="p">;</span>
+      <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="err">（</span><span class="nx">selector</span><span class="err">）</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">current</span><span class="p">;</span>
       <span class="k">if</span><span class="err">（</span><span class="nx">current</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="o">=</span> <span class="nx">end</span><span class="err">）</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="err">（</span><span class="nx">selector</span><span class="err">）</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">end</span><span class="p">;</span>
       <span class="k">if</span><span class="err">（</span><span class="nx">current</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="o">=</span> <span class="nx">end</span><span class="err">）</span><span class="nx">clearInterval</span><span class="err">（</span><span class="nx">timer</span><span class="err">）</span><span class="p">;</span>
     <span class="p">}</span><span class="err">，</span><span class="nb">Math</span><span class="p">.</span><span class="nx">abs</span><span class="err">（</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="err">（</span><span class="nx">duration</span> <span class="o">/</span><span class="err">（</span><span class="nx">end</span>  <span class="o">-</span>  <span class="nx">start</span><span class="err">））））</span><span class="p">;</span>
@@ -11015,7 +11017,7 @@ npm安装30秒的代码
 到阵列.
 对于<code>off</code>，使用<code>Array.prototype.findIndex（）</code>来查找事件数组中处理程序的索引，并使用<code>Array.prototype.splice（）</code>将其删除.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">createEventHub</span> <span class="o">=</span><span class="err">（）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="p">{</span>
-  <span class="nx">hub</span><span class="err">：</span><span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="err">（</span><span class="kc">null</span><span class="err">），</span>
+  <span class="nx">hub</span><span class="o">:</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="kc">null</span><span class="p">),</span>
   <span class="nx">发射</span><span class="err">（</span><span class="nx">事件</span><span class="err">，</span><span class="nx">数据</span><span class="err">）</span><span class="p">{</span>
     <span class="err">（</span><span class="k">this</span><span class="p">.</span><span class="nx">hub</span> <span class="p">[</span><span class="nx">event</span><span class="p">]</span> <span class="o">||</span> <span class="p">[]</span><span class="err">）</span><span class="p">.</span><span class="nx">forEach</span><span class="err">（</span><span class="nx">handler</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">handler</span><span class="err">（</span><span class="nx">data</span><span class="err">））</span><span class="p">;</span>
   <span class="p">},</span>
@@ -11148,7 +11150,7 @@ npm安装30秒的代码
 </details>
 
 <h3 id="hasclass">hasClass<a class="headerlink" href="#hasclass" title="Permanent link">&para;</a></h3>
-<p>Returns <code>true</code> if the element has the specified class, <code>false</code> otherwise.</p>
+<p>如果元素具有指定的类，则返回“true”，否则返回“false”.</p>
 <p>使用<code>element.classList.contains（）</code>来检查元素是否具有指定的类.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">hasClass</span> <span class="o">=</span><span class="err">（</span><span class="nx">el</span><span class="err">，</span><span class="nx">className</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">el</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">contains</span><span class="err">（</span><span class="nx">className</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
@@ -11337,7 +11339,7 @@ npm安装30秒的代码
     <span class="nx">lastTime</span> <span class="o">=</span> <span class="nx">now</span><span class="p">;</span>
   <span class="p">};</span>
   <span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">touchstart</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">，（）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
-    <span class="k">if</span><span class="err">（</span><span class="nx">type</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">touch</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="k">return</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">type</span> <span class="o">===</span> <span class="s1">&#39;touch&#39;</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
     <span class="err">（</span><span class="nx">type</span> <span class="o">=&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">touch</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">），</span><span class="nx">callback</span><span class="err">（</span><span class="nx">type</span><span class="err">），</span><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">mousemove</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">，</span><span class="nx">mousemoveHandler</span><span class="err">）</span><span class="p">;</span>
   <span class="p">});</span>
 <span class="p">};</span>
@@ -11378,7 +11380,7 @@ npm安装30秒的代码
 使用“start”和“stop”两种方法返回一个对象，以允许手动控制录制. 
 省略第二个参数</code>autoStart<code>，在调用函数时隐式调用</code>start`.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">recordAnimationFrames</span> <span class="o">=</span><span class="err">（</span><span class="nx">callback</span><span class="err">，</span><span class="nx">autoStart</span> <span class="o">=</span> <span class="kc">true</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
-  <span class="nx">让running</span> <span class="o">=</span> <span class="kc">true</span><span class="err">，</span>
+  <span class="kd">let</span> <span class="nx">running</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
     <span class="nx">货架</span><span class="p">;</span>
   <span class="kr">const</span> <span class="nx">stop</span> <span class="o">=</span><span class="err">（）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
     <span class="nx">running</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
@@ -11619,8 +11621,8 @@ npm安装30秒的代码
 <h3 id="getdaysdiffbetweendates">getDaysDiffBetweenDates<a class="headerlink" href="#getdaysdiffbetweendates" title="Permanent link">&para;</a></h3>
 <p>返回两个日期之间的差异（以天为单位）.</p>
 <p>计算两个<code>Date</code>对象之间的差异（以天为单位）.</p>
-<div class="codehilite"><pre><span></span><span class="nx">常量getDaysDiffBetweenDates</span> <span class="o">=</span><span class="err">（</span><span class="nx">初始日期</span><span class="err">，</span><span class="nx">日期最终</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
-  <span class="err">（</span><span class="nx">日期最终</span> <span class="o">-</span> <span class="nx">初始日期</span><span class="err">）</span><span class="o">/</span><span class="err">（</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">3600</span> <span class="o">*</span> <span class="mi">24</span><span class="err">）</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">getDaysDiffBetweenDates</span> <span class="o">=</span><span class="err">（</span><span class="nx">dateInitial</span><span class="err">，</span><span class="nx">dateFinal</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
+  <span class="err">（</span><span class="nx">dateFinal</span>  <span class="o">-</span>  <span class="nx">dateInitial</span><span class="err">）</span><span class="o">/</span><span class="err">（</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">3600</span> <span class="o">*</span> <span class="mi">24</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
 
 <details>
@@ -11633,7 +11635,7 @@ npm安装30秒的代码
 <h3 id="getmeridiemsuffixofinteger">getMeridiemSuffixOfInteger<a class="headerlink" href="#getmeridiemsuffixofinteger" title="Permanent link">&para;</a></h3>
 <p>将整数转换为后缀字符串，根据其值添加“am”或“pm”.</p>
 <p>使用模运算符（<code>％</code>）和条件检查将整数转换为带有meridiem后缀的字符串化12小时格式.</p>
-<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">getMeridiemSuffixOfInteger</span> <span class="o">=</span> <span class="nx">num</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">getMeridiemSuffixOfInteger</span> <span class="o">=</span> <span class="nx">num</span> <span class="p">=&gt;</span>
    <span class="nx">是否</span><span class="o">===</span> <span class="mi">0</span> <span class="o">||</span>  <span class="o">===</span><span class="nx">是否24</span>
      <span class="err">？</span>  <span class="mi">12</span> <span class="o">+&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">上午</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span>
     <span class="err">：</span><span class="nx">num</span> <span class="o">===</span> <span class="mi">12</span>
@@ -11664,7 +11666,7 @@ npm安装30秒的代码
 </details>
 
 <h3 id="isbeforedate">isBeforeDate<a class="headerlink" href="#isbeforedate" title="Permanent link">&para;</a></h3>
-<p>Check if a date is before another date.</p>
+<p>检查日期是否在另一个日期之前.</p>
 <p>使用小于运算符（<code>&amp;lt;</code>）来检查第一个日期是否在第二个日期之前.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">isBeforeDate</span> <span class="o">=</span><span class="err">（</span><span class="nx">dateA</span><span class="err">，</span><span class="nx">dateB</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">dateA</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="nx">dateB</span><span class="p">;</span>
 </pre></div>
@@ -11805,8 +11807,8 @@ npm安装30秒的代码
 </details>
 
 <h3 id="checkprop">checkProp<a class="headerlink" href="#checkprop" title="Permanent link">&para;</a></h3>
-<p>给定一个<code>predicate</code>函数和一个<code>prop</code>字符串，这个curried函数将通过调用属性并将其传递给谓词来检查<code>object</code>.</p>
-<p>在<code>obj</code>上召唤<code>prop</code>，将它传递给提供的<code>predicate</code>函数并返回一个屏蔽的布尔值.</p>
+<p>Given a <code>predicate</code> function and a <code>prop</code> string, this curried function will then take an <code>object</code> to inspect by calling the property and passing it to the predicate.</p>
+<p>Summon <code>prop</code> on <code>obj</code>, pass it to a provided <code>predicate</code> function and return a masked boolean.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">checkProp</span> <span class="o">=</span><span class="err">（</span><span class="nx">predicate</span><span class="err">，</span><span class="nx">prop</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">obj</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="o">!!</span><span class="nx">谓词</span><span class="err">（</span><span class="nx">obj</span> <span class="p">[</span><span class="nx">prop</span><span class="p">]</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
 
@@ -12065,7 +12067,7 @@ npm安装30秒的代码
 
 <p>创建一个限制函数，每个<code>wait</code>毫秒最多只调用一次提供的函数</p>
 <p>使用<code>setTimeout（）</code>和<code>clearTimeout（）</code>来限制给定的方法<code>fn</code>.
-Use <code>Function.prototype.apply()</code> to apply the <code>this</code> context to the function and provide the necessary <code>arguments</code>.
+使用<code>Function.prototype.apply（）</code>将<code>this</code>上下文应用于函数并提供必要的<code>参数</code>.
 使用<code>Date.now（）</code>来跟踪上次调用限制函数的时间.
 省略第二个参数<code>wait</code>，将超时设置为默认值0 ms.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">throttle</span> <span class="o">=</span><span class="err">（</span><span class="nx">fn</span><span class="err">，</span><span class="nx">wait</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
@@ -12474,7 +12476,7 @@ Use <code>Function.prototype.apply()</code> to apply the <code>this</code> conte
 
 <h3 id="isprime">isPrime<a class="headerlink" href="#isprime" title="Permanent link">&para;</a></h3>
 <p>检查提供的整数是否为素数.</p>
-<p>检查从“2”到给定数字的平方根的数字.
+<p>Check numbers from <code>2</code> to the square root of the given number.
 如果其中任何一个除以给定的数字，则返回<code>false</code>，否则返回<code>true</code>，除非该数字小于&#39;2`.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">isPrime</span> <span class="o">=</span> <span class="nx">num</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
   <span class="kr">const</span> <span class="nx">boundary</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="err">（</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="err">（</span><span class="nx">num</span><span class="err">））</span><span class="p">;</span>
@@ -12794,7 +12796,7 @@ GCD公式使用递归.</p>
   <span class="nx">数组</span><span class="err">（</span><span class="nx">结束</span><span class="o">+</span> <span class="mi">1</span>  <span class="o">-</span> <span class="nx">开始</span><span class="err">）</span>
     <span class="p">.</span><span class="nx">fill伪</span><span class="err">（</span><span class="mi">0</span><span class="err">）</span>
     <span class="p">.</span><span class="nx">map</span><span class="err">（（</span><span class="nx">x</span><span class="err">，</span><span class="nx">i</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="nx">i</span> <span class="o">+</span> <span class="nx">start</span><span class="err">）</span><span class="o">**</span> <span class="nx">power</span><span class="err">）</span>
-    <span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">a</span><span class="err">，</span><span class="nx">b</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="err">，</span><span class="mi">0</span><span class="err">）</span><span class="p">;</span>
+    <span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
 </pre></div>
 
 <details>
@@ -12953,7 +12955,7 @@ GCD公式使用递归.</p>
 </details>
 
 <h3 id="isduplexstream">isDuplexStream<a class="headerlink" href="#isduplexstream" title="Permanent link">&para;</a></h3>
-<p>Checks if the given argument is a duplex (readable and writable) stream.</p>
+<p>检查给定参数是否为双工（可读写）流.</p>
 <p>检查值是否与<code>null</code>不同，使用<code>typeof</code>检查值是否为<code>object</code>类型，<code>pipe</code>属性是否为<code>function</code>类型.
 另外检查<code>typeof``_read</code>，<code>_ write</code>和<code>_readableState</code>，<code>_ writeableState</code>属性是否分别是<code>function</code>和<code>object</code>.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">isDuplexStream</span> <span class="o">=</span> <span class="nx">val</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
@@ -13007,7 +13009,7 @@ GCD公式使用递归.</p>
 
 <h3 id="istravisci">isTravisCI<a class="headerlink" href="#istravisci" title="Permanent link">&para;</a></h3>
 <p>检查当前环境是否正常 <a href="https://travis-ci.org/">Travis CI</a>.</p>
-<p>Checks if the current environment has the <code>TRAVIS</code> and <code>CI</code> environment variables (<a href="https://docs.travis-ci.com/user/environment-variables/#Default-Environment-Variables">reference</a>).</p>
+<p>检查当前环境是否具有<code>TRAVIS</code>和<code>CI</code>环境变量（<a href="https://docs.travis-ci.com/user/environment-variables/#Default-Environment-Variables">reference</a>).</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">isTravisCI</span> <span class="o">=</span><span class="err">（）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">process</span> <span class="nx">TR中的</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">TRAVIS</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">和process</span><span class="p">.</span><span class="nx">env中的</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">CI</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;;</span>
 </pre></div>
 
@@ -13137,7 +13139,7 @@ GCD公式使用递归.</p>
     <span class="nx">key</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="nx">clone</span> <span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">=</span> <span class="k">typeof</span> <span class="nx">obj</span> <span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">object</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">？</span><span class="nx">deepClone</span><span class="err">（</span><span class="nx">obj</span> <span class="p">[</span><span class="nx">key</span><span class="p">]</span><span class="err">）：</span><span class="nx">obj</span> <span class="p">[</span><span class="nx">key</span><span class="p">]</span><span class="err">）</span>
   <span class="p">);</span>
   <span class="k">return</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="err">（</span><span class="nx">obj</span><span class="err">）</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">length</span>
-     <span class="err">？</span>  <span class="err">（</span><span class="nx">clone</span><span class="p">.</span><span class="nx">length</span> <span class="o">=</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">length</span><span class="err">）</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">from</span><span class="err">（</span><span class="nx">clone</span><span class="err">）</span>
+    <span class="o">?</span> <span class="p">(</span><span class="nx">clone</span><span class="p">.</span><span class="nx">length</span> <span class="o">=</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">from</span><span class="p">(</span><span class="nx">clone</span><span class="p">)</span>
     <span class="err">：</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="err">（</span><span class="nx">obj</span><span class="err">）</span>
        <span class="err">？</span>  <span class="nb">Array</span><span class="p">.</span><span class="nx">from</span><span class="err">（</span><span class="nx">OBJ</span><span class="err">）</span>
       <span class="err">：</span><span class="nx">克隆</span><span class="p">;</span>
@@ -13177,11 +13179,11 @@ GCD公式使用递归.</p>
      <span class="err">？</span>  <span class="nx">obj</span><span class="p">.</span><span class="nx">map</span><span class="err">（</span><span class="nx">val</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">deepMapKeys</span><span class="err">（</span><span class="nx">val</span><span class="err">，</span><span class="nx">f</span><span class="err">））</span>
     <span class="err">：</span><span class="k">typeof</span> <span class="nx">obj</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">object</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span>
        <span class="err">？</span>  <span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="err">（</span><span class="nx">obj</span><span class="err">）</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">acc</span><span class="err">，</span><span class="nx">current</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
-        <span class="kr">const</span> <span class="nx">val</span> <span class="o">=</span> <span class="nx">obj</span> <span class="p">[</span><span class="nx">current</span><span class="p">];</span>
-        <span class="nx">acc</span> <span class="p">[</span><span class="nx">f</span><span class="err">（</span><span class="nx">current</span><span class="err">）</span><span class="p">]</span> <span class="o">=</span>
+          <span class="kr">const</span> <span class="nx">val</span> <span class="o">=</span> <span class="nx">obj</span> <span class="p">[</span><span class="nx">current</span><span class="p">];</span>
+          <span class="nx">acc</span> <span class="p">[</span><span class="nx">f</span><span class="err">（</span><span class="nx">current</span><span class="err">）</span><span class="p">]</span> <span class="o">=</span>
              <span class="nx">val</span><span class="err">！</span><span class="o">==</span> <span class="kc">null</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span> <span class="k">typeof</span> <span class="nx">val</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">object</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">？</span>  <span class="nx">deepMapKeys</span><span class="err">（</span><span class="nx">val</span><span class="err">，</span><span class="nx">f</span><span class="err">）</span><span class="o">:</span><span class="p">(</span> <span class="nx">acc</span> <span class="p">[</span><span class="nx">f</span><span class="err">（</span><span class="nx">current</span><span class="err">）</span><span class="p">]</span> <span class="o">=</span> <span class="nx">val</span><span class="err">）</span><span class="p">;</span>
-        <span class="nx">返回acc</span><span class="p">;</span>
-      <span class="p">},</span> <span class="p">{})</span>
+          <span class="nx">返回acc</span><span class="p">;</span>
+        <span class="p">},</span> <span class="p">{})</span>
       <span class="err">：</span><span class="nx">obj</span><span class="p">;</span>
 </pre></div>
 
@@ -13213,9 +13215,9 @@ GCD公式使用递归.</p>
   <span class="nx">目标在obj</span>
      <span class="err">？</span>  <span class="nx">OBJ</span> <span class="p">[</span><span class="nx">靶标</span><span class="p">]</span>
     <span class="err">：</span><span class="nb">Object</span><span class="p">.</span><span class="nx">values</span><span class="err">（</span><span class="nx">obj</span><span class="err">）</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">acc</span><span class="err">，</span><span class="nx">val</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
-      <span class="k">if</span> <span class="p">(</span><span class="nx">acc</span> <span class="o">!==</span> <span class="kc">undefined</span><span class="p">)</span> <span class="k">return</span> <span class="nx">acc</span><span class="p">;</span>
-      <span class="k">if</span><span class="err">（</span><span class="k">typeof</span> <span class="nx">val</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">object</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="nx">返回dig</span><span class="err">（</span><span class="nx">val</span><span class="err">，</span><span class="nx">target</span><span class="err">）</span><span class="p">;</span>
-    <span class="p">}</span><span class="err">，</span><span class="kc">undefined</span><span class="err">）</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">acc</span> <span class="o">!==</span> <span class="kc">undefined</span><span class="p">)</span> <span class="k">return</span> <span class="nx">acc</span><span class="p">;</span>
+        <span class="k">if</span><span class="err">（</span><span class="k">typeof</span> <span class="nx">val</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">object</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="nx">返回dig</span><span class="err">（</span><span class="nx">val</span><span class="err">，</span><span class="nx">target</span><span class="err">）</span><span class="p">;</span>
+      <span class="p">}</span><span class="err">，</span><span class="kc">undefined</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
 
 <details>
@@ -13374,7 +13376,7 @@ GCD公式使用递归.</p>
 <h3 id="invertkeyvalues">invertKeyValues<a class="headerlink" href="#invertkeyvalues" title="Permanent link">&para;</a></h3>
 <p>反转对象的键值对，而不改变它.  每个反转键的相应反转值是负责产生反转值的键阵列.  如果提供了功能，则将其应用于每个反转键.</p>
 <p>使用<code>Object.keys（）</code>和<code>Array.prototype.reduce（）</code>来反转对象的键值对并应用提供的函数（如果有的话）.
-Omit the second argument, <code>fn</code>, to get the inverted keys without applying a function to them.</p>
+省略第二个参数<code>fn</code>，得到反转键而不对它们应用函数.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">invertKeyValues</span> <span class="o">=</span><span class="err">（</span><span class="nx">obj</span><span class="err">，</span><span class="nx">fn</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="err">（</span><span class="nx">obj</span><span class="err">）</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">acc</span><span class="err">，</span><span class="nx">key</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
      <span class="kr">const</span> <span class="nx">val</span> <span class="o">=</span> <span class="nx">fn</span><span class="err">？</span>  <span class="nx">fn</span><span class="err">（</span><span class="nx">obj</span> <span class="p">[</span><span class="nx">key</span><span class="p">]</span><span class="err">）：</span><span class="nx">obj</span> <span class="p">[</span><span class="nx">key</span><span class="p">];</span>
@@ -13591,7 +13593,7 @@ Omit the second argument, <code>fn</code>, to get the inverted keys without appl
     <span class="nx">props</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">acc</span><span class="err">，</span><span class="nx">prop</span><span class="err">，</span><span class="nx">i</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
       <span class="k">if</span><span class="err">（</span><span class="nx">acc</span> <span class="o">===</span> <span class="mi">0</span><span class="err">）</span><span class="p">{</span>
          <span class="kr">const</span> <span class="p">[</span><span class="nx">p1</span><span class="err">，</span><span class="nx">p2</span><span class="p">]</span> <span class="o">=</span> <span class="nx">orders</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span> <span class="nx">orders</span> <span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">desc</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">？</span>  <span class="p">[</span><span class="nx">b</span> <span class="p">[</span><span class="nx">prop</span><span class="p">]</span><span class="err">，</span><span class="p">[</span><span class="nx">prop</span><span class="p">]]</span><span class="err">：</span><span class="p">[</span><span class="nx">a</span> <span class="p">[</span><span class="nx">prop</span><span class="p">]</span><span class="err">，</span><span class="nx">b</span> <span class="p">[</span><span class="nx">prop</span><span class="p">]];</span>
-        <span class="nx">acc</span> <span class="o">=</span> <span class="nx">p1</span> <span class="o">&gt;</span> <span class="nx">p2</span> <span class="o">?</span> <span class="mi">1</span> <span class="o">:</span> <span class="nx">p1</span> <span class="o">&lt;</span> <span class="nx">p2</span> <span class="o">?</span> <span class="o">-</span><span class="mi">1</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+         <span class="nx">acc</span> <span class="o">=</span> <span class="nx">p1</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">p2</span><span class="err">？</span>  <span class="mi">1</span><span class="err">：</span><span class="nx">p1</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="nx">p2</span><span class="err">？</span>  <span class="o">-</span><span class="mi">1</span><span class="err">：</span><span class="mi">0</span><span class="p">;</span>
       <span class="p">}</span>
       <span class="nx">返回acc</span><span class="p">;</span>
     <span class="p">},</span> <span class="mi">0</span><span class="p">)</span>
@@ -13736,7 +13738,7 @@ Omit the second argument, <code>fn</code>, to get the inverted keys without appl
             <span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;}</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;.</span><span class="nx">重复</span><span class="err">（</span><span class="nx">keys</span><span class="p">.</span><span class="nx">length</span><span class="err">）</span>
         <span class="p">)</span>
       <span class="p">);</span>
-    <span class="p">}</span><span class="nx">其他acc</span> <span class="p">[</span><span class="nx">k</span><span class="p">]</span> <span class="o">=</span> <span class="nx">obj</span> <span class="p">[</span><span class="nx">k</span><span class="p">];</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="nx">acc</span><span class="p">[</span><span class="nx">k</span><span class="p">]</span> <span class="o">=</span> <span class="nx">obj</span><span class="p">[</span><span class="nx">k</span><span class="p">];</span>
     <span class="nx">返回acc</span><span class="p">;</span>
   <span class="p">},</span> <span class="p">{});</span>
 </pre></div>
@@ -14137,7 +14139,7 @@ Omit the second argument, <code>fn</code>, to get the inverted keys without appl
 对于给定字符串中的每个字母，为其余字母创建所有部分排列.
 使用<code>Array.prototype.map（）</code>将字母与每个部分排列组合，然后使用<code>Array.prototype.reduce（）</code>来组合一个数组中的所有排列.
 字符串<code>length</code>等于“2”或“1”的基本情况.</p>
-<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">stringPermutations</span> <span class="o">=</span> <span class="nx">str</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">stringPermutations</span> <span class="o">=</span> <span class="nx">str</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
    <span class="k">if</span><span class="err">（</span><span class="nx">str</span><span class="p">.</span><span class="nx">length</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">=</span> <span class="mi">2</span><span class="err">）</span><span class="nx">返回str</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="mi">2</span><span class="err">？</span>  <span class="p">[</span><span class="nx">str</span><span class="err">，</span><span class="nx">str</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="nx">str</span> <span class="p">[</span><span class="mi">0</span><span class="p">]]</span><span class="err">：</span><span class="p">[</span><span class="nx">str</span><span class="p">];</span>
   <span class="nx">返回str</span>
     <span class="p">.</span><span class="nx">分裂</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span>
@@ -14304,7 +14306,7 @@ Omit the second argument, <code>fn</code>, to get the inverted keys without appl
 
 <h3 id="words">words<a class="headerlink" href="#words" title="Permanent link">&para;</a></h3>
 <p>将给定的字符串转换为单词数组.</p>
-<p>Use <code>String.prototype.split()</code> with a supplied pattern (defaults to non-alpha as a regexp) to convert to an array of strings. Use <code>Array.prototype.filter()</code> to remove any empty strings.
+<p>使用带有提供模式的<code>String.prototype.split（）</code>（默认为非alpha作为regexp）转换为字符串数组.  使用<code>Array.prototype.filter（）</code>删除任何空字符串.
 省略第二个参数以使用默认的regexp.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">words</span> <span class="o">=</span><span class="err">（</span><span class="nx">str</span><span class="err">，</span><span class="nx">pattern</span> <span class="o">=</span> <span class="sr">/ [^ a-zA-Z  - ] + /</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">str</span><span class="p">.</span><span class="nx">split</span><span class="err">（</span><span class="nx">pattern</span><span class="err">）</span><span class="p">.</span><span class="nx">filter</span><span class="err">（</span><span class="nb">Boolean</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
@@ -14398,7 +14400,7 @@ Omit the second argument, <code>fn</code>, to get the inverted keys without appl
 </details>
 
 <h3 id="isnil">isNil<a class="headerlink" href="#isnil" title="Permanent link">&para;</a></h3>
-<p>Returns <code>true</code> if the specified value is <code>null</code> or <code>undefined</code>, <code>false</code> otherwise.</p>
+<p>如果指定的值为“null”或“undefined”，则返回“true”，否则返回“false”.</p>
 <p>使用strict equality运算符检查<code>val</code>的值是否等于<code>null</code>或<code>undefined</code>.</p>
 <div class="codehilite"><pre><span></span> <span class="kr">const</span> <span class="nx">isNil</span> <span class="o">=</span> <span class="nx">val</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">val</span> <span class="o">===</span> <span class="kc">undefined</span> <span class="o">||</span>  <span class="nx">val</span> <span class="o">===</span> <span class="kc">null</span><span class="p">;</span>
 </pre></div>
@@ -14425,8 +14427,9 @@ Omit the second argument, <code>fn</code>, to get the inverted keys without appl
 
 <h3 id="isnumber">isNumber<a class="headerlink" href="#isnumber" title="Permanent link">&para;</a></h3>
 <p>检查给定的参数是否为数字.</p>
-<p>使用<code>typeof</code>检查值是否被归类为数字原语.</p>
-<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">isNumber</span> <span class="o">=</span> <span class="nx">val</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="k">typeof</span> <span class="nx">val</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">number</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;;</span>
+<p>使用<code>typeof</code>检查值是否被归类为数字原语. 
+为了防止“NaN”，检查<code>val === val</code>（因为<code>NaN</code>的<code>typeof</code>等于<code>number</code>并且唯一的值不等于它自己）.</p>
+<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">isNumber</span> <span class="o">=</span> <span class="nx">val</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="k">typeof</span> <span class="nx">val</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">number</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span> <span class="nx">val</span> <span class="o">===</span> <span class="nx">val</span><span class="p">;</span>
 </pre></div>
 
 <details>
@@ -14438,7 +14441,7 @@ Omit the second argument, <code>fn</code>, to get the inverted keys without appl
 
 <h3 id="isobject">isObject<a class="headerlink" href="#isobject" title="Permanent link">&para;</a></h3>
 <p>返回一个布尔值，确定传递的值是否为对象.</p>
-<p>使用<code>Object</code>构造函数为给定值创建一个对象包装器. 
+<p>Uses the  <code>Object</code> constructor to create an object wrapper for the given value. 
  如果值为“null”或“undefined”，则创建并返回一个空对象.  否则，返回与给定值对应的类型的对象.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">isObject</span> <span class="o">=</span> <span class="nx">obj</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">obj</span> <span class="o">===</span> <span class="nb">Object</span><span class="err">（</span><span class="nx">obj</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
@@ -14451,7 +14454,7 @@ Omit the second argument, <code>fn</code>, to get the inverted keys without appl
 </details>
 
 <h3 id="isobjectlike">isObjectLike<a class="headerlink" href="#isobjectlike" title="Permanent link">&para;</a></h3>
-<p>Checks if a value is object-like.</p>
+<p>检查值是否类似于对象.</p>
 <p>检查提供的值是否为“null”且其“typeof”是否等于“object”.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">isObjectLike</span> <span class="o">=</span> <span class="nx">val</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">val</span><span class="err">！</span><span class="o">==</span> <span class="kc">null</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span> <span class="k">typeof</span> <span class="nx">val</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">object</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;;</span>
 </pre></div>
@@ -14568,7 +14571,7 @@ Omit the second argument, <code>fn</code>, to get the inverted keys without appl
 <h2 id="utility_1">🔧 Utility<a class="headerlink" href="#utility_1" title="Permanent link">&para;</a></h2>
 <h3 id="castarray">castArray<a class="headerlink" href="#castarray" title="Permanent link">&para;</a></h3>
 <p>如果不是一个数组，则将提供的值转换为数组.</p>
-<p>使用<code>Array.prototype.isArray（）</code>来确定<code>val</code>是否是一个数组并按原样返回它或相应地封装在一个数组中.</p>
+<p>Use <code>Array.prototype.isArray()</code> to determine if <code>val</code> is an array and return it as-is or encapsulated in an array accordingly.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">castArray</span> <span class="o">=</span> <span class="nx">val</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="err">（</span><span class="nx">val</span><span class="err">）？</span><span class="nx">val</span><span class="err">：</span><span class="p">[</span><span class="nx">val</span><span class="p">]</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
 
@@ -14738,7 +14741,7 @@ Omit the second argument, <code>fn</code>, to get the inverted keys without appl
 <p>对<code>window</code>和<code>document</code>的<code>typeof</code>值使用<code>Array.prototype.includes（）</code>（全局变量通常只在浏览器环境中可用，除非它们是明确定义的），如果其中一个，则返回<code>true</code>他们是&#39;未定义&#39;.
 <code>typeof</code>允许检查全局变量是否存在而不抛出<code>ReferenceError</code>.
 如果它们都不是“未定义”，则假定当前环境是浏览器.</p>
-<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">isBrowser</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="o">!</span><span class="p">[</span><span class="k">typeof</span> <span class="nb">window</span><span class="p">,</span> <span class="k">typeof</span> <span class="nb">document</span><span class="p">].</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;undefined&#39;</span><span class="p">);</span>
+<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">isBrowser</span> <span class="o">=</span><span class="err">（）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">！</span><span class="p">[</span><span class="k">typeof</span> <span class="nb">window</span><span class="err">，</span><span class="k">typeof</span> <span class="nb">document</span><span class="p">]</span> <span class="p">.</span><span class="nx">includes</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="kc">undefined</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
 
 <details>
@@ -14750,7 +14753,7 @@ Omit the second argument, <code>fn</code>, to get the inverted keys without appl
 
 <h3 id="mostperformant">mostPerformant<a class="headerlink" href="#mostperformant" title="Permanent link">&para;</a></h3>
 <p>返回执行速度最快的函数数组中函数的索引.</p>
-<p>使用<code>Array.prototype.map（）</code>生成一个数组，其中每个值是在<code>iterations</code>次之后执行该函数所花费的总时间.  使用之前和之后的<code>performance.now（）</code>值的差异来获得高精度的总时间（以毫秒为单位）.
+<p>Use <code>Array.prototype.map()</code> to generate an array where each value is the total time taken to execute the function after <code>iterations</code> times. Use the difference in <code>performance.now()</code> values before and after to get the total time in milliseconds to a high degree of accuracy.
 使用<code>Math.min（）</code>查找最小执行时间，并返回与最高性能函数的索引相对应的最短时间的索引.
  省略第二个参数<code>iterations</code>，使用默认的10,000次迭代.  迭代次数越多，结果越可靠，但需要的时间越长.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">mostPerformant</span> <span class="o">=</span><span class="err">（</span><span class="nx">fns</span><span class="err">，</span><span class="nx">iterations</span> <span class="o">=</span> <span class="mi">10000</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
@@ -14785,7 +14788,7 @@ Omit the second argument, <code>fn</code>, to get the inverted keys without appl
 
 <h3 id="parsecookie">parseCookie<a class="headerlink" href="#parsecookie" title="Permanent link">&para;</a></h3>
 <p>解析HTTP Cookie标头字符串并返回所有cookie名称 - 值对的对象.</p>
-<p>Use <code>String.prototype.split(';')</code> to separate key-value pairs from each other.
+<p>使用<code>String.prototype.split（&amp;#39;;&amp;#39;）</code>将键值对彼此分开.
 使用<code>Array.prototype.map（）</code>和<code>String.prototype.split（&amp;#39;=&amp;#39;）</code>将键与每对中的值分开.
 使用<code>Array.prototype.reduce（）</code>和<code>decodeURIComponent（）</code>创建一个包含所有键值对的对象.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">parseCookie</span> <span class="o">=</span> <span class="nx">str</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
