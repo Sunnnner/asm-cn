@@ -7172,16 +7172,16 @@ docker.sock的代理，用于强制实施访问控制和隔离权限.</li>
 <h3 id="levels-of-security-problems">Levels of security problems<a class="headerlink" href="#levels-of-security-problems" title="Permanent link">&para;</a></h3>
 <p>1）定期申请</p>
 <p><em>总是不信任 - &gt;知道
-</em> suid bit  - &gt; mount with nosuid
-<em>限制可用的系统调用 - &gt; seccomp-bpf，grsec
- </em>泄漏到另一个容器（名称空间，文件系统中的错误） - &gt;每个容器内部具有不同uid的用户名称空间：容器中的1000  - 外部的14293和15398;  安全模块，如selinux或apparmor</p>
+* suid bit  - &gt; mount with nosuid
+</em>限制可用的系统调用 - &gt; seccomp-bpf，grsec
+ *泄漏到另一个容器（名称空间，文件系统中的错误） - &gt;每个容器内部具有不同uid的用户名称空间：容器中的1000  - 外部的14293和15398;  安全模块，如selinux或apparmor</p>
 <p>2）系统服务，如cron，ssh</p>
 <p><em>以root身份运行 - &gt;通过堡垒主机或vm隔离
 </em>使用/ dev  - &gt;“devices”控制组<br />
 默认情况下，在容器中创建以下设备节点.<br />
 Docker镜像也与nodev一起安装，这意味着即使在图像中预先创建了设备节点，容器内的进程也无法使用它来与内核通信.<br />
-/dev/console,/dev/null,/dev/zero,/dev/full,/dev/tty<em>,/dev/urandom,/dev/random,/dev/fuse
-</em> root调用 - &gt;功能（cap_sys_admin警告！）<br />
+/dev/console,/dev/null,/dev/zero,/dev/full,/dev/tty*,/dev/urandom,/dev/random,/dev/fuse
+* root调用 - &gt;功能（cap_sys_admin警告！）<br />
 以下是Docker使用的当前功能列表：chown，dac_override，fowner，kill，setgid，setuid，setpcap，net_bind_service，net_raw，sys_chroot，mknod，setfcap和audit_write.<br />
 Docker删除了其中的一些功能，包括：<br />
 CAP_SETPCAP修改流程功能<br />
