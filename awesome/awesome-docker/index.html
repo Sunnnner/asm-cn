@@ -7468,7 +7468,7 @@
 <li><a href="https://github.com/dwyl/learn-docker">Learn Docker</a>：逐步教程和更多资源（视频，文章，备忘单） <a href="https://github.com/dwyl">@dwyl</a></li>
 <li><a href="https://training.play-with-docker.com/">Play With Docker</a> ：PWD是从初学者到高级用户开始使用Docker的好方法.  Docker直接在您的浏览器中运行.</li>
 <li><a href="http://play-with-moby.com/">Play With Moby</a> ：PWM是一个基于Web的Moby游乐场，可让您在几秒钟内尝试不同的平台组件.  它为您提供了在云中拥有免费的Alpine Linux虚拟机的体验，您可以在其中构建和运行Moby项目，甚至可以创建集群进行实验.</li>
-<li><a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/">Practical Introduction to Container Terminology</a>  容器技术的前景不仅仅是docker.  如果没有很好地掌握术语，很难掌握docker和（选择你喜欢的，CRI-O，rkt，lxc / lxd）之间的关键区别，或者了解Open Container Initiative正在做些什么来标准化容器技术.</li>
+<li><a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/">Practical Introduction to Container Terminology</a>  容器技术的前景不仅仅是docker.  如果没有很好地掌握术语，就很难掌握docker和（选择你喜欢的，CRI-O，rkt，lxc / lxd）之间的关键差异，或者了解Open Container Initiative正在做些什么来标准化容器技术.</li>
 <li><a href="https://hashnode.com/post/docker-tutorial-for-beginners-cjrj2hg5001s2ufs1nker9he2">Docker Tutorial for Beginners (Updated 2019 version)</a>   - 在这个Docker教程中，您将学习所有基础知识，并了解如何将Node.js和Go应用程序容纳在一起.  即使您不熟悉这些语言，也应该很容易遵循本教程并使用任何其他语言.</li>
 </ul>
 <p><strong> Cheatsheets </strong> by</p>
@@ -7513,7 +7513,7 @@
 <li><a href="https://github.com/p8952/bocker">bocker</a> （1）：头骨： -  Docker在100行bash中实现 <a href="https://github.com/p8952">p8952</a></li>
 <li><a href="https://github.com/box-builder/box">box</a> - 使用mruby DSL构建Dockerfile映像，包括展平和图层处理</li>
 <li><a href="https://github.com/byrnedo/capitan">Capitan</a> - 可组合的docker业务流程，增加了脚本支持 <a href="https://github.com/byrnedo">@byrnedo</a>.</li>
-<li><a href="https://github.com/funkwerk/compose_plantuml">compose_plantuml</a> - 通过Docker-compose文件生成Plantuml图 <a href="https://github.com/funkwerk">@funkwerk</a></li>
+<li><a href="https://github.com/funkwerk/compose_plantuml">compose_plantuml</a> - 通过以下方式从docker-compose文件生成Plantuml图 <a href="https://github.com/funkwerk">@funkwerk</a></li>
 <li><a href="https://github.com/magicmark/composerize">Composerize</a> - 将docker run命令转换为docker-compose文件</li>
 <li><a href="https://github.com/polonskiy/crowdr">crowdr</a> - 用于管理多个Docker容器的工具（<code>docker-compose</code>替代） <a href="https://github.com/polonskiy/">@polonskiy</a></li>
 <li><a href="https://github.com/abesto/docker-compose-graphviz">docker-compose-graphviz</a> - 将docker-compose.yml文件转换为Graphviz .dot文件 <a href="https://github.com/abesto">@abesto</a></li>
@@ -7546,7 +7546,7 @@
 </ul>
 <h3 id="monitoring">Monitoring<a class="headerlink" href="#monitoring" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://github.com/axibase/atsd-use-cases/tree/master/integrations/docker">Axibase Collector</a> -  Axibase Collector将性能计数器，配置更改和生命周期事件从Docker引擎流式传输到Axibase时间序列数据库，用于汇总仪表板和与上游监控系统的集成.</li>
+<li><a href="https://github.com/axibase/atsd-use-cases/tree/master/integrations/docker">Axibase Collector</a> -  Axibase Collector将性能计数器，配置更改和生命周期事件从Docker引擎流入Axibase时间序列数据库，用于汇总仪表板和与上游监控系统的集成.</li>
 <li><a href="https://github.com/google/cadvisor">cAdvisor</a>   - 分析正在运行的容器的资源使用情况和性能特征.  由[@Google]创建[google]</li>
 <li><a href="https://github.com/stefanprodan/dockprom">dockprom</a> - 使用Prometheus，Grafana，cAdvisor，NodeExporter和AlertManager的Docker主机和容器监控 <a href="https://github.com/stefanprodan">@stefanprodan</a></li>
 <li><a href="https://github.com/deltaskelta/docker-alertd">Docker-Alertd</a> - 根据docker容器资源使用情况/统计信息监控和发送警报</li>
@@ -7564,7 +7564,7 @@
 <li><a href="https://github.com/NexClipper/NexClipper">NexClipper</a> -  NexClipper是专门用于Docker，Apache Mesos，Marathon，DC / OS，Mesosphere，Kubernetes的容器监控和性能管理解决方案 <a href="https://github.com/NexClipper">@Nexclipper</a></li>
 <li><a href="https://github.com/uschtwill/docker_monitoring_logging_alerting">Out-of-the-box Host/Container Monitoring/Logging/Alerting Stack</a>   -  Docker主机和容器监控，日志记录和开箱即用的警报，使用cAdvisor，Prometheus，Grafana进行监控，Elasticsearch，Kibana和Logstash进行日志记录，使用elastalert和Alertmanager进行警报.  设置在5分钟.  生产使用的安全模式，内置[自动Nginx反向代理（jwilder）] [nginxproxy].</li>
 <li><a href="https://github.com/gpulido/SwarmAlert">SwarmAlert</a> - 监视Docker Swarm并在发现没有运行正常服务任务的容器时发送Pushover警报.</li>
-<li><a href="https://github.com/monitoringartist/Zabbix-Docker-Monitoring">Zabbix Docker module</a>   -  Zabbix模块，提供运行容器，CPU /内存/ blk IO / net容器指标的发现.  还支持Systemd Docker和LXC执行驱动程序.  它是一个动态链接的共享对象库，因此其性能比任何脚本解决方案都要好（~10x）.</li>
+<li><a href="https://github.com/monitoringartist/Zabbix-Docker-Monitoring">Zabbix Docker module</a>   -  Zabbix模块，提供运行容器，CPU /内存/ blk IO / net容器指标的发现.  还支持Systemd Docker和LXC执行驱动程序.  它是一个动态链接的共享对象库，因此它的性能比任何脚本解决方案都要好（~10x）.</li>
 <li><a href="https://github.com/gomex/docker-zabbix">Zabbix Docker</a> - 使用zabbix LLD功能自动监控容器.</li>
 </ul>
 <h3 id="networking">Networking<a class="headerlink" href="#networking" title="Permanent link">&para;</a></h3>
@@ -7588,7 +7588,7 @@
 <li><a href="https://github.com/DevTable/gantryd">gantryd</a> ：skull： - 一个框架，用于轻松管理跨机器的基于docker的组件 <a href="https://github.com/DevTable">@DevTable</a></li>
 <li><a href="https://github.com/codeabovelab/haven-platform">Haven</a>   -  Haven是一个简化的容器管理平台，集成了容器，应用程序，集群，映像和注册表管理.  通过 <a href="https://github.com/codeabovelab">@codeabovelab</a></li>
 <li><a href="https://github.com/spotify/helios">Helios</a> ：skull： - 通过[@spotify] [spotify]在整个服务器队列中部署和管理容器的简单平台</li>
-<li><a href="https://github.com/kontena/kontena">Kontena</a> - 群众应用容器 <a href="https://www.kontena.io/">website</a></li>
+<li><a href="https://github.com/kontena/kontena">Kontena</a> - 面向群众的应用容器 <a href="https://www.kontena.io/">website</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes">Kubernetes</a> -  Google的Docker容器的开源编排系统</li>
 <li><a href="https://github.com/ManageIQ/manageiq">ManageIQ</a>   - 发现，优化和控制您的混合IT.  通过 <a href="https://github.com/ManageIQ">ManageIQ</a></li>
 <li><a href="https://github.com/mantl/mantl">Mantl</a> -  Mantl是一个快速部署全球分布式服务的现代平台</li>
@@ -7638,7 +7638,7 @@
 <li><a href="https://github.com/dev-sec/cis-docker-benchmark">CIS Docker Benchmark</a>   - 此[InSpec] [inspec]合规性配置文件以自动方式实施CIS Docker 1.12.0基准测试，以便在生产环境中围绕Docker守护程序和容器提供安全性最佳实践测试.  通过 <a href="https://github.com/dev-sec">@dev-sec</a></li>
 <li><a href="https://github.com/coreos/clair">Clair</a>   -  Clair是一个开源项目，用于静态分析appc和docker容器中的漏洞.  由[@coreos] [coreos]</li>
 <li><a href="https://github.com/eliasgranderubio/dagda">Dagda</a>   -  Dagda是一种工具，用于对docker镜像/容器中的已知漏洞，特洛伊木马，病毒，恶意软件和其他恶意威胁进行静态分析，并监视docker守护程序和运行docker容器以检测异常活动.  通过 <a href="https://github.com/eliasgranderubio">@eliasgranderubio</a></li>
-<li><a href="https://github.com/docker/docker-bench-security">docker-bench-security</a>   - 用于检查在生产中部署Docker容器的数十种常见最佳实践的脚本.  通过[@docker] [docker]</li>
+<li><a href="https://github.com/docker/docker-bench-security">docker-bench-security</a>   - 用于检查生产中部署Docker容器的数十种常见最佳实践的脚本.  通过[@docker] [docker]</li>
 <li><a href="https://github.com/google/docker-explorer">docker-explorer</a> - 通过[@Google] [google]帮助预防离线码头获取的工具</li>
 <li><a href="https://github.com/theupdateframework/notary">notary</a>   - 用于运行和与受信任集合交互的服务器和客户端.  通过 <a href="https://github.com/theupdateframework">@TUF</a></li>
 <li><a href="https://github.com/OpenSCAP/openscap">oscap-docker</a>   -  OpenSCAP提供了oscap-docker工具，用于扫描Docker容器和图像.  通过 <a href="https://github.com/OpenSCAP">OpenSCAP</a></li>
@@ -7660,7 +7660,7 @@
 <li><a href="https://github.com/rancher/convoy">Convoy</a>   - 一个开源的Docker卷驱动程序，可以在任何地方快照，备份和恢复Docker卷.  由[@rancher] [牧场主]</li>
 <li><a href="https://github.com/adlogix/docker-machine-nfs">Docker Machine NFS</a> 为OS X上通过Docker Machine创建的现有boot2docker框激活NFS.</li>
 <li><a href="https://github.com/leighmcculloch/docker-unison">Docker Unison</a>  使用Unison进行快速双向文件夹同步的docker卷容器.  创建作为OS X上缓慢boot2docker卷的替代方法 <a href="https://github.com/leighmcculloch">@leighmcculloch</a></li>
-<li><a href="https://github.com/CWSpear/local-persist">Local Persist</a> 为本地卷指定一个挂载点（通过<code>docker volume create</code>创建），这样文件将始终保持不变，因此您可以挂载到不同容器中的不同目录.</li>
+<li><a href="https://github.com/MatchbookLab/local-persist">Local Persist</a> 为本地卷指定一个挂载点（通过<code>docker volume create</code>创建），这样文件将始终保持不变，因此您可以挂载到不同容器中的不同目录.</li>
 <li><a href="https://github.com/minio/minio">Minio</a> -  Docker容器中的S3兼容对象存储服务器</li>
 <li><a href="https://github.com/ContainX/docker-volume-netshare">Netshare</a>  Docker NFS，AWS EFS，Ceph和Samba / CIFS卷插件.  通过[@ContainX] [containsx]</li>
 <li><a href="https://portworx.com">portworx</a> ：heavy_dollar_sign： - 用于持久，共享和复制卷的分散存储解决方案.</li>
@@ -7734,7 +7734,7 @@
 <li><a href="https://github.com/garywiz/chaperone">Chaperone</a>   - 为docker容器设计的单个PID1进程.  用户管理，日志管理，启动，僵尸收获，都在一个小包装中.  通过 <a href="https://github.com/garywiz">@garywiz</a></li>
 <li>[CoreOS] [coreos]  - 用于大规模服务器部署的Linux</li>
 <li><a href="https://github.com/GoogleContainerTools/distroless">distroless</a> - 通过[@GoogleContainerTools] [googlecontainertools]减去语言的码头图像，减去操作系统</li>
-<li><a href="https://github.com/gliderlabs/docker-alpine">docker-alpine</a> - 一个超级小型Docker基础图像_（5MB）_使用Alpine Linux by [@gliderlabs] [gliderlabs]</li>
+<li><a href="https://github.com/gliderlabs/docker-alpine">docker-alpine</a> - 一个超级小型Docker基础图像_（5MB）_使用Alpine Linux [@gliderlabs] [gliderlabs]</li>
 <li><a href="https://github.com/jwilder/docker-gen">docker-gen</a> -  [@jwilder] [jwilder]从docker容器元数据生成文件</li>
 <li><a href="https://github.com/jwilder/dockerize">dockerize</a> -  [@jwilder] [jwilder]简化在docker容器中运行应用程序的实用程序</li>
 <li><a href="https://github.com/tianon/gosu">GoSu</a> - 以此特定用户身份运行此特定应用程序，然后退出管道（入口点脚本工具） <a href="https://github.com/tianon">@tianon</a></li>
@@ -7774,7 +7774,7 @@
 <li><a href="https://github.com/oracle/smith">Smith</a> - 一个Micocontainer Builder，可以在构建映像后执行多阶段构建[Oracle] [oracle]</li>
 <li><a href="https://github.com/flant/werf">werf</a> -  Werf（以前称为dapp）有助于实现和支持持续集成和持续交付 <a href="https://github.com/flant">@flant</a></li>
 <li><a href="https://github.com/P3GLEG/Whaler">Whaler</a> - 将Docker镜像反转为Dockerfiles的程序 <a href="https://github.com/P3GLEG/">@P3GLEG</a>.</li>
-<li><a href="https://github.com/Gueils/whales">Whales</a> - 自动将应用程序停靠的工具 <a href="https://github.com/IcaliaLabs">@icalialabs</a>.</li>
+<li><a href="https://github.com/Gueils/whales">Whales</a> - 一种自动将应用程序停靠的工具 <a href="https://github.com/IcaliaLabs">@icalialabs</a>.</li>
 </ul>
 <h3 id="dockerfile">Dockerfile<a class="headerlink" href="#dockerfile" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7900,7 +7900,7 @@
 </ul>
 <h3 id="garbage-collection">Garbage Collection<a class="headerlink" href="#garbage-collection" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://github.com/tjamet/caduc">caduc</a> - 最近没有使用的码头工人垃圾收集器清洁工具</li>
+<li><a href="https://github.com/tjamet/caduc">caduc</a> - 最近没有使用的码头工垃圾收集器清理工具</li>
 <li><a href="https://github.com/ZZROTDesign/docker-clean">Docker Clean</a> - 一个清理Docker容器，图像和卷的脚本 <a href="https://github.com/ZZROTDesign">@zzrotdesign</a></li>
 <li><a href="https://github.com/meltwater/docker-cleanup">Docker-cleanup</a> - 自动Docker镜像，容器和卷清理 <a href="https://github.com/meltwater">@meltwater</a></li>
 <li><a href="https://github.com/Yelp/docker-custodian">docker-custodian</a>   - 让docker主机保持整洁.  通过 <a href="https://github.com/Yelp">@Yelp</a></li>
@@ -8000,7 +8000,7 @@
 <ul>
 <li><a href="https://github.com/ciandcd/awesome-ciandcd">Awesome CI/CD</a> - 不是特定于码头工具但相关.</li>
 <li><a href="https://github.com/ramitsurana/awesome-kubernetes">Awesome Kubernetes</a> by [@ramitsurana] [ramitsurana]</li>
-<li><a href="https://github.com/Friz-zy/awesome-linux-containers">Awesome Linux Container</a> 关于容器的一般情况比这个回购更多 <a href="https://github.com/Friz-zy">@Friz-zy</a>.</li>
+<li><a href="https://github.com/Friz-zy/awesome-linux-containers">Awesome Linux Container</a> 关于容器的一般情况比这个回购更通用 <a href="https://github.com/Friz-zy">@Friz-zy</a>.</li>
 <li><a href="https://github.com/Kickball/awesome-selfhosted">Awesome Selfhosted</a>  可以通过以传统方式（设置本地Web服务器并从那里运行应用程序）或在Docker容器中运行的本地托管的自由软件网络服务和Web应用程序列表.  通过 <a href="https://github.com/Kickball">@Kickball</a></li>
 <li><a href="https://github.com/n1trux/awesome-sysadmin">Awesome Sysadmin</a> 通过 <a href="https://github.com/n1trux">@n1trux</a></li>
 <li><a href="https://github.com/cjbarber/ToolsOfTheTrade">ToolsOfTheTrade</a> 一个SaaS和Onfrontise应用程序列表 <a href="https://github.com/cjbarber">@cjbarber</a></li>
