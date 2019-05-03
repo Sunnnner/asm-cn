@@ -12201,7 +12201,7 @@ launchctl load -w /System/Library/LaunchAgents/com.apple.rcd.plist
 <h4 id="vacuum-mail-index">Vacuum Mail Index<a class="headerlink" href="#vacuum-mail-index" title="Permanent link">&para;</a></h4>
 <p>下面的AppleScript代码将退出Mail，清空SQLite索引，然后重新打开Mail.  在一段时间没有优化的大型电子邮件数据库中，这可以显着提高响应速度和速度.
 <div class="codehilite"><pre><span></span><span class="cm">(*</span>
-<span class="cm">通过吸尘信封索引来加速Mail.app</span>
+<span class="cm">Speed up Mail.app by vacuuming the Envelope Index</span>
 <span class="cm">代码来自：http：//web.archive.org/web/20071008123746/http://www.hawkwings.net/2007/03/03/scripts-to-automate-the-mailapp-envelope-speed-trick/</span>
 <span class="cm">最初由“pmbuko”改编，由Romulo修改</span>
 <span class="cm">由Brett Terpstra 2012更新</span>
@@ -12347,7 +12347,7 @@ sudo defaults write /Library/Preferences/com.apple.TimeMachine RequiresACPower -
 <h3 id="vim">Vim<a class="headerlink" href="#vim" title="Permanent link">&para;</a></h3>
 <h4 id="compile-sane-vim">Compile Sane Vim<a class="headerlink" href="#compile-sane-vim" title="Permanent link">&para;</a></h4>
 <p>通过Homebrew编译MacVim的所有铃声和口哨声，包括覆盖系统Vim.
-<div class="codehilite"><pre><span></span>brew install macvim --HEAD --with-cscope --with-lua --with-override-system-vim --with-luajit --with-python
+<div class="codehilite"><pre><span></span>brew install macvim --HEAD
 </pre></div></p>
 <h4 id="neovim">Neovim<a class="headerlink" href="#neovim" title="Permanent link">&para;</a></h4>
 <p>通过Homebrew安装现代Vim插件替代品.
@@ -12576,11 +12576,11 @@ defaults write com.apple.frameworks.diskimages skip-verify-remote -bool <span cl
 killall Finder
 
 <span class="c1">## Disable (Default)</span>
-defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool <span class="nb">false</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+默认写入com.apple.finder ShowExternalHardDrivesOnDesktop -bool <span class="nb">false</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
 killall Finder
 </pre></div></p>
 <h4 id="show-internal-media">Show Internal Media<a class="headerlink" href="#show-internal-media" title="Permanent link">&para;</a></h4>
-<p>Built-in HDs or SSDs.
+<p>内置HD或SSD.
 <div class="codehilite"><pre><span></span><span class="c1">## Enable</span>
 默认写com.apple.finder ShowHardDrivesOnDesktop -bool <span class="nb">true</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
 killall Finder
@@ -12866,11 +12866,11 @@ defaults write /Library/Preferences/com.apple.driver.AppleIRController DeviceEna
 <h4 id="chime-when-charging">Chime When Charging<a class="headerlink" href="#chime-when-charging" title="Permanent link">&para;</a></h4>
 <p>连接MagSafe时播放iOS充电声音.
 <div class="codehilite"><pre><span></span><span class="c1">## Enable</span>
-默认值写com.apple.PowerChime ChimeOnAllHardware -bool <span class="nb">true</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
+默认写入com.apple.PowerChime ChimeOnAllHardware -bool <span class="nb">true</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\ </span>t
 打开/System/Library/CoreServices/PowerChime.app
 
 <span class="c1">## Disable (Default)</span>
-默认写入com.apple.PowerChime ChimeOnAllHardware -bool <span class="nb">false</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
+默认写入com.apple.PowerChime ChimeOnAllHardware -bool <span class="nb">false</span> <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\ </span>t
 killall PowerChime
 </pre></div></p>
 <h2 id="input-devices">Input Devices<a class="headerlink" href="#input-devices" title="Permanent link">&para;</a></h2>
@@ -13047,7 +13047,7 @@ sudo launchctl unload -w /System/Library/LaunchDaemons/ssh.plist
 <span class="c1">#### Start Native TFTP Daemon</span>
 文件将从<span class="sb">`</span>/ private / tftpboot<span class="sb">`</span>提供.
 <span class="sb">```</span>bash
-sudo launchctl load -F /System/Library/LaunchDaemons/tftp.plist<span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
+sudo launchctl load -F /System/Library/LaunchDaemons/tftp.plist <span class="o">&amp;&amp;</span> <span class="se">\</span>
 sudo launchctl start com.apple.tftpd
 </pre></div></p>
 <h3 id="wi-fi">Wi-Fi<a class="headerlink" href="#wi-fi" title="Permanent link">&para;</a></h3>
@@ -13060,7 +13060,7 @@ sudo launchctl start com.apple.tftpd
 <div class="codehilite"><pre><span></span>sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport / usr / <span class="nb">local</span> / bin / airport
 </pre></div>
 运行无线扫描：
-<div class="codehilite"><pre><span></span>机场-s
+<div class="codehilite"><pre><span></span>airport -s
 </pre></div></p>
 <h4 id="show-current-ssid">Show Current SSID<a class="headerlink" href="#show-current-ssid" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span> /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I <span class="p">|</span>  awk<span class="p">&amp;</span><span class="c1">#39;/ SSID / {print substr（$ 0，index（$ 0，$ 2））}&amp;#39;</span>
@@ -13180,7 +13180,7 @@ sudo spctl --master-disable
 </pre></div>
 
 <h3 id="wiping-data">Wiping Data<a class="headerlink" href="#wiping-data" title="Permanent link">&para;</a></h3>
-<p>Note: The <code>srm</code> command appears to have been removed on MacOS after 10.9. There is a note on an <a href="https://support.apple.com/en-us/HT201949">Apple support page</a> 暗示为什么：
+<p>注意：在10.9之后，“srm”命令似乎已在MacOS上删除.  有一个注释 <a href="https://support.apple.com/en-us/HT201949">Apple support page</a> 暗示为什么：
  &gt;使用SSD驱动器时，磁盘工具中不提供安全擦除和擦除可用空间.  SSD驱动器不需要这些选项，因为标准擦除使得难以从SSD恢复数据.</p>
 <h4 id="securely-remove-file">Securely Remove File<a class="headerlink" href="#securely-remove-file" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span>srm / path / to / file
@@ -13233,7 +13233,7 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool <span class="n
 
 <h4 id="copy-large-file-with-progress">Copy Large File with Progress<a class="headerlink" href="#copy-large-file-with-progress" title="Permanent link">&para;</a></h4>
 <p>确保安装了<code>pv</code>并用适当的写设备或文件替换<code>/ dev / rdisk2</code>.
-<div class="codehilite"><pre><span></span> <span class="nv">FILE</span> <span class="o">=</span> / path / to / file.iso pv -s $（du -h $ FILE <span class="p">|</span> awk<span class="p">&amp;</span><span class="c1">#39;/.*/ {print $ 1}&amp;#39;）$ FILE |  sudo dd = / dev / rdisk2 bs = 1m</span>
+<div class="codehilite"><pre><span></span><span class="nv">FILE</span><span class="o">=</span>/path/to/file.iso pv -s <span class="k">$(</span>du -h <span class="nv">$FILE</span> <span class="p">|</span> awk <span class="s1">&#39;/.*/ {print $1}&#39;</span><span class="k">)</span> <span class="nv">$FILE</span> <span class="p">|</span> sudo dd <span class="nv">of</span><span class="o">=</span>/dev/rdisk2 <span class="nv">bs</span><span class="o">=</span>1m
 </pre></div></p>
 <h4 id="restore-sane-shell">Restore Sane Shell<a class="headerlink" href="#restore-sane-shell" title="Permanent link">&para;</a></h4>
 <p>如果您的shell会话疯狂（某些脚本或应用程序将其变成乱码）.
@@ -13276,7 +13276,7 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool <span class="n
 
 <h3 id="filevault">FileVault<a class="headerlink" href="#filevault" title="Permanent link">&para;</a></h3>
 <h4 id="automatically-unlock-filevault-on-restart">Automatically Unlock FileVault on Restart<a class="headerlink" href="#automatically-unlock-filevault-on-restart" title="Permanent link">&para;</a></h4>
-<p>If FileVault is enabled on the current volume, it restarts the system, bypassing the initial unlock. The command may not work on all systems.
+<p>如果在当前卷上启用了FileVault，则会重新启动系统，从而绕过初始解锁.  该命令可能无法在所有系统上运行.
 <div class="codehilite"><pre><span></span>sudo fdesetup authrestart
 </pre></div></p>
 <h4 id="filevault-service">FileVault Service<a class="headerlink" href="#filevault-service" title="Permanent link">&para;</a></h4>
@@ -13506,7 +13506,7 @@ sudo systemsetup setusingnetworktime off
 
 <h2 id="terminal_1">Terminal<a class="headerlink" href="#terminal_1" title="Permanent link">&para;</a></h2>
 <h4 id="ring-terminal-bell">Ring Terminal Bell<a class="headerlink" href="#ring-terminal-bell" title="Permanent link">&para;</a></h4>
-<p>敲响终端铃（如果已启用）并在其上放置徽章.
+<p>Rings the terminal bell (if enabled) and puts a badge on it.
 <div class="codehilite"><pre><span></span>tput bel
 </pre></div></p>
 <h3 id="alternative-terminals">Alternative Terminals<a class="headerlink" href="#alternative-terminals" title="Permanent link">&para;</a></h3>
@@ -13556,7 +13556,7 @@ chsh -s $（brew --prefix）/ bin / zsh
 <li><a href="https://dejavu-fonts.github.io/">DejaVu Sans Mono</a> - 基于Vera字体的字体系列.</li>
 <li><a href="http://sourcefoundry.org/hack/">Hack</a> -  Hack手工修饰，光学平衡，成为您的首选代码.</li>
 <li><a href="http://levien.com/type/myfonts/inconsolata.html">Inconsolata</a> - 等宽字体，专为代码清单等设计.</li>
-<li><a href="http://input.fontbureau.com">Input</a> - A flexible system of fonts designed specifically for code.</li>
+<li><a href="http://input.fontbureau.com">Input</a> - 专为代码设计的灵活字体系统.</li>
 <li><a href="https://github.com/andreberg/Meslo-Font">Meslo</a> -  Apple的Menlo字体的定制版本.</li>
 <li><a href="https://www.typography.com/fonts/operator/overview/">Operator Mono</a> - 一种令人惊讶的可用替代品，采用等宽字体（商业）.</li>
 <li><a href="https://github.com/powerline/fonts">Powerline Fonts</a> -  Powerline插件的修补字体回购.</li>
@@ -13691,7 +13691,7 @@ chsh -s $（brew --prefix）/ bin / zsh
 </tbody>
 </table>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
-<p><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+<p><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" /><br />本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名 - 相同方式共享4.0国际许可协议授权</a> .</p>
                 
                   
                 
