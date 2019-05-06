@@ -8245,9 +8245,9 @@ vi？]（<a href="http://www.viemu.com/a-why-vi-vim.html">http://www.viemu.com/a
 Vim解释道.</p>
 <h2 id="the-vim-philosophy">The Vim Philosophy<a class="headerlink" href="#the-vim-philosophy" title="Permanent link">&para;</a></h2>
 <p>Vim坚持模态编辑理念.  这意味着它提供
-multiple modes and the meaning of keys changes according to the mode. You
+ 多种模式和键的含义根据模式而变化.  您
 在_normal mode_中导航文件，在_insert mode_中插入文本，然后选择
-在_visual mode_中的行，您可以在_command-line mode_中访问命令，依此类推.
+_visual mode_中的行，您可以在_command-line mode_中访问命令，依此类推.
 这听起来可能很复杂，但有一个巨大的优势：你没有
 通过一次握住几把钥匙来打破你的手指，大多数时候你
  只需一个接一个地按下它们.  任务越常见，密钥越少
@@ -8359,7 +8359,7 @@ GitHub上的vimrc（通常在名为“vim-config”或“dotfiles”的存储库
 或者它是否与文件相关联，因此需要同步
 磁盘保存.</p>
 <p><strong> Windows </strong>是视口_onto_ buffers.  如果要查看多个文件
-在同一个文件的同一时间甚至不同的位置，您使用的是Windows.</p>
+在同一文件的同一时间甚至不同的位置，您使用的是Windows.</p>
 <p>请不要叫他们_splits_.  您可以将窗口拆分为两个，但是
 这不会使他们_splits_.</p>
 <p>Windows可以垂直或水平分割，高度和宽度分开
@@ -8379,7 +8379,7 @@ tab.</p>
 如果你通过<code>：e file2</code>加载另一个文件，<code>file1</code>将成为<strong>隐藏缓冲区</strong>
 和<code>file2</code>是活动的.</p>
 <p>两个缓冲区也<strong>列出</strong>，因此它们将列在输出中
- <code>：ls</code>.  插件缓冲区或帮助缓冲区通常标记为未列出，因为
+ <code>：ls</code>.  插件缓冲区或帮助缓冲区通常标记为不公开，因为
  它们不是您通常使用文本编辑器编辑的常规文件.  列出和
 未列出的缓冲区可以通过<code>：ls！</code>显示.</p>
 <p><strong>未命名的缓冲区</strong>（也经常被插件使用）是没有缓冲区的缓冲区
@@ -8454,10 +8454,10 @@ exclusively.</p>
 <td>operator-pending</td>
 </tr>
 <tr>
-<td></td>
-<td><code>：map</code></td>
+<td><code>：imap</code></td>
 <td><code>：inoremap</code></td>
 <td><code>：iunmap</code></td>
+<td>插入</td>
 </tr>
 </tbody>
 </table>
@@ -8498,7 +8498,7 @@ desired.</p>
 <p>Help:</p>
 <div class="codehilite"><pre><span></span>：h键符号
 ：h映射
-：h 05.3
+:h 05.3
 </pre></div>
 
 
@@ -8772,13 +8772,13 @@ desired.</p>
 </tr>
 </tbody>
 </table>
-<p>Put <code>'</code>/<code>g'</code> or <code>`</code>/<code>g`</code> in front of a mark to form a motion.</p>
+<p>在标记前放置<code>``/</code>g&#39;`或``````````````````````</p>
 <p>使用“mm”记住标记为“m”的当前位置.  移动文件
 然后通过<code>&amp;#39;m</code>（第一个非空白）或<code>`m</code>（精确列）跳回来.
 如果你告诉你的viminfo，退出Vim后会记住小写标记
 文件，请参阅<code>：h viminfo-&amp;#39;</code>.</p>
 <p>使用<code>mM</code>记住文件标记为“M”的当前位置.  切换到另一个
-缓冲并通过&#39;&#39;M`或<code>`M</code>切换回来.</p>
+buffer and switch back via <code>'M</code> or <code>`M</code>.</p>
 <p>其他动议包括：</p>
 <table>
 <thead>
@@ -8935,7 +8935,7 @@ desired.</p>
  在弹出菜单中选择条目.  有关详细信息，请参阅<code>：hi ^ n</code>和`：h&#39;complete&#39;
 this.</p>
 <p>一定要检查<code>：h&amp;#39;completeopt&amp;#39;</code>来配置行为
- 弹出菜单.  默认是非常理智，但我更喜欢添加“noselect”.</p>
+ 弹出菜单.  默认是相当明智的，但我更喜欢添加“noselect”.</p>
 <p>Help:</p>
 <div class="codehilite"><pre><span></span>：h ins-completion
 ：h popupmenu-keys
@@ -8972,14 +8972,14 @@ this.</p>
 介于两者之间.</p>
 <p>请参阅所有可用文本对象的<code>：h text-objects</code>.</p>
 <h2 id="autocmds">Autocmds<a class="headerlink" href="#autocmds" title="Permanent link">&para;</a></h2>
-<p>很多时候，Vim会发布事件.  你通过使用钩住这些事件
-autocmds.</p>
-<p>如果没有autocmds你就不会使用Vim.  他们一直都在使用，甚至
- 如果你没注意到它.  不相信我？  检查<code>：au</code>，但不要输出
- 压倒你.  这些都是现在生效的所有autocmds！</p>
+<p>您可以在Vim中的许多事件之后触发操作，例如缓冲区
+通过所谓的_autocmds_保存或Vim启动了.</p>
+<p>Vim广泛依赖于autocmds.  不相信我？  检查<code>：au</code>，但不要让
+ 输出压倒了你.  这些都是有效的autocmds
+now!</p>
 <p>请参阅<code>：h {event}</code>以快速了解所有可用事件和<code>：h
 autocmd-events-abc</code>了解更多详情.</p>
-<p>一个典型的例子是设置特定于文件类型的设置：</p>
+<p>一个典型的例子是文件类型特定的设置：</p>
 <div class="codehilite"><pre><span></span>autocmd <span class="nb">FileType</span> <span class="k">ruby</span>​​ <span class="k">setlocal</span> <span class="nb">shiftwidth</span> <span class="p">=</span> <span class="m">2</span> <span class="nb">softtabstop</span> <span class="p">=</span> <span class="m">2</span> <span class="nb">comments</span><span class="p">-</span> <span class="p">=</span>：#
 </pre></div>
 
@@ -9085,7 +9085,7 @@ created.</p>
  回到节点“bar”和另一个<code>的状态 &lt;c-r&gt;</code>到节点的状态
  “QUUX”.  （再也无法使用分支命令到达节点“baz”.）</p>
 <p>与此相反，<code>g -</code>和<code>g +</code>按时工作.  因此，<code>g-</code>将不会恢复为
-节点“bar”的状态，就像“你”那样，但是按时间顺序排在前面的状态，
+节点“bar”的状态，就像“你”一样，但是按时间顺序排在前面的状态，
  节点“baz”.  另一个<code>g -</code>会将状态恢复为节点“bar”之一
  上.  因此，<code>g -</code>和<code>g +</code>分别只是及时地来回传递.</p>
 <table>
@@ -9131,12 +9131,12 @@ it.</p>
 <h2 id="quickfix-and-location-lists">Quickfix and location lists<a class="headerlink" href="#quickfix-and-location-lists" title="Permanent link">&para;</a></h2>
 <p>quickfix列表是保存文件位置的数据结构.  实质上，
 quickfix列表中的每个条目都包含文件路径，行号和
-可选列和说明.</p>
+optional column, and a description.</p>
 <p>典型的用例是汇编编译器错误或grep工具的结果.</p>
 <p>Vim有一种特殊类型的缓冲区用于显示quickfix列表：quickfix
  缓冲.  quickfix缓冲区中的每一行显示quickfix列表中的一个条目.</p>
 <p>通常，您打开一个新窗口以显示quickfix列表：quickfix窗口.
-发生这种情况时，最后一个窗口将与quickfix窗口关联.</p>
+当发生这种情况时，最后一个窗口与quickfix窗口相关联.</p>
 <p>在quickfix缓冲区<code>&lt;cr&gt;</code>在相关窗口中打开所选条目
  和<code>&lt;c-w&gt;&lt;cr&gt;</code>在新窗口中.</p>
 <p>quickfix列表以<a href="https://en.wikipedia.org/wiki/Aztec_C">Aztec C.的“快速修复”功能命名
@@ -9159,7 +9159,7 @@ compiler</a>.</p>
 <tbody>
 <tr>
 <td>打开窗口</td>
-<td><code>：Copen</code></td>
+<td><code>：copen</code></td>
 <td><code>：walk</code></td>
 </tr>
 <tr>
@@ -9246,7 +9246,7 @@ q
 </pre></div>
 
 <p>（没有宏也可以这样做：`：％s / ^ /  = line（&#39;.&#39;）.&#39;.&#39;``）</p>
-<p>请注意，我还展示了如何在不使用宏的情况下实现相同的功能，但这一点
+<p>请注意，我还展示了如何在不使用宏的情况下实现相同目标，但这一点
  主要适用于这些简单的例子.  对于更复杂的自动化，宏
 是炸弹！</p>
 <p>Help:</p>
@@ -9349,7 +9349,7 @@ them.</p>
  当前的工作目录，检查<code>：pwd</code>.  重新启动Vim并执行<code>：source
 Foo.vim</code>和voilà，缓冲区列表，窗口布局，映射，工作目录
  等等都应该与保存会话之前相同.  做更多的工作
-and update the session by overwriting the already existing session file with
+并通过覆盖已存在的会话文件来更新会话
  <code>：mksession！  Foo.vim</code>.</p>
 <p>请注意，会话文件实际上只是Vim命令的集合
 应该恢复一个Vim实例的某个状态，所以随意拿一个
@@ -9364,7 +9364,7 @@ and update the session by overwriting the already existing session file with
 </pre></div>
 
 <h2 id="locality">Locality<a class="headerlink" href="#locality" title="Permanent link">&para;</a></h2>
-<p>Many of the concepts mentioned above also have <em>local</em> counterparts:</p>
+<p>上面提到的许多概念也有_local_对应物：</p>
 <table>
 <thead>
 <tr>
@@ -9410,7 +9410,7 @@ and update the session by overwriting the already existing session file with
 <p><a href="https://vimhelp.appspot.com/usr_41.txt.html#41.2">Variables also have different scopes</a>.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <h2 id="getting-help-offline">Getting help offline<a class="headerlink" href="#getting-help-offline" title="Permanent link">&para;</a></h2>
-<p>Vim带有一个带有单个文本文件形式的优秀文档
+<p>Vim带有一个带有文本的单个文本文件的优秀文档
  特殊布局.  Vim使用基于标签的系统来访问某些部分
 那些帮助文件.</p>
 <p>首先，请阅读：<code>：help：help</code>.  这将打开文件
@@ -9424,7 +9424,7 @@ and update the session by overwriting the already existing session file with
 </ul>
 <p>你可以用<code>&lt;c-d&gt;</code>（这是<kbd>ctrl</kbd> + <kbd>d</kbd> ）列出所有标签
  匹配当前输入的查询.  例如<code>：h tab &lt;c-d&gt;</code>会给你一份清单
-标签从&#39;tab<code>over</code>&#39;softtabstop&#39;<code>到</code>setting-guitablabel`.</p>
+从<code>tab</code>到<code>&amp;#39;softtabstop&amp;#39;</code>到<code>setting-guitablabel</code>的标签.</p>
 <p>您想列出所有VimL功能吗？  简单：<code>：h（） &lt;c-d&gt;</code>.  你想列出所有
  与Windows有关的VimL功能？  <code>：h win *（） &lt;c-d&gt;</code>.</p>
 <p>这很快成为第二天性，但尤其是在开始时，你
@@ -9469,7 +9469,7 @@ something).</p>
     的东西.  请注意，某些键始终写为相同，例如Control
     将永远是CTRL.  注意，对于普通模式命令，保留“n”，
     例如<code>：h CTRL-A</code>.  相反，<code>：h c_CTRL-R</code>将描述CTRL-R的作用
-   在命令行中输入命令和<code>：h v_Ctrl-A</code>谈论
+   在命令行中输入命令并且<code>：h v_Ctrl-A</code>谈到
    在视觉模式中递增数字和<code>：h g_CTRL-A</code>谈论g <C-A>
     命令（因此你必须按“g”然后 <Ctrl-A>  ）.  这里的“g”代表
    正常命令“g”，在执行之前总是期望第二个键
@@ -9494,14 +9494,10 @@ something).</p>
     以前访问过的窗口）.  您也可以访问<code>：h windows.txt</code>并阅读
    如果你正在寻找窗口处理命令，你的方式通过.</p>
 <ol>
-<li>
-<p>Ex commands always start with ":", so <code>:h :s</code> covers the ":s" command.</p>
-</li>
-<li>
-<p>Use CTRL-D after typing a topic and let Vim try to complete to all available
-    话题.</p>
-</li>
+<li>Ex commands always start with ":", so <code>:h :s</code> covers the ":s" command.</li>
 </ol>
+<p>11.键入主题后使用CTRL-D，让Vim尝试完成所有可用的操作
+    话题.</p>
 <p>12.使用<code>：helpgrep</code>搜索所有帮助页面（通常还包括帮助
      安装插件的页面）.  有关如何使用它，请参阅<code>：h：helpgrep</code>.  一旦您
     已经搜索了一个主题，所有匹配都可以在quickfix中找到（或者
@@ -9536,7 +9532,7 @@ something).</p>
      FT  -  *  -  syntax</code>.  例如<code>：h ft-c-syntax</code>谈论C语法文件和
      它提供的选项.  有时，全方位完成的附加部分（<code>：h
     ft-php-omni</code>）或filetype插件（<code>：h ft-tex-plugin</code>）可用.</p>
-<p>此外，还有用户文档的链接（更多地描述了某些命令）
+<p>此外，还有指向用户文档的链接（更多地描述了某些命令）
 从帮助的角度来看，从用户的角度来看并且不那么详细
  页面如果可用.  所以<code>：h pattern.txt</code>提到用户指南主题
 <code>：h 03.9</code>和<code>：h usr_27</code>.</p>
@@ -9658,7 +9654,7 @@ CLIPBOARD.</p>
 <div class="codehilite"><pre><span></span>计划A： &lt;ctrl+c&gt;
 程序A：断言CLIPBOARD的所有权
 方案B： &lt;ctrl+v&gt;
-计划B：注意CLIPBOARD的所有权由计划A持有
+Program B: note that ownership of CLIPBOARD is hold by Program A
 程序B：从程序A请求数据
 程序A：响应请求并将数据发送到程序B.
 程序B：从程序A接收数据并将其插入窗口
@@ -9692,7 +9688,7 @@ CLIPBOARD.</p>
  X服务器！  因此，在应用程序中丢失了用<code>ctrl + c</code>复制的数据
 closes.</p>
 <p>使用<code>“* p</code>粘贴PRIMARY选择或<code>”+ y1G</code>将整个文件拉到
-CLIPBOARD选择.</p>
+the CLIPBOARD selection.</p>
 <p>如果您碰巧一直访问两个寄存器中的一个，请考虑使用：</p>
 <div class="codehilite"><pre><span></span>设置剪贴板^ <span class="p">=</span>未命名“*注册
 “ 要么
@@ -9731,10 +9727,10 @@ CLIPBOARD选择.</p>
 <p>在保存文件之前，Vim会创建一个备份文件.  如果写入磁盘是
 成功后，备份文件将被删除.</p>
 <p>使用<code>：set backup</code>，备份将保持不变.  这意味着，备份文件将
-始终具有与原始文件相同的内容_before_最近的保存.
+始终具有与原始文件相同的内容_before_最近保存.
 由您来决定这是否有用.</p>
 <p>您可以使用<code>：set nobackup nowritebackup</code>完全禁用备份，但是您
- 现在不应该这样.  <code>&amp;#39;writebackup&amp;#39;</code>是一个安全功能
+shouldn't need to nowadays. <code>'writebackup'</code> is a security feature that makes
 确保你没有丢失原始文件，以防它保存失败，
 无论你是否保留备份文件.</p>
 <p>如果你经常使用Vim编辑大文件，<a href="#editing-huge-files-is-slow">和你可能
@@ -9745,7 +9741,7 @@ shouldn't</a>, you can exclude those from backups with
 <li><strong>复制</strong>
     1.创建原始文件的完整副本并将其用作备份.
     1.原始文件被清空，然后填充了内容
-    Vim buffer.</li>
+    Vim缓冲区.</li>
 <li><strong>重命名</strong>
     1.原始文件重命名为备份文件.<ol>
 <li>Vim缓冲区的内容被写入名为的新文件
@@ -9851,7 +9847,7 @@ ssh&#39;ing到服务器并使用管理员希望你使用的任何东西.</p>
 <div class="codehilite"><pre><span></span>：e scp：//bram@awesome.site.com/.vimrc
 </pre></div>
 
-<p>如果您已经设置了<code>〜/ .ssh / config</code>，则会自动使用它：</p>
+<p>如果你已经设置了<code>〜/ .ssh / config</code>，它将自动使用：</p>
 <div class="codehilite"><pre><span></span>主持人真棒
     主机名awesome.site.com
     1234号港口
@@ -9904,7 +9900,7 @@ after the end of each line, do this: <code>&lt;c-v&gt;3j$Atext&lt;esc&gt;</code>
 编程接口，例如Lua，并使用它的线程支持，但在此期间
  然而，Vim进程被阻止的时间.  Neovim通过添加一个来修复
 适当的工作API.</p>
-<p>（显然Bram正在考虑为Vim增加工作控制权.如果你
+<p>（显然Bram正在考虑为Vim增加工作控制.如果你
 有一个非常新的版本，请参阅<code>：helpgrep startjob</code>.）</p>
 <p>使用<code>：！</code>开始工作.  如果要列出当前工作中的文件
  目录，使用<code>：！ls</code>.  像往常一样在shell中使用<code>|</code>，例如<code>：！ls -1 |
@@ -9950,7 +9946,7 @@ Go的插件经常提供称为<code>：Fmt</code>的辅助命令
 <li>这个全球符号的定义是什么？</li>
 <li>这个变量在哪里得到它的价值？</li>
 <li>源文件中的这个功能在哪里？</li>
-<li>什么函数调用此函数？</li>
+<li>What functions call this function?</li>
 <li>此功能调用哪些功能？</li>
 <li>“空间不足”的信息来自哪里？</li>
 <li>目录结构中的源文件在哪里？</li>
@@ -10184,10 +10180,10 @@ cnoremap <span class="p">&lt;</span><span class="k">c</span><span class="p">-</s
 <p>现在<code>5 [ &lt;space&gt;</code>在当前行上方插入5个空行.</p>
 <h2 id="quickly-edit-your-macros">Quickly edit your macros<a class="headerlink" href="#quickly-edit-your-macros" title="Permanent link">&para;</a></h2>
 <p>这是一个真正的宝石！  映射采用寄存器（或默认为“*”）并打开
- 它在cmdline窗口中.  点击<code>&lt;cr&gt;</code>当你完成编辑设置时
+it in the cmdline-window. Hit <code>&lt;cr&gt;</code> when you're done editing for setting the
 register.</p>
 <p>我经常使用它来纠正我在录制宏时所犯的错别字.</p>
-<div class="codehilite"><pre><span></span><span class="nb">nnoremap</span> <span class="p">&lt;</span>leader<span class="p">&gt;</span><span class="k">m</span>  :<span class="p">&lt;</span><span class="k">c</span><span class="p">-</span><span class="k">u</span><span class="p">&gt;&lt;</span><span class="k">c</span><span class="p">-</span><span class="k">r</span><span class="p">&gt;&lt;</span><span class="k">c</span><span class="p">-</span><span class="k">r</span><span class="p">&gt;=</span><span class="s1">&#39;let @&#39;</span>. <span class="k">v</span>:<span class="k">register</span> .<span class="s1">&#39; = &#39;</span>. string<span class="p">(</span>getreg<span class="p">(</span><span class="k">v</span>:<span class="k">register</span><span class="p">))&lt;</span><span class="k">cr</span><span class="p">&gt;&lt;</span><span class="k">c</span><span class="p">-</span><span class="k">f</span><span class="p">&gt;&lt;</span><span class="k">left</span><span class="p">&gt;</span>
+<div class="codehilite"><pre><span></span> <span class="nb">nnoremap</span> <span class="p">&lt;</span>leader<span class="p">&gt;</span>  米： <span class="p">&lt;</span><span class="k">c</span><span class="p">-</span><span class="k">u</span><span class="p">&gt;&lt;</span><span class="k">c</span><span class="p">-</span><span class="k">r</span><span class="p">&gt;&lt;</span><span class="k">c</span><span class="p">-</span><span class="k">r</span><span class="p">&gt;</span>  <span class="p">=</span>&amp;#<span class="m">39</span>;让@&amp;#<span class="m">39</span>;.  <span class="k">v</span>：注册.&amp;#<span class="m">39</span>;  <span class="p">=</span>&amp;#<span class="m">39</span>;.  串（getreg（ν：寄存器）） <span class="p">&lt;</span><span class="k">cr</span><span class="p">&gt;&lt;</span><span class="k">c</span><span class="p">-</span><span class="k">f</span><span class="p">&gt;&lt;</span><span class="k">left</span><span class="p">&gt;</span>
 </pre></div>
 
 <p>像这样使用它 <leader>  m<code>或``q &lt;leader&gt;  M</code>.</p>
@@ -10409,7 +10405,7 @@ steps.</p>
 在您的环境中找到慢代码.</p>
 <p><code>：profile</code>命令需要一堆子命令来指定内容
 profile.</p>
-<p>如果您想要分析_everything_，请执行以下操作：</p>
+<p>If you want to profile <em>everything</em>, do this:</p>
 <div class="codehilite"><pre><span></span>：profile start /tmp/profile.log
 ：个人档案*
 ：profile func *
@@ -10432,7 +10428,7 @@ familiar.</p>
 <p>只需将<code>：debug</code>添加到任何其他命令，您将进入调试模式.
 也就是说，执行将在即将执行的第一行停止
 将显示一行.</p>
-<p>有关6个可用的调试器命令，请参阅<code>：h&amp;gt; cont</code>及以下内容，请注意，
+<p>有关6个可用的调试器命令，请参阅<code>：h&amp;gt; cont</code>及其下方，并注意，
 比如在gdb和类似的调试器中，你也可以使用它们的简短形式：<code>c</code>，<code>q</code>，
 <code>n</code>，<code>s</code>，<code>i</code>和<code>f</code>.</p>
 <p>除此之外，您可以自由使用任何Vim命令，例如<code>：echo myvar</code>，
@@ -10681,8 +10677,8 @@ publishing.</p>
 <td><code>当用户按下相同的键42次时.  开玩笑！  :-)</code></td>
 </tr>
 <tr>
-<td><code>:h bar</code></td>
-<td><code>Ceci n'est pas une pipe.</code></td>
+<td><code>：h bar</code></td>
+<td>`这不是管道.</td>
 </tr>
 <tr>
 <td><code>：h holy-grail</code></td>
@@ -10704,7 +10700,7 @@ publishing.</p>
 </table>
 <h2 id="why-hjkl-for-navigation">Why hjkl for navigation?<a class="headerlink" href="#why-hjkl-for-navigation" title="Permanent link">&para;</a></h2>
 <p>When <a href="https://en.wikipedia.org/wiki/Bill_Joy">Bill Joy</a> 创建
-<a href="https://en.wikipedia.org/wiki/Vi">vi</a>作为Vim的前身，他是在一个人的基础上做到
+<a href="https://en.wikipedia.org/wiki/Vi">vi</a>，Vim的前身，他是在一个
 <a href="https://en.wikipedia.org/wiki/ADM-3A">ADM-3A</a> 没有额外的光标按钮
 但是用过，你可能已经猜到了，而不是hjkl.</p>
 <p>键盘布局： <a href="https://raw.githubusercontent.com/mhinz/vim-galore/master/static/images/content-adm-3a-layout.jpg">click</a></p>
@@ -10718,9 +10714,9 @@ publishing.</p>
 <table>
 <thead>
 <tr>
-<th>Typical culprit</th>
-<th>Why?</th>
-<th>Solution?</th>
+<th>典型的罪魁祸首</th>
+<th>为什么？</th>
+<th>解？</th>
 </tr>
 </thead>
 <tbody>
@@ -10791,13 +10787,13 @@ up?</p>
 <p>如果你厌倦了一直打开“粘贴”，请看看这个好
 为你做的插件：
 <a href="https://github.com/ConradIrwin/vim-bracketed-paste">bracketed-paste</a>.</p>
-<p>与插件相同的其他读物：
+<p>Additional read from the same author as the plugin:
 <a href="http://cirw.in/blog/bracketed-paste">here</a>.</p>
 <p><strong> Neovim </strong>：Neovim试图让所有这些更加无缝和集合
 如果终端仿真器支持，则自动括起粘贴模式.</p>
 <h2 id="delays-when-using-escape-key-in-terminal">Delays when using escape key in terminal<a class="headerlink" href="#delays-when-using-escape-key-in-terminal" title="Permanent link">&para;</a></h2>
 <p>如果你住在命令行中，你可能会使用所谓的_terminal
-emulator_喜欢xterm，gnome-terminal，iTerm2等（与真实的相反）
+emulator_喜欢xterm，gnome-terminal，iTerm2等（与真实相反）
 <a href="https://en.wikipedia.org/wiki/Computer_terminal">terminal</a>).</p>
 <p>像他们的祖先一样，终端模拟器使用[逃避
 序列]（<a href="https://en.wikipedia.org/wiki/Escape_sequence">https://en.wikipedia.org/wiki/Escape_sequence</a>）（或_control
@@ -10852,7 +10848,7 @@ character.</p>
 <li>可以使用<code>.</code>重做简单的文本更改.  （它保存在<code>.</code>寄存器中;
   用<code>：echo @ .</code>打印它.</li>
 </ul>
-<p>如果你从一个函数中执行它们，那么这两件事都不是这样的！  因此你
+<p>如果你从一个函数中执行它们，那么事情都不是这样的！  因此你
 无法轻松突出显示函数中的单词或重做所做的文本更改
 it.</p>
 <p>帮助：<code>：h function-search-undo</code></p>
@@ -10866,7 +10862,7 @@ it.</p>
 <p><code>Vim script</code>, <code>Vimscript</code>, and <code>VimL</code> all refer to the same thing: The
  用于编写Vim脚本的编程语言.  即使
 <a href="https://github.com/vim/vim/commit/b544f3c81f1e6a50322855681ac266ffaa8e313c">8.0.360</a>
-将所有对“VimL”的引用改为“Vim脚本”，现在可以考虑了
+将所有对“VimL”的引用更改为“Vim脚本”，现在可以考虑了
 官方称，“VimL”仍然遍布互联网.</p>
 <p>无论你使用哪个术语，每个人都会理解它.</p>
                 
