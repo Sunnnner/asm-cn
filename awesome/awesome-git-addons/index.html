@@ -5057,6 +5057,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#git-word-blame" title="git-word-blame" class="md-nav__link">
+    git-word-blame
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#git-fire" title="git-fire" class="md-nav__link">
     git-fire
   </a>
@@ -8854,6 +8861,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#git-word-blame" title="git-word-blame" class="md-nav__link">
+    git-word-blame
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#git-fire" title="git-fire" class="md-nav__link">
     git-fire
   </a>
@@ -9302,7 +9316,7 @@ last = cat-file commit HEAD
 </pre></div>
 
 <h3 id="info">info<a class="headerlink" href="#info" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>$ git信息
+<div class="codehilite"><pre><span></span>$ go info
 
     ## 远程网址：
 
@@ -9342,8 +9356,8 @@ last = cat-file commit HEAD
 <div class="codehilite"><pre><span></span>$ git发布0.1.0
 ...释放0.1.0
 关于分支发展
-您的分支机构与“原产地/开发”保持同步.
-nothing to commit, working directory clean
+Your branch is up-to-date with &#39;origin/development&#39;.
+无需提交，工作目录清理
 总计0（delta 0），重用0（delta 0）
 要https://github.com/tj/git-extras.git
    9fde751..e62edfa master  - &amp;gt; master
@@ -9419,7 +9433,7 @@ $ git功能完成依赖项
 
 <h3 id="local-commits">local-commits<a class="headerlink" href="#local-commits" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span>$ git local-commits
-提交5f00a3c1bb71876ebdca059fac96b7185dea5467
+commit 5f00a3c1bb71876ebdca059fac96b7185dea5467
 合并：7ad3ef9 841af4e
 作者：Blaine Bublitz &lt;blaine@iceddev.com&gt;
 日期：2015年8月20日星期四11:35:15 -0700
@@ -9450,7 +9464,7 @@ $ git功能完成依赖项
 </pre></div>
 
 <h3 id="lock">lock<a class="headerlink" href="#lock" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>$ git lock config / database.yml
+<div class="codehilite"><pre><span></span>$ config lock / database.yml lock
 </pre></div>
 
 <h3 id="locked">locked<a class="headerlink" href="#locked" title="Permanent link">&para;</a></h3>
@@ -9459,7 +9473,7 @@ config/database.yml
 </pre></div>
 
 <h3 id="unlock">unlock<a class="headerlink" href="#unlock" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>$ git unlock config / database.yml
+<div class="codehilite"><pre><span></span>$ un config / database.yml git
 </pre></div>
 
 <h3 id="reset-file">reset-file<a class="headerlink" href="#reset-file" title="Permanent link">&para;</a></h3>
@@ -9676,7 +9690,7 @@ $ git am --ignore-whitespace https://github.com/davidbalbert/hub/commit/fdb9921
 
 <h3 id="submodule">submodule<a class="headerlink" href="#submodule" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span>$ git submodule添加wycats / bundler vendor / bundler
-&gt; git submodule add git://github.com/wycats/bundler.git vendor/bundler
+&amp;gt; git submodule添加git：//github.com/wycats/bundler.git vendor / bundler
 </pre></div>
 
 <h3 id="ci-status">ci-status<a class="headerlink" href="#ci-status" title="Permanent link">&para;</a></h3>
@@ -9821,7 +9835,7 @@ $ git issue new -s&amp;#39;从命令行输入的新问题&amp;#39;
 </pre></div>
 
 <h3 id="list-open-issues">List open issues<a class="headerlink" href="#list-open-issues" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>$ git问题列表
+<div class="codehilite"><pre><span></span>$ git issue list
 7dfa5b7从编辑器输入的问题
 e6a95c9从命令行输入新问题
 </pre></div>
@@ -9887,7 +9901,7 @@ remote：总计60（delta 8），重用60（delta 8），pack-reused 0
 </pre></div>
 
 <h3 id="list-open-issues_1">List open issues<a class="headerlink" href="#list-open-issues_1" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>$ git问题列表
+<div class="codehilite"><pre><span></span>$ git issue list
 7dfa5b7从编辑器输入的问题
 e6a95c9从命令行输入新问题
 </pre></div>
@@ -9955,7 +9969,7 @@ Fast-forward
 </pre></div>
 
 <h3 id="list-open-issues_2">List open issues<a class="headerlink" href="#list-open-issues_2" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>$ git问题列表
+<div class="codehilite"><pre><span></span>$ git issue list
 7dfa5b7从编辑器输入的问题
 abc9adc在另一台主机上添加了问题
 e6a95c9从命令行输入新问题
@@ -10055,7 +10069,7 @@ HEAD和origin / 4.0 DIVERGED，共同点是657213a52d5e9c19b85df6a42f76341a98c08
 <div class="codehilite"><pre><span></span>$ go test -v
 4.0 ^ origin / 4.0 ^ origin / master将测试2次提交
 iter commit tree结果
-0000 57af4b0 f5ef0d8传递（缓存）
+0000 57af4b0 f5ef0d8通过（缓存）
 0001 10ed389 434370f通过
 </pre></div>
 
@@ -10130,8 +10144,8 @@ Fast-forward
 在分支大师
 您的分支通过1次提交超过“origin / master”.
   （使用“git push”发布您的本地提交）
-nothing to commit, working directory clean
-丢弃的藏匿@ {0}（7c28b7f5eaf09dd72ec6e1ea440cbd1611e36c7f）
+无需提交，工作目录清理
+丢失的藏匿@ {0}（7c28b7f5eaf09dd72ec6e1ea440cbd1611e36c7f）
 </pre></div>
 
 <h3 id="graft_1">graft<a class="headerlink" href="#graft_1" title="Permanent link">&para;</a></h3>
@@ -10216,10 +10230,10 @@ $ git打开上游主人
     - 工作但不提供任何收益
 •hbsfy ................................................ 2015-10-21
 ✓主人................................................ 2015年10月22日
-•有ads4 .............................................. 2015年10月22日
+•有ads4 .................................................. 2015年10月22日
 •remove-equalize_content_height ........................ 2015-10-21
 •移除 - 驱除....................................... 2015-10-21
-    - 需要干预驱除功能
+    - 需要干燥驱除功能
     -  uglified时无法正确映射
     - 需要撤消postCSS映射更改
 •rm-convert_dates-order ................................ 2015-10-22
@@ -10275,11 +10289,22 @@ c6eb3bfa（LOREM 2014年8月11日23时15分57秒+0000 5）Nostrud例行学区LAB
 0f0d17bd（ATM 2014年6月2日11时31分48秒+0000 6 *）除非在它aliquipis优势.
 </pre></div>
 
+<h2 id="git-word-blame"><a href="https://framagit.org/mdamien/git-word-blame">git-word-blame</a><a class="headerlink" href="#git-word-blame" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>$ git word-blame README.md
+结果在/ tmp / word-blame-output /
+ -  author_stats.tsv
+ -  commit_stats.tsv
+ -  word-blame-by-commit.html
+ -  word-blame-by-author.html
+ - 文本输出
+</pre></div>
+
+<p><img alt="git word-blame on this README" src="https://user-images.githubusercontent.com/1469823/57202569-0247eb00-6fa7-11e9-8549-f55d81299fab.png" /></p>
 <h2 id="git-fire"><a href="https://github.com/qw3rtman/git-fire">git-fire</a><a class="headerlink" href="#git-fire" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>$ git fire
 切换到新的分支&amp;#39;fire-master-maochenyan@gmail.com-1451379915&amp;#39;
 在分支fire-master-maochenyan@gmail.com-1451379915
-nothing to commit, working directory clean
+无需提交，工作目录清理
 计数对象：2，完成.
  写入对象：100％（2/2），168字节|  0字节/秒，完成.
 总计2（delta 0），重复使用0（delta 0）
@@ -10370,14 +10395,14 @@ $ git fixup 6d623f6525dd94b4aaea6f6ae2e7a59edc39bdb8
 <div class="codehilite"><pre><span></span>$ git rebase -i master
 </pre></div>
 
-<p><img alt="git-interactive-rebase-tool screenshot" src="https://raw.githubusercontent.com/MitMaro/git-interactive-rebase-tool/master/git-interactive-tool.gif" /></p>
+<p><img alt="git-interactive-rebase-tool screenshot" src="https://raw.githubusercontent.com/MitMaro/git-interactive-rebase-tool/master/docs/assets/images/git-interactive-rebase-demo.gif" /></p>
 <h2 id="git-fiddle"><a href="https://github.com/felixSchl/git-fiddle">git-fiddle</a><a class="headerlink" href="#git-fiddle" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>$ git fiddle -h
 git-fiddle
 
 在* interactive * rebase期间编辑提交元信息.
 
-`git-fiddle(1)&#39; is a lightweight wrapper around `git-rebase(1)&#39; that
+`git-fiddle（1）&amp;#39;是一个围绕`git-rebase（1）&amp;#39;的轻量级包装器
 用它的* author * date，作者名称来注释每个提交
  作为提交消息.  然后将应用对这些中的任何一个的更改
 在git-rebase序列中使用&amp;#39;exec&amp;#39;脚本.
@@ -10472,7 +10497,7 @@ cz-cli@2.9.6, cz-conventional-changelog@1.2.0
   style：不影响代码含义的更改（空格，格式，缺少半
 - 等等）
   重构：代码更改既不修复错误也不添加功能
-  perf:     A code change that improves performance
+  perf：改进性能的代码更改
   测试：添加缺失测试或更正现有测试
 </pre></div>
 
@@ -10502,7 +10527,7 @@ $ go url -r v1.0
 协议：https
 网站：github.com
 回复：zdharma / git-url
-修订版：v1.0
+Revision:  v1.0
 
 gitu://ŪĪАϔEäḝЃȣϟṈӛŀї
 
