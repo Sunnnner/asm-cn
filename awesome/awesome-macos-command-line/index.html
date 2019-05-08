@@ -2236,6 +2236,32 @@
     Package Managers
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#homebrew" title="Homebrew" class="md-nav__link">
+    Homebrew
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#full-uninstall" title="Full Uninstall" class="md-nav__link">
+    Full Uninstall
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -11104,6 +11130,32 @@
     Package Managers
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#homebrew" title="Homebrew" class="md-nav__link">
+    Homebrew
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#full-uninstall" title="Full Uninstall" class="md-nav__link">
+    Full Uninstall
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -12995,7 +13047,7 @@ scselect
 scselect LocationNameFromStatus
 </pre></div></p>
 <h4 id="set-static-ip-address">Set Static IP Address<a class="headerlink" href="#set-static-ip-address" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span>networksetup -setmanual“Ethernet”192.168.2.100 <span class="m">255</span>.255.255.0 <span class="m">192</span>.168.2.1
+<div class="codehilite"><pre><span></span>networksetup -setmanual “以太网” <span class="m">192</span>.168.2.100 <span class="m">192</span>.168.2.1 <span class="m">255</span>.255.255.0
 </pre></div>
 
 <h3 id="networking-tools">Networking Tools<a class="headerlink" href="#networking-tools" title="Permanent link">&para;</a></h3>
@@ -13088,6 +13140,11 @@ sudo launchctl start com.apple.tftpd
 <li><a href="https://brew.sh">Homebrew</a> -  OS X缺少的包管理器.最受欢迎的选择.</li>
 <li><a href="https://www.macports.org">MacPorts</a>   - 编译，安装和升级命令行，X11或基于Aqua的开源软件.  非常干净，这就是我使用的.</li>
 </ul>
+<h3 id="homebrew">Homebrew<a class="headerlink" href="#homebrew" title="Permanent link">&para;</a></h3>
+<h4 id="full-uninstall">Full Uninstall<a class="headerlink" href="#full-uninstall" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span>ruby -e“$（curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall）”
+</pre></div>
+
 <h2 id="printing">Printing<a class="headerlink" href="#printing" title="Permanent link">&para;</a></h2>
 <h4 id="clear-print-queue">Clear Print Queue<a class="headerlink" href="#clear-print-queue" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span>取消-a  - 
@@ -13511,6 +13568,7 @@ sudo systemsetup setusingnetworktime off
 </pre></div></p>
 <h3 id="alternative-terminals">Alternative Terminals<a class="headerlink" href="#alternative-terminals" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="https://github.com/jwilm/alacritty">Alacritty</a> - 跨平台，GPU加速的终端仿真器.</li>
 <li><a href="https://iterm2.com">iTerm2</a> - 一个更好的Terminal.app.</li>
 <li><a href="https://sw.kovidgoyal.net/kitty/">kitty</a> - 现代GPU加速终端仿真器.</li>
 </ul>
