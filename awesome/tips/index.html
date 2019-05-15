@@ -4092,6 +4092,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#show-changes-over-time-for-specific-file" title="Show changes over time for specific file" class="md-nav__link">
+    Show changes over time for specific file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#remove-sensitive-data-from-history-after-a-push" title="Remove sensitive data from history, after a push" class="md-nav__link">
     Remove sensitive data from history, after a push
   </a>
@@ -4115,6 +4122,13 @@
         <li class="md-nav__item">
   <a href="#git-reset-first-commit" title="Git reset first commit" class="md-nav__link">
     Git reset first commit
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reset-preserve-uncommitted-local-changes" title="Reset: preserve uncommitted local changes" class="md-nav__link">
+    Reset: preserve uncommitted local changes
   </a>
   
 </li>
@@ -4960,6 +4974,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#list-all-currently-configured-remotes" title="List all currently configured remotes" class="md-nav__link">
+    List all currently configured remotes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#show-the-author-time-and-last-revision-made-to-each-line-of-a-given-file" title="Show the author, time and last revision made to each line of a given file" class="md-nav__link">
     Show the author, time and last revision made to each line of a given file
   </a>
@@ -5165,6 +5186,13 @@
         <li class="md-nav__item">
   <a href="#use-ssh-instead-of-https-for-remotes" title="Use SSH instead of HTTPs for remotes" class="md-nav__link">
     Use SSH instead of HTTPs for remotes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-a-submodule-to-the-latest-commit" title="Update a submodule to the latest commit" class="md-nav__link">
+    Update a submodule to the latest commit
   </a>
   
 </li>
@@ -7770,6 +7798,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#show-changes-over-time-for-specific-file" title="Show changes over time for specific file" class="md-nav__link">
+    Show changes over time for specific file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#remove-sensitive-data-from-history-after-a-push" title="Remove sensitive data from history, after a push" class="md-nav__link">
     Remove sensitive data from history, after a push
   </a>
@@ -7793,6 +7828,13 @@
         <li class="md-nav__item">
   <a href="#git-reset-first-commit" title="Git reset first commit" class="md-nav__link">
     Git reset first commit
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reset-preserve-uncommitted-local-changes" title="Reset: preserve uncommitted local changes" class="md-nav__link">
+    Reset: preserve uncommitted local changes
   </a>
   
 </li>
@@ -8638,6 +8680,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#list-all-currently-configured-remotes" title="List all currently configured remotes" class="md-nav__link">
+    List all currently configured remotes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#show-the-author-time-and-last-revision-made-to-each-line-of-a-given-file" title="Show the author, time and last revision made to each line of a given file" class="md-nav__link">
     Show the author, time and last revision made to each line of a given file
   </a>
@@ -8847,6 +8896,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#update-a-submodule-to-the-latest-commit" title="Update a submodule to the latest commit" class="md-nav__link">
+    Update a submodule to the latest commit
+  </a>
+  
+</li>
+      
       
       
       
@@ -8904,6 +8960,10 @@
 <div class="codehilite"><pre><span></span>git log -S<span class="p">&amp;</span><span class="c1">#39; &lt;a term in the source&gt;&amp;#39;&lt;/a&gt;</span>
 </pre></div>
 
+<h2 id="show-changes-over-time-for-specific-file">Show changes over time for specific file<a class="headerlink" href="#show-changes-over-time-for-specific-file" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>git log -p &lt;file_name&gt;
+</pre></div>
+
 <h2 id="remove-sensitive-data-from-history-after-a-push">Remove sensitive data from history, after a push<a class="headerlink" href="#remove-sensitive-data-from-history-after-a-push" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span> git filter-branch --force --index-filter<span class="p">&amp;</span><span class="c1">#39;git rm --cached --ignore-unmatch &lt;path-to-your-file&gt;  &amp;#39;--proune-empty --tag-name-filter cat  -  --all &amp;amp;&amp;amp; git push origin --force --all</span>
 </pre></div>
@@ -8920,8 +8980,12 @@
 <div class="codehilite"><pre><span></span>git update-ref -d HEAD
 </pre></div>
 
+<h2 id="reset-preserve-uncommitted-local-changes">Reset: preserve uncommitted local changes<a class="headerlink" href="#reset-preserve-uncommitted-local-changes" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>git reset --keep &lt;commit&gt;
+</pre></div>
+
 <h2 id="list-all-the-conflicted-files">List all the conflicted files<a class="headerlink" href="#list-all-the-conflicted-files" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>git diff --name-only --diff-filter<span class="o">=</span>U
+<div class="codehilite"><pre><span></span>git diff --name-only --diff-filter <span class="o">=</span> U.
 </pre></div>
 
 <h2 id="list-of-all-files-changed-in-a-commit">List of all files changed in a commit<a class="headerlink" href="#list-of-all-files-changed-in-a-commit" title="Permanent link">&para;</a></h2>
@@ -8980,6 +9044,9 @@
 <p><strong>Alternatives:</strong>
 <div class="codehilite"><pre><span></span>git push origin： &lt;remote_branchname&gt;
 </pre></div></p>
+<div class="codehilite"><pre><span></span>git branch -dr &lt;remote/branch&gt;
+</pre></div>
+
 <h2 id="delete-local-tag">Delete local tag<a class="headerlink" href="#delete-local-tag" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>git tag -d &lt;tag-name&gt;
 </pre></div>
@@ -9509,6 +9576,10 @@ git bisect reset                    <span class="c1"># Finish search </span>
 <div class="codehilite"><pre><span></span>git远程添加&lt;remote-nickname&gt;&lt;remote-url&gt;
 </pre></div>
 
+<h2 id="list-all-currently-configured-remotes">List all currently configured remotes<a class="headerlink" href="#list-all-currently-configured-remotes" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>git remote -v
+</pre></div>
+
 <h2 id="show-the-author-time-and-last-revision-made-to-each-line-of-a-given-file">Show the author, time and last revision made to each line of a given file<a class="headerlink" href="#show-the-author-time-and-last-revision-made-to-each-line-of-a-given-file" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>git责备&lt;file-name&gt;
 </pre></div>
@@ -9641,6 +9712,14 @@ git bisect reset                    <span class="c1"># Finish search </span>
 
 <h2 id="use-ssh-instead-of-https-for-remotes">Use SSH instead of HTTPs for remotes<a class="headerlink" href="#use-ssh-instead-of-https-for-remotes" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>git config --global url.<span class="p">&amp;</span><span class="c1">#39;git@github.com:&amp;#39;.allyOf&amp;#39;https://github.com/&amp;#39;</span>
+</pre></div>
+
+<h2 id="update-a-submodule-to-the-latest-commit">Update a submodule to the latest commit<a class="headerlink" href="#update-a-submodule-to-the-latest-commit" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>光盘&lt;path-to-submodule&gt;
+git pull origin &lt;branch&gt;
+光盘&lt;root-of-your-main-project&gt;
+git add &lt;path-to-submodule&gt;
+git commit -m“submodule updated”
 </pre></div>
 
 <!-- Don’t remove or change the comment below – that can break automatic updates. More info at <http://npm.im/doxie.inject>. -->
