@@ -142,7 +142,7 @@
 <li><a href="https://github.com/coreos/flannel/">Flannel</a>   -  Flannel是一个虚拟网络，为每个主机提供一个子网，用于容器运行时.  由[@coreos] [coreos]</li>
 <li><a href="https://github.com/Microsoft/Freeflow">Freeflow</a>   -  Linux上的高性能容器覆盖网络.  启用RDMA（在InfiniBand和RoCE上）并加速TCP到裸机性能.  [@microsoft] [<a href="https://github.com/Microsoft/">https://github.com/Microsoft/</a>]</li>
 <li><a href="https://github.com/nicolaka/netshoot">netshoot</a> -  netshoot容器具有一组强大的网络工具，可帮助解决Docker网络问题 <a href="https://github.com/nicolaka">@nicolaka</a></li>
-<li><a href="https://github.com/jpetazzo/pipework">Pipework</a> - Software-Defined Networking for Linux Containers, Pipework works with "plain" LXC containers, and with the awesome Docker. By [@jpetazzo][jpetazzo]</li>
+<li><a href="https://github.com/jpetazzo/pipework">Pipework</a>   -  Linux容器的软件定义网络，Pipework使用“普通”LXC容器，以及令人敬畏的Docker.  由[@jpetazzo] [jpetazzo]</li>
 <li>[Weave] [weave]（Docker网络） -  Weave创建一个虚拟网络，连接跨多个主机部署的Docker容器.</li>
 </ul>
 <h3 id="orchestration">Orchestration<a class="headerlink" href="#orchestration" title="Permanent link">&para;</a></h3>
@@ -227,7 +227,7 @@
 <ul>
 <li><a href="https://github.com/blockbridge/blockbridge-docker-volume">Blockbridge</a>   -  Blockbridge插件是一个卷插件，可以访问一组可扩展的基于容器的持久存储选项.  它支持单主机和多主机Docker环境，其功能包括租户隔离，自动配置，加密，安全删除，快照和QoS.  通过 <a href="https://github.com/blockbridge">@blockbridge</a></li>
 <li><a href="https://github.com/rancher/convoy">Convoy</a>   - 一个开源的Docker卷驱动程序，可以在任何地方快照，备份和恢复Docker卷.  由[@rancher] [牧场主]</li>
-<li><a href="https://github.com/adlogix/docker-machine-nfs">Docker Machine NFS</a> 为OS X上通过Docker Machine创建的现有boot2docker框激活NFS.</li>
+<li><a href="https://github.com/adlogix/docker-machine-nfs">Docker Machine NFS</a> Activates NFS for an existing boot2docker box created through Docker Machine on OS X.</li>
 <li><a href="https://github.com/leighmcculloch/docker-unison">Docker Unison</a>  使用Unison进行快速双向文件夹同步的docker卷容器.  创建作为OS X上缓慢boot2docker卷的替代方法 <a href="https://github.com/leighmcculloch">@leighmcculloch</a></li>
 <li><a href="https://github.com/MatchbookLab/local-persist">Local Persist</a> 为本地卷指定一个挂载点（通过<code>docker volume create</code>创建），这样文件将始终保持不变，因此您可以挂载到不同容器中的不同目录.</li>
 <li><a href="https://github.com/minio/minio">Minio</a> -  Docker容器中的S3兼容对象存储服务器</li>
@@ -305,7 +305,7 @@
 <li>[CoreOS] [coreos]  - 用于大规模服务器部署的Linux</li>
 <li><a href="https://github.com/GoogleContainerTools/distroless">distroless</a> - 通过[@GoogleContainerTools] [googlecontainertools]减去语言的码头图像，减去操作系统</li>
 <li><a href="https://github.com/gliderlabs/docker-alpine">docker-alpine</a> - A super small Docker base image <em>(5MB)</em> using Alpine Linux by [@gliderlabs][gliderlabs]</li>
-<li><a href="https://github.com/jwilder/docker-gen">docker-gen</a> - Generate files from docker container meta-data by <a href="https://github.com/jwilder">@jwilder</a></li>
+<li><a href="https://github.com/jwilder/docker-gen">docker-gen</a> -  <a href="https://github.com/jwilder">@jwilder</a>从docker容器元数据生成文件</li>
 <li><a href="https://github.com/jwilder/dockerize">dockerize</a> -  <a href="https://github.com/jwilder">@jwilder</a>简化在docker容器中运行应用程序的实用程序</li>
 <li><a href="https://github.com/tianon/gosu">GoSu</a> - 以此特定用户身份运行此特定应用程序，然后退出管道（入口点脚本工具） <a href="https://github.com/tianon">@tianon</a></li>
 <li><a href="https://github.com/sindresorhus/is-docker">is-docker</a> -  [@sindresorhus] [sindresorhus]检查进程是否在Docker容器内运行</li>
@@ -313,7 +313,7 @@
 <li><a href="https://github.com/NVIDIA/nvidia-docker">NVIDIA-Docker</a> -  [@NVIDIA] [nvidia]的Docker NVIDIA Container Runtime</li>
 <li><a href="https://github.com/ncopa/su-exec">su-exec</a>   - 这是一个简单的工具，只需执行具有不同权限的程序.  该程序将直接执行，而不是像小孩一样运行，如su和sudo，这可以避免TTY和信号问题.  为什么重塑gosu？  这与gosu或多或少完全相同，但它只有10kb而不是1.8MB.  通过 <a href="https://github.com/ncopa">ncopa</a></li>
 <li><a href="https://github.com/aptible/supercronic">supercronic</a> -  crontab兼容的作业运行器，专门设计用于在容器中运行 <a href="https://github.com/aptible/">@aptible</a></li>
-<li><a href="https://github.com/vorakl/TrivialRC">TrivialRC</a> - 容器的简约运行时配置系统和进程管理器 <a href="https://github.com/vorakl">@vorakl</a></li>
+<li><a href="https://github.com/vorakl/TrivialRC">TrivialRC</a> - A minimalistic Runtime Configuration system and process manager for containers <a href="https://github.com/vorakl">@vorakl</a></li>
 </ul>
 <h3 id="builder">Builder<a class="headerlink" href="#builder" title="Permanent link">&para;</a></h3>
 <p>旨在帮助或简化构建<strong>新</strong>图像的应用程序</p>
@@ -441,7 +441,7 @@
 <li><a href="https://screwdriver.cd/">Screwdriver <img alt="💲" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f4b2.svg" title=":heavy_dollar_sign:" /></a> - 雅虎的OpenSource构建平台，专为持续交付而设计.</li>
 <li><a href="https://github.com/Stratoscale/skipper">Skipper</a> - 轻松将您的Git存储库停靠 <a href="https://github.com/Stratoscale">@Stratoscale</a></li>
 <li><a href="https://github.com/ghostsquad/swarmci">SwarmCI</a> - 在Docker Swarm中创建分布式，隔离的任务管道.</li>
-<li><a href="https://github.com/containrrr/watchtower">Watchtower</a> -  [@CenturyLinkLabs] [centurylinklabs]自动更新正在运行的Docker容器</li>
+<li><a href="https://github.com/containrrr/watchtower">Watchtower</a> - 自动更新正在运行的Docker容器</li>
 </ul>
 <h3 id="development-environment">Development Environment<a class="headerlink" href="#development-environment" title="Permanent link">&para;</a></h3>
 <ul>
