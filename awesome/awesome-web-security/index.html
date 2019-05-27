@@ -7,10 +7,10 @@
 <p>毋庸置疑，大多数网站都存在各种类型的错误，最终可能导致漏洞.  为什么这会经常发生？  可能涉及许多因素，包括配置错误，工程师的安全技能不足等.为了解决这个问题，这里列出了用于学习尖端渗透技术的Web安全材料和资源，我强烈建议您阅读本文“<a href="https://portswigger.net/blog/so-you-want-to-be-a-web-security-researcher">So you want to be a web security researcher?</a>“先.</p>
 <p><em>请阅读 <a href="https://github.com/qazbnm456/awesome-web-security/blob/master/CONTRIBUTING.md">contribution guidelines</a> 在贡献之前.</em></p>
 <hr />
-<p align="center"><b>🌈 Want to strengthen your penetration skills?</b><br>I would recommend playing some <a href="https://github.com/apsdehal/awesome-ctf" target="_blank">awesome-ctf</a>s.</p>
+<p align="center">  想加强你的渗透技能？ <br>  我建议玩一些<a href="https://github.com/apsdehal/awesome-ctf" target="_blank">很棒的ctf</a> . </p>
 
 <hr />
-<p>如果您喜欢这个很棒的列表并想支持它，请查看我 <a href="https://www.patreon.com/boik">Patreon</a>  页面:) <br>  另外，别忘了看看我 <a href="https://github.com/qazbnm456">repos</a>  或者说我喜欢* hi * <a href="https://twitter.com/qazbnm456">Twitter</a>!</p>
+<p>如果你喜欢这个很棒的列表，并想支持它，请查看我 <a href="https://www.patreon.com/boik">Patreon</a>  页面:) <br>  另外，别忘了看看我 <a href="https://github.com/qazbnm456">repos</a>  或者说我喜欢* hi * <a href="https://twitter.com/qazbnm456">Twitter</a>!</p>
 <h2 id="forums">Forums<a class="headerlink" href="#forums" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="http://www.phrack.org/">Phrack Magazine</a> - 由黑客和黑客写的电子杂志.</li>
@@ -177,6 +177,7 @@
 <p><a name="evasions-csp"></a></p>
 <h3 id="csp">CSP<a class="headerlink" href="#csp" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="https://github.com/w3c/webappsec-csp/issues/243">Any protection against dynamic module import?</a> - 写 <a href="https://twitter.com/@shhnjk">@shhnjk</a>.</li>
 <li><a href="https://labs.detectify.com/2016/04/04/csp-bypassing-form-action-with-reflected-xss/">CSP: bypassing form-action with reflected XSS</a> - 写 <a href="https://labs.detectify.com/">Detectify Labs</a>.</li>
 <li><a href="http://www.paulosyibelo.com/2017/05/twitter-xss-csp-bypass.html">TWITTER XSS + CSP BYPASS</a> - 写 <a href="http://www.paulosyibelo.com/">Paulos Yibelo</a>.</li>
 <li><a href="https://lab.wallarm.com/how-to-trick-csp-in-letting-you-run-whatever-you-want-73cb5ff428aa">Neatly bypassing CSP</a> - 写 <a href="https://wallarm.com/">Wallarm</a>.</li>
@@ -213,6 +214,8 @@
 <p><a name="tricks-rce"></a></p>
 <h3 id="remote-code-execution">Remote Code Execution<a class="headerlink" href="#remote-code-execution" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="https://paper.seebug.org/910/">WebLogic RCE (CVE-2019-2725) Debug Diary</a> - 由Badcode @ Knownsec 404团队撰写.</li>
+<li><a href="https://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability/">What Do WebLogic, WebSphere, JBoss, Jenkins, OpenNMS, and Your Application Have in Common? This Vulnerability.</a> - 写 <a href="https://twitter.com/@breenmachine">@breenmachine</a>.</li>
 <li><a href="https://opsecx.com/index.php/2017/02/08/exploiting-node-js-deserialization-bug-for-remote-code-execution/">Exploiting Node.js deserialization bug for Remote Code Execution</a> - 写 <a href="https://opsecx.com/index.php/author/ajinabraham/">OpSecX</a>.</li>
 <li><a href="https://www.ambionics.io/blog/drupal-services-module-rce">DRUPAL 7.X SERVICES MODULE UNSERIALIZE() TO RCE</a> - 写 <a href="https://www.ambionics.io/">Ambionics Security</a>.</li>
 <li><a href="https://capacitorset.github.io/mathjs/">How we exploited a remote code execution vulnerability in math.js</a> - 写 <a href="https://github.com/capacitorset">@capacitorset</a>.</li>
@@ -226,6 +229,7 @@
 <p><a name="tricks-xss"></a></p>
 <h3 id="xss">XSS<a class="headerlink" href="#xss" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="https://medium.com/bugbountywriteup/xss-auditor-the-protector-of-unprotected-f900a5e15b7b">XSS-Auditor — the protector of unprotected and the deceiver of protected.</a> - 写 <a href="https://medium.com/@terjanq">@terjanq</a>.</li>
 <li><a href="https://hackerone.com/reports/293689">Query parameter reordering causes redirect page to render unsafe URL</a> - 写 <a href="https://hackerone.com/kenziy">kenziy</a>.</li>
 <li><a href="http://www.slideshare.net/x00mario/es6-en">ECMAScript 6 from an Attacker's Perspective - Breaking Frameworks, Sandboxes, and everything else</a> - 写 <a href="http://www.slideshare.net/x00mario">Mario Heiderich</a>.</li>
 <li><a href="https://medium.com/@marin_m/how-i-found-a-5-000-google-maps-xss-by-fiddling-with-protobuf-963ee0d9caff#.u50nrzhas">How I found a $5,000 Google Maps XSS (by fiddling with Protobuf)</a> - 写 <a href="https://medium.com/@marin_m">@marin_m</a>.</li>
@@ -306,6 +310,7 @@
 <h2 id="browser-exploitation">Browser Exploitation<a class="headerlink" href="#browser-exploitation" title="Permanent link">&para;</a></h2>
 <h3 id="frontend-like-sop-bypass-url-spoofing-and-something-like-that">Frontend (like SOP bypass, URL spoofing, and something like that)<a class="headerlink" href="#frontend-like-sop-bypass-url-spoofing-and-something-like-that" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="https://jameshfisher.com/2019/04/27/the-inception-bar-a-new-phishing-method/">The inception bar: a new phishing method</a> - 写 <a href="https://jameshfisher.com/">jameshfisher</a>.</li>
 <li><a href="http://blog.portswigger.net/2016/11/json-hijacking-for-modern-web.html">JSON hijacking for the modern web</a> - 写 <a href="https://portswigger.net/">portswigger</a>.</li>
 <li><a href="https://www.facebook.com/ExploitWareLabs/photos/a.361854183878462.84544.338832389513975/1378579648872572/?type=3&amp;theater">IE11 Information disclosure - local file detection</a> - 由James Lee撰写.</li>
 <li><a href="https://www.brokenbrowser.com/sop-bypass-uxss-stealing-credentials-pretty-fast/">SOP bypass / UXSS – Stealing Credentials Pretty Fast (Edge)</a> - 写 <a href="https://twitter.com/magicmac2000">Manuel</a>.</li>
@@ -316,6 +321,7 @@
 </ul>
 <h3 id="backend-core-of-browser-implementation-and-often-refers-to-c-or-c-part">Backend (core of Browser implementation, and often refers to C or C++ part)<a class="headerlink" href="#backend-core-of-browser-implementation-and-often-refers-to-c-or-c-part" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="https://habr.com/en/company/drweb/blog/452076/">Breaking UC Browser</a> - 写 <a href="https://www.drweb.ru/">Доктор Веб</a>.</li>
 <li><a href="http://www.phrack.org/papers/attacking_javascript_engines.html">Attacking JavaScript Engines - A case study of JavaScriptCore and CVE-2016-4622</a> - 写 <a href="https://github.com/qazbnm456/awesome-web-security/blob/master/phrack@saelo.net">https://github.com/qazbnm456/awesome-web-security/blob/master/phrack@saelo.net</a>.</li>
 <li><a href="http://blogs.360.cn/360safe/2016/11/29/three-roads-lead-to-rome-2/">Three roads lead to Rome</a> - 写 <a href="http://blogs.360.cn/360safe/author/xsecure/">Luke Viruswalker</a>.</li>
 <li><a href="https://halbecaf.com/2017/05/24/exploiting-a-v8-oob-write/">Exploiting a V8 OOB write.</a> - 写 <a href="https://twitter.com/halbecaf">@halbecaf</a>.</li>
@@ -480,7 +486,7 @@
 <h3 id="proxy">Proxy<a class="headerlink" href="#proxy" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://www.charlesproxy.com/">Charles</a> -  HTTP代理/ HTTP监视器/反向代理，使开发人员能够查看其计算机和Internet之间的所有HTTP和SSL / HTTPS流量.</li>
-<li><a href="https://github.com/mitmproxy/mitmproxy">mitmproxy</a> - 支持交互式TLS的拦截HTTP代理，用于渗透测试人员和软件开发人员 <a href="https://github.com/mitmproxy">@mitmproxy</a>.</li>
+<li><a href="https://github.com/mitmproxy/mitmproxy">mitmproxy</a> - Interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers by <a href="https://github.com/mitmproxy">@mitmproxy</a>.</li>
 </ul>
 <p><a name="tools-webshell"></a></p>
 <h3 id="webshell">Webshell<a class="headerlink" href="#webshell" title="Permanent link">&para;</a></h3>
@@ -513,7 +519,7 @@
 <h2 id="social-engineering-database">Social Engineering Database<a class="headerlink" href="#social-engineering-database" title="Permanent link">&para;</a></h2>
 <p><strong>使用风险自负</strong></p>
 <ul>
-<li><a href="https://haveibeenpwned.com/">haveibeenpwned</a> - 检查您的帐户是否因数据泄露而受到损害 <a href="https://www.troyhunt.com/">Troy Hunt</a>.</li>
+<li><a href="https://haveibeenpwned.com/">haveibeenpwned</a> - 检查您的帐户是否因数据泄露而遭到入侵 <a href="https://www.troyhunt.com/">Troy Hunt</a>.</li>
 <li><a href="https://www.databases.today/index.php">databases.today</a> - 面向安全研究人员和记者的最大免费下载公共网站数据库集合 <a href="https://twitter.com/publicdbhost">@publicdbhost</a>.</li>
 <li><a href="http://www.mysql-password.com/database/1">mysql-password</a> -  MySQL哈希数据库.</li>
 </ul>
@@ -572,7 +578,7 @@
 <p><a name="practices-modsecurity"></a></p>
 <h3 id="modsecurity-owasp-modsecurity-core-rule-set">ModSecurity / OWASP ModSecurity Core Rule Set<a class="headerlink" href="#modsecurity-owasp-modsecurity-core-rule-set" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://www.netnea.com/cms/apache-tutorials/">ModSecurity / OWASP ModSecurity Core Rule Set</a> - 一系列安装，配置和调整ModSecurity和核心规则集的教程 - 撰写者 <a href="https://twitter.com/ChrFolini">@ChrFolini</a>.</li>
+<li><a href="https://www.netnea.com/cms/apache-tutorials/">ModSecurity / OWASP ModSecurity Core Rule Set</a> - 用于安装，配置和调整ModSecurity和核心规则集的系列教程 - 撰写者 <a href="https://twitter.com/ChrFolini">@ChrFolini</a>.</li>
 </ul>
 <h2 id="community">Community<a class="headerlink" href="#community" title="Permanent link">&para;</a></h2>
 <ul>
@@ -606,6 +612,7 @@
 <li><a href="https://www.secjuice.com/finding-real-ips-of-origin-servers-behind-cloudflare-or-tor/">Finding The Real Origin IPs Hiding Behind CloudFlare or TOR</a> - 写 <a href="https://www.secjuice.com/author/paul-dannewitz/">Paul Dannewitz</a>.</li>
 <li><a href="https://dev.to/antogarand/why-facebooks-api-starts-with-a-for-loop-1eob?fbclid=IwAR0BQ7RmYGzQzsL33IJ2LM7lmlH0OSuIuxKLebUUBi1D51R-9UOnHrW0DQg">Why Facebook's api starts with a for loop</a> - 写 <a href="https://twitter.com/AntoGarand">@AntoGarand</a>.</li>
 <li><a href="https://blog.avatao.com/How-I-could-steal-your-photos-from-Google/">How I could have stolen your photos from Google - my first 3 bug bounty writeups</a> - 写 <a href="https://twitter.com/gergoturcsanyi">@gergoturcsanyi</a>.</li>
+<li><a href="https://0day.work/an-example-why-nat-is-not-security/">An example why NAT is NOT security</a> - 写 <a href="https://twitter.com/@0daywork">@0daywork</a>.</li>
 </ul>
 <h2 id="code-of-conduct">Code of Conduct<a class="headerlink" href="#code-of-conduct" title="Permanent link">&para;</a></h2>
 <p>请注意，此项目已发布 <a href="https://github.com/qazbnm456/awesome-web-security/blob/master/code-of-conduct.md">Contributor Code of Conduct</a> .  参与此项目即表示您同意遵守其条款.</p>
