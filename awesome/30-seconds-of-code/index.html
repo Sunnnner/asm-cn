@@ -1433,9 +1433,9 @@ npm安装30秒的代码
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">remove</span> <span class="o">=</span><span class="err">（</span><span class="nx">arr</span><span class="err">，</span><span class="nx">func</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="err">（</span><span class="nx">ARR</span><span class="err">）</span>
      <span class="err">？</span>  <span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="err">（</span><span class="nx">func</span><span class="err">）</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">acc</span><span class="err">，</span><span class="nx">val</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
-      <span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="err">（</span><span class="nx">arr</span><span class="p">.</span><span class="nx">indexOf</span><span class="err">（</span><span class="nx">val</span><span class="err">），</span><span class="mi">1</span><span class="err">）</span><span class="p">;</span>
-      <span class="k">return</span> <span class="nx">acc</span><span class="p">.</span><span class="nx">concat</span><span class="err">（</span><span class="nx">val</span><span class="err">）</span><span class="p">;</span>
-    <span class="p">},</span> <span class="p">[])</span>
+        <span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="err">（</span><span class="nx">arr</span><span class="p">.</span><span class="nx">indexOf</span><span class="err">（</span><span class="nx">val</span><span class="err">），</span><span class="mi">1</span><span class="err">）</span><span class="p">;</span>
+        <span class="k">return</span> <span class="nx">acc</span><span class="p">.</span><span class="nx">concat</span><span class="err">（</span><span class="nx">val</span><span class="err">）</span><span class="p">;</span>
+      <span class="p">},</span> <span class="p">[])</span>
     <span class="o">:</span> <span class="p">[];</span>
 </pre></div>
 
@@ -2395,7 +2395,7 @@ The comparator function takes two arguments: the values of the two elements bein
 <h3 id="getstyle">getStyle<a class="headerlink" href="#getstyle" title="Permanent link">&para;</a></h3>
 <p>返回指定元素的CSS规则的值.</p>
 <p>使用<code>Window.getComputedStyle（）</code>获取指定元素的CSS规则的值.</p>
-<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">getStyle</span> <span class="o">=</span><span class="err">（</span><span class="nx">el</span><span class="err">，</span><span class="nx">ruleName</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">getComputedStyle</span><span class="err">（</span><span class="nx">el</span><span class="err">）</span><span class="p">[</span><span class="nx">ruleName</span><span class="p">];</span>
+<div class="codehilite"><pre><span></span><span class="nx">的getStyle</span> <span class="o">=</span><span class="nx">常数</span><span class="err">（</span><span class="nx">的</span><span class="err">，</span><span class="nx">RULENAME</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="nx">的getComputedStyle</span><span class="err">（</span><span class="nx">下</span><span class="err">）</span><span class="p">[</span><span class="nx">RULENAME</span><span class="p">];</span>
 </pre></div>
 
 <details>
@@ -2499,7 +2499,7 @@ The comparator function takes two arguments: the values of the two elements bein
 </details>
 
 <h3 id="isbrowsertabfocused">isBrowserTabFocused<a class="headerlink" href="#isbrowsertabfocused" title="Permanent link">&para;</a></h3>
-<p>如果页面的浏览器选项卡是聚焦的，则返回“true”，否则返回“false”.</p>
+<p>Returns <code>true</code> if the browser tab of the page is focused, <code>false</code> otherwise.</p>
 <p>使用Page Visibility API引入的<code>Document.hidden</code>属性来检查页面的浏览器选项卡是可见还是隐藏.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">isBrowserTabFocused</span> <span class="o">=</span><span class="err">（）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">！</span><span class="nb">document</span><span class="p">.</span><span class="nx">hidden</span><span class="p">;</span>
 </pre></div>
@@ -3853,8 +3853,8 @@ Use the spread (<code>...</code>) operator to supply the function with an arbitr
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">factorial</span> <span class="o">=</span> <span class="nx">n</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="nx">n</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="mi">0</span>
     <span class="o">?</span> <span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-      <span class="nx">抛出新的TypeError</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">不允许使用负数</span><span class="err">！</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="p">;</span>
-    <span class="p">})()</span>
+        <span class="nx">抛出新的TypeError</span><span class="err">（</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">不允许使用负数</span><span class="err">！</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="p">;</span>
+      <span class="p">})()</span>
     <span class="err">：</span><span class="nx">n</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">=</span> <span class="mi">1</span>
       <span class="o">?</span> <span class="mi">1</span>
       <span class="err">：</span><span class="nx">n</span> <span class="o">*</span><span class="nx">阶乘</span><span class="err">（</span><span class="nx">n</span>  <span class="o">-</span>  <span class="mi">1</span><span class="err">）</span><span class="p">;</span>
@@ -4824,11 +4824,11 @@ GCD公式使用递归.</p>
      <span class="err">？</span>  <span class="nx">obj</span><span class="p">.</span><span class="nx">map</span><span class="err">（</span><span class="nx">val</span> <span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">deepMapKeys</span><span class="err">（</span><span class="nx">val</span><span class="err">，</span><span class="nx">f</span><span class="err">））</span>
     <span class="err">：</span><span class="k">typeof</span> <span class="nx">obj</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">object</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span>
        <span class="err">？</span>  <span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="err">（</span><span class="nx">obj</span><span class="err">）</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">acc</span><span class="err">，</span><span class="nx">current</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
-        <span class="kr">const</span> <span class="nx">val</span> <span class="o">=</span> <span class="nx">obj</span> <span class="p">[</span><span class="nx">current</span><span class="p">];</span>
-        <span class="nx">acc</span> <span class="p">[</span><span class="nx">f</span><span class="err">（</span><span class="nx">current</span><span class="err">）</span><span class="p">]</span> <span class="o">=</span>
+          <span class="kr">const</span> <span class="nx">val</span> <span class="o">=</span> <span class="nx">obj</span> <span class="p">[</span><span class="nx">current</span><span class="p">];</span>
+          <span class="nx">acc</span> <span class="p">[</span><span class="nx">f</span><span class="err">（</span><span class="nx">current</span><span class="err">）</span><span class="p">]</span> <span class="o">=</span>
              <span class="nx">val</span><span class="err">！</span><span class="o">==</span> <span class="kc">null</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span> <span class="k">typeof</span> <span class="nx">val</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">object</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">？</span>  <span class="nx">deepMapKeys</span><span class="err">（</span><span class="nx">val</span><span class="err">，</span><span class="nx">f</span><span class="err">）</span><span class="o">:</span><span class="p">(</span> <span class="nx">acc</span> <span class="p">[</span><span class="nx">f</span><span class="err">（</span><span class="nx">current</span><span class="err">）</span><span class="p">]</span> <span class="o">=</span> <span class="nx">val</span><span class="err">）</span><span class="p">;</span>
-        <span class="nx">返回acc</span><span class="p">;</span>
-      <span class="p">},</span> <span class="p">{})</span>
+          <span class="nx">返回acc</span><span class="p">;</span>
+        <span class="p">},</span> <span class="p">{})</span>
       <span class="err">：</span><span class="nx">obj</span><span class="p">;</span>
 </pre></div>
 
@@ -4888,9 +4888,9 @@ GCD公式使用递归.</p>
   <span class="nx">目标在obj</span>
      <span class="err">？</span>  <span class="nx">OBJ</span> <span class="p">[</span><span class="nx">靶标</span><span class="p">]</span>
     <span class="err">：</span><span class="nb">Object</span><span class="p">.</span><span class="nx">values</span><span class="err">（</span><span class="nx">obj</span><span class="err">）</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">acc</span><span class="err">，</span><span class="nx">val</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="p">{</span>
-      <span class="k">if</span><span class="err">（</span><span class="nx">acc</span><span class="err">！</span><span class="o">==</span> <span class="kc">undefined</span><span class="err">）</span><span class="k">return</span> <span class="nx">acc</span><span class="p">;</span>
-      <span class="k">if</span><span class="err">（</span><span class="k">typeof</span> <span class="nx">val</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">object</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="nx">返回dig</span><span class="err">（</span><span class="nx">val</span><span class="err">，</span><span class="nx">target</span><span class="err">）</span><span class="p">;</span>
-    <span class="p">}</span><span class="err">，</span><span class="kc">undefined</span><span class="err">）</span><span class="p">;</span>
+        <span class="k">if</span><span class="err">（</span><span class="nx">acc</span><span class="err">！</span><span class="o">==</span> <span class="kc">undefined</span><span class="err">）</span><span class="k">return</span> <span class="nx">acc</span><span class="p">;</span>
+        <span class="k">if</span><span class="err">（</span><span class="k">typeof</span> <span class="nx">val</span> <span class="o">===&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="nx">object</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="err">）</span><span class="nx">返回dig</span><span class="err">（</span><span class="nx">val</span><span class="err">，</span><span class="nx">target</span><span class="err">）</span><span class="p">;</span>
+      <span class="p">}</span><span class="err">，</span><span class="kc">undefined</span><span class="err">）</span><span class="p">;</span>
 </pre></div>
 
 <details>
@@ -5363,7 +5363,7 @@ GCD公式使用递归.</p>
 </details>
 
 <h3 id="pick">pick<a class="headerlink" href="#pick" title="Permanent link">&para;</a></h3>
-<p>Picks the key-value pairs corresponding to the given keys from an object.</p>
+<p>从对象中挑选与给定键对应的键值对.</p>
 <p>如果对象中存在键，则使用<code>Array.prototype.reduce（）</code>将已过滤/拾取的键转换回具有相应键值对的对象.</p>
 <div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">pick</span> <span class="o">=</span><span class="err">（</span><span class="nx">obj</span><span class="err">，</span><span class="nx">arr</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span>
   <span class="nx">arr</span><span class="p">.</span><span class="nx">reduce</span><span class="err">（（</span><span class="nx">acc</span><span class="err">，</span><span class="nx">curr</span><span class="err">）</span><span class="o">=&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="err">（</span><span class="nx">curr</span> <span class="k">in</span> <span class="nx">obj</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="err">（</span><span class="nx">acc</span> <span class="p">[</span><span class="nx">curr</span><span class="p">]</span> <span class="o">=</span> <span class="nx">obj</span> <span class="p">[</span><span class="nx">curr</span><span class="p">]</span><span class="err">），</span><span class="nx">acc</span><span class="err">），</span><span class="p">{}</span><span class="err">）</span><span class="p">;</span>
@@ -6709,7 +6709,7 @@ GCD公式使用递归.</p>
 </details>
 
 <h3 id="isbrowser">isBrowser<a class="headerlink" href="#isbrowser" title="Permanent link">&para;</a></h3>
-<p>Determines if the current runtime environment is a browser so that front-end modules can run on the server (Node) without throwing errors.</p>
+<p>确定当前运行时环境是否为浏览器，以便前端模块可以在服务器（节点）上运行而不会抛出错误.</p>
 <p>对<code>window</code>和<code>document</code>的<code>typeof</code>值使用<code>Array.prototype.includes（）</code>（通常只在浏览器环境中可用的全局变量，除非它们是明确定义的），如果其中一个，则返回<code>true</code>他们是&#39;未定义&#39;.
 <code>typeof</code>允许检查全局变量是否存在而不抛出<code>ReferenceError</code>.
 如果它们都不是“未定义”，则假定当前环境是浏览器.</p>
