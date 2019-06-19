@@ -4402,6 +4402,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#repository-templates" title="Repository Templates" class="md-nav__link">
+    Repository Templates
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -7554,6 +7561,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#repository-templates" title="Repository Templates" class="md-nav__link">
+    Repository Templates
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -7841,7 +7855,7 @@ $ git push
 <p><img alt="Git.io" src="http://i.imgur.com/6JUfbcG.png?1" /></p>
 <p>您也可以使用Curl通过纯HTTP使用它：</p>
 <div class="codehilite"><pre><span></span>$ curl -i http://git.io -F“url <span class="o">=</span> https://github.com / ...”
-HTTP / <span class="m">1</span>.1 201已创建
+HTTP/1.1 <span class="m">201</span> Created
 地点：http：//git.io/abc123
 
 $ curl -i http://git.io/abc123
@@ -7857,7 +7871,7 @@ $ curl -i http://git.io/abc123
 <li>按&#39;w`将调出分支选择器.</li>
 <li>按<code>s</code>将聚焦当前存储库的搜索字段.  按退格键删除“此存储库”丸会更改该字段以搜索所有GitHub.</li>
 <li>按“l”将编辑现有问题的标签.</li>
-<li>Pressing <code>y</code> <strong>when looking at a file</strong> (e.g., <code>https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md</code>) will change your URL to one which, in effect, freezes the page you are looking at. If this code changes, you will still be able to see what you saw at that current time.</li>
+<li>查看文件时按&#39;y<code>** **（例如，</code>https：// github.com / tiimgreen / github-cheat-sheet / blob / master / README.md`）会将您的URL更改为实际上，冻结了您正在查看的页面.  如果此代码更改，您仍然可以看到您在当前时间看到的内容.</li>
 </ul>
 <p>要查看当前页面的所有快捷方式，请按<code>？</code>：</p>
 <p><img alt="Keyboard shortcuts" src="http://i.imgur.com/y5ZfNEm.png" /></p>
@@ -7899,7 +7913,7 @@ $ curl -i http://git.io/abc123
 <p><code>是：issue -label：activerecord</code></p>
 <p>此外，这也适用于拉取请求：</p>
 <p><code>是：pr -label：activerecord</code></p>
-<p>Github has tabs for displaying open or closed issues and pull requests but you
+<p>Github有标签显示打开或关闭的问题，并提取请求但你
  也可以看到合并拉取请求.  只需将以下内容放入过滤器：</p>
 <p><code>is:merged</code></p>
 <p><a href="https://help.github.com/articles/searching-issues/"><em>Read more about searching issues.</em></a></p>
@@ -8014,7 +8028,7 @@ puts table.to_s
 </ul>
 <p><a href="https://github.com/blog/1825-task-lists-in-all-markdown-documents"><em>Read more about task lists in markdown documents.</em></a></p>
 <h3 id="relative-links">Relative Links<a class="headerlink" href="#relative-links" title="Permanent link">&para;</a></h3>
-<p>链接到内部内容时，建议在Markdown文件中使用相对链接.</p>
+<p>Relative links are recommended in your Markdown files when linking to internal content.</p>
 <div class="codehilite"><pre><span></span>[Link to a file](https://github.com/tiimgreen/github-cheat-sheet/blob/master/docs/readme)
 </pre></div>
 
@@ -8188,6 +8202,12 @@ index 88fcf69..8614873 100644
 
 <p>e.g. <a href="https://github.com/tiimgreen.keys">https://github.com/tiimgreen.keys</a></p>
 <p><a href="https://changelog.com/github-exposes-public-ssh-keys-for-its-users/"><em>Read more about accessing public ssh keys.</em></a></p>
+<h3 id="repository-templates">Repository Templates<a class="headerlink" href="#repository-templates" title="Permanent link">&para;</a></h3>
+<p>您可以在存储库中启用模板，允许任何人复制目录结构和文件，允许他们立即使用文件（例如，教程或编写样板代码）.  这可以在存储库的设置中启用.</p>
+<p><img alt="Convert" src="https://i.postimg.cc/hGCrVm9F/Template.gif" /></p>
+<p>更改为模板存储库将提供可以共享的新URL端点，并立即允许用户将存储库用作模板.  或者，他们可以转到您的存储库并单击“用作模板”按钮.</p>
+<p><img alt="Template" src="https://i.postimg.cc/L8PKCHx0/New-Template.gif" /></p>
+<p><a href="https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/"><em>Read more about using repositories as templates</em></a></p>
 <h2 id="git">Git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h2>
 <h3 id="remove-all-deleted-files-from-the-working-tree">Remove All Deleted Files from the Working Tree<a class="headerlink" href="#remove-all-deleted-files-from-the-working-tree" title="Permanent link">&para;</a></h3>
 <p>使用<code>/ bin / rm</code>删除大量文件时，可以使用以下命令将其从工作树和索引中删除，无需单独删除每个文件：</p>
@@ -8468,7 +8488,7 @@ $ git rebase abcde ^ --autosquash -i
 <span class="c1">## in 1.5 seconds automatically...</span>
 </pre></div>
 
-<p>git之前的延迟将重新运行命令，因此用户有时间中止.</p>
+<p>The delay before git will rerun the command is so the user has time to abort.</p>
 <h4 id="color">Color<a class="headerlink" href="#color" title="Permanent link">&para;</a></h4>
 <p>要为Git输出添加更多颜色：</p>
 <div class="codehilite"><pre><span></span>$ git config --global color.ui <span class="m">1</span>
@@ -8560,7 +8580,7 @@ $ git rebase abcde ^ --autosquash -i
 <td></td>
 </tr>
 <tr>
-<td>Pro Go</td>
+<td>去专业</td>
 <td><a href="http://git-scm.com/book">http://git-scm.com/book</a></td>
 </tr>
 <tr>
